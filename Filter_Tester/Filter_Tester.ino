@@ -50,10 +50,7 @@ void loop(){
      oldPoints[i]=points[i]; 
   }
   float xsum;
-  for(int i=0;i<5;i++){
-    xsum+=points[i];
-  }
-  xsum=points[0]+points[2];
+  xsum=points[0]+points[2]+points[3]+points[4];
   lcd.clear();
   lcd.print(xsum);
   Serial.print(ax);
@@ -67,5 +64,5 @@ void loop(){
       lcd.write(Serial.read());
     }
   }
-  delay(100);
+  //delay(100);
 }

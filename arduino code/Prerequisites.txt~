@@ -1,2 +1,5 @@
 To complie and run this arduino code please be sure to install the following libraries:
 
+1) Adafruit_LSM9DSO Library https://learn.adafruit.com/adafruit-lsm9ds0-accelerometer-gyro-magnetometer-9-dof-breakouts/wiring-and-test
+
+
