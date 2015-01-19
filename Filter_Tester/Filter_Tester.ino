@@ -3,7 +3,10 @@
 #include<SPI.h>
 #include <Adafruit_LSM9DS0.h>;
 #include <Adafruit_Sensor.h>;
-
+/*
+This comment is here to give an example of how to edit the code
+Please delete it for practice, or don't, really your call!
+*/
 
 Adafruit_LSM9DS0 lsm = Adafruit_LSM9DS0();
 
