@@ -80,10 +80,10 @@ void loop(){
   vx=vxsum/3;
   x+=vx*(float)dt/1000;
   oldnetaccel=netaccel;
-  lcd.clear();
-  lcd.print("X: ");
-  lcd.print(x*12);
-  lcd.print(" in");
+  //lcd.clear();
+  //lcd.print("X: ");
+  //lcd.print(x*12);
+  //lcd.print(" in");
   Serial.print(ax);
   Serial.print(',');
   Serial.print(netaccel);
