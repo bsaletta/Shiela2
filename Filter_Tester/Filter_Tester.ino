@@ -66,7 +66,7 @@ void loop(){
   xsum=points[0]+points[1]+points[2]+points[3]+points[4];
   float netaccel=(xsum/5)-sin(pitch*3.14157/180);
   
-  //netaccel=(float)(floor(netaccel*1000))/1000;
+  netaccel=(float)(round(netaccel*1000))/1000;
   vx+=((oldnetaccel+netaccel)/2)*(float)dt/1000*32.174;
  float velocities[3];
  velocities[0]=vx;
@@ -84,7 +84,6 @@ void loop(){
   //lcd.print("X: ");
   //lcd.print(x*12);
   //lcd.print(" in");
-  Serial.print("You ready, bitches?");
   Serial.print(ax);
   Serial.print(',');
   Serial.print(netaccel);
@@ -99,5 +98,5 @@ void loop(){
       lcd.write(Serial.read());
     }
   }
-  delay(5000);
+  delay(50);
 }
