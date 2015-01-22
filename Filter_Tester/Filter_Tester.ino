@@ -98,5 +98,5 @@ void loop(){
       lcd.write(Serial.read());
     }
   }
-  delay(50);
+  delay(5000);
 }
