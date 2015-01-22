@@ -84,6 +84,7 @@ void loop(){
   //lcd.print("X: ");
   //lcd.print(x*12);
   //lcd.print(" in");
+  Serial.print("You ready, bitches?");
   Serial.print(ax);
   Serial.print(',');
   Serial.print(netaccel);
