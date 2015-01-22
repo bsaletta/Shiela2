@@ -3,10 +3,7 @@
 #include<SPI.h>
 #include <Adafruit_LSM9DS0.h>;
 #include <Adafruit_Sensor.h>;
-/*
-This comment is here to give an example of how to edit the code
-Please delete it for practice, or don't, really your call!
-*/
+
 
 Adafruit_LSM9DS0 lsm = Adafruit_LSM9DS0();
 
@@ -25,7 +22,9 @@ void setup(){
   Serial.begin(9600);
   lcd.begin(16,2);
  
-  lcd.print("got one");
+  lcd.print("    Process");
+  lcd.setCursor(0,2);
+  lcd.print("   Initiated");
   if (!lsm.begin()){
     while(1){
     Serial.println("Oops ... unable to initialize the LSM9DS0. Check your wiring!");
@@ -36,13 +35,24 @@ void setup(){
 }
 
 float oldPoints[5]={0,0,0,0,0};
-
+float oldVelocities[5]={0,0,0};
+float pitch=0;
+float x=0;
+float vx=0;
+float oldnetaccel=0;
 void loop(){
   sensors_event_t accel,mag,gyro,temp;
   lsm.getEvent(&accel,&mag,&gyro,&temp);
   long dt=millis()-oldTime;
   oldTime=millis();
+  //Angle Calculations
+  float dty=gyro.gyro.y;
   float ax=accel.acceleration.x;
+  
+  pitch=.5*(pitch+dty*((float)dt/1000))+.5*(asin(ax)*(180/3.14157));
+  
+  
+  
   //linear approximation
   float points[5];
   points[0]=ax;
@@ -53,13 +63,34 @@ void loop(){
      oldPoints[i]=points[i]; 
   }
   float xsum;
-  xsum=points[0]+points[2]+points[3]+points[4];
+  xsum=points[0]+points[1]+points[2]+points[3]+points[4];
+  float netaccel=(xsum/5)-sin(pitch*3.14157/180);
+  
+  //netaccel=(float)(floor(netaccel*1000))/1000;
+  vx+=((oldnetaccel+netaccel)/2)*(float)dt/1000*32.174;
+ float velocities[3];
+ velocities[0]=vx;
+  for(int i=1;i<3;i++){
+    velocities[i]=oldVelocities[i-1];
+  }
+    for(int i=0;i<3;i++){
+     oldVelocities[i]=velocities[i]; 
+  }
+  float vxsum=velocities[0]+velocities[1]+velocities[2];
+  vx=vxsum/3;
+  x+=vx*(float)dt/1000;
+  oldnetaccel=netaccel;
   lcd.clear();
-  lcd.print(xsum);
+  lcd.print("X: ");
+  lcd.print(x*12);
+  lcd.print(" in");
   Serial.print(ax);
   Serial.print(',');
-  Serial.println(xsum/5);
-  
+  Serial.print(netaccel);
+  Serial.print(',');
+  Serial.print(vx);
+  Serial.print(',');
+  Serial.println(x);
   if(Serial.available()>0){
     delay(100);
     lcd.clear();
@@ -67,5 +98,5 @@ void loop(){
       lcd.write(Serial.read());
     }
   }
-  //delay(100);
+  delay(50);
 }
