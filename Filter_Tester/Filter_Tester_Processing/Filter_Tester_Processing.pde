@@ -46,7 +46,7 @@ void draw(){
    line(150,0,150,1000);
    textFont(f); //Set the Created font as the text font
    text("Velocity: "+vx,800,20);
-   text("Position: "+x,800,40);  
+   text("Position: "+x,800,40);
   
   int val=(int)((measured+2)*150)-150; //Scale values to window
   int valf=(int)((filtered+2)*150)-150;

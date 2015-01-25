@@ -32,6 +32,8 @@ void setup(){
     setupSensor();
   }
   oldTime=millis();
+    sensors_event_t accel,mag,gyro,temp; //Clear old reading from the board
+  lsm.getEvent(&accel,&mag,&gyro,&temp);
 }
 
 float oldPoints[5]={0,0,0,0,0};
@@ -40,6 +42,7 @@ float pitch=0;
 float x=0;
 float vx=0;
 float oldnetaccel=0;
+int count=0;
 void loop(){
   sensors_event_t accel,mag,gyro,temp;
   lsm.getEvent(&accel,&mag,&gyro,&temp);
@@ -65,25 +68,42 @@ void loop(){
   float xsum;
   xsum=points[0]+points[1]+points[2]+points[3]+points[4];
   float netaccel=(xsum/5)-sin(pitch*3.14157/180);
-  
-  netaccel=(float)(round(netaccel*1000))/1000;
-  vx+=((oldnetaccel+netaccel)/2)*(float)dt/1000*32.174;
- float velocities[3];
- velocities[0]=vx;
-  for(int i=1;i<3;i++){
-    velocities[i]=oldVelocities[i-1];
-  }
+  //float error=netaccel*1000;
+  netaccel=(float)(floor(abs(netaccel*100)))/100*(netaccel/abs(netaccel));
+  if(count>5){
+    
+    float vxsample=((netaccel))*(float)dt/1000*32.174;
+    if(vxsample!=0){
+      vx+=(float)(floor(abs(vxsample*1000)))/1000*(vxsample/abs(vxsample));
+    }else{
+      if(vx!=0){
+        vx-=vx/abs(vx)*.0001;//return to zero tendancy
+      }
+    }
+    float velocities[3];
+    velocities[0]=vx;
+    for(int i=1;i<3;i++){
+      velocities[i]=oldVelocities[i-1];
+    }
     for(int i=0;i<3;i++){
-     oldVelocities[i]=velocities[i]; 
+      oldVelocities[i]=velocities[i]; 
+    }
+    float vxsum=velocities[0]+velocities[1]+velocities[2];
+    vx=vxsum/3;
+    if(count>8){
+      
+      x+=vx*(float)dt/1000;
+    }
   }
-  float vxsum=velocities[0]+velocities[1]+velocities[2];
-  vx=vxsum/3;
-  x+=vx*(float)dt/1000;
   oldnetaccel=netaccel;
-  //lcd.clear();
-  //lcd.print("X: ");
-  //lcd.print(x*12);
-  //lcd.print(" in");
+  lcd.clear();
+  lcd.print("X: ");
+  lcd.print(x*12);
+  lcd.print(" in");
+  lcd.setCursor(0,2);
+    lcd.print("VX: ");
+  lcd.print(vx*12);
+  lcd.print(" in/s");
   Serial.print(ax);
   Serial.print(',');
   Serial.print(netaccel);
@@ -98,5 +118,6 @@ void loop(){
       lcd.write(Serial.read());
     }
   }
-  delay(50);
+  count++;
+  delay(150);
 }
