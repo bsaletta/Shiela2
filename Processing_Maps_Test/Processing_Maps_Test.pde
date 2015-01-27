@@ -18,8 +18,13 @@ UnfoldingMap map;
 
 void setup(){
  size(800,600);
-  map=new UnfoldingMap(this);
- MapUtils.createDefaultEventDispatcher(this,map); 
+  map=new UnfoldingMap(this, new Microsoft.AerialProvider());
+  
+ MapUtils.createDefaultEventDispatcher(this,map);
+ 
+ map.draw();
+ 
+ map.zoomAndPanTo(new Location(34.0608f,-117.7558f),50);
 }
 void draw(){
  map.draw(); 
