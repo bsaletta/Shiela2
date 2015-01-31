@@ -50,7 +50,16 @@ void loop(){
   oldTime=millis();
   //Angle Calculations
   float dty=gyro.gyro.y;
+  float dtx=gyro.gyro.x;
+  float dtz=gyro.gyro.z;
+  
   float ax=accel.acceleration.x;
+  float ay=accel.acceleration.y;
+  float az=accel.acceleration.z;
+  
+  float mx=mag.magnetic.x;
+  float my=mag.magnetic.y;
+  float mz=mag.magnetic.z;
   
   pitch=.5*(pitch+dty*((float)dt/1000))+.5*(asin(ax)*(180/3.14157));
   

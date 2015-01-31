@@ -17,7 +17,7 @@ void setupSensor(){
 }
 
 long oldTime;
-
+long timer=0;
 void setup(){
   lcd.begin(16,2);
  
@@ -57,11 +57,13 @@ void loop(){
   float netaccel=(ax)-sin(pitch*3.14157/180);
   
   error+=(netaccel);
-  
-  lcd.clear();
-  lcd.print("Average Drift/ns: ");
-  lcd.setCursor(0,2);
-  lcd.print(error/(oldTime)*1000000);
+  if((millis()-timer)>100){
+    lcd.clear();
+    lcd.print("Average Drift/ns: ");
+    lcd.setCursor(0,2);
+    lcd.print(error/(oldTime)*1000000);
+    timer=millis();
+  }
   count++;
   //delay(0);
 }

@@ -28,9 +28,12 @@ void setup(){
     oldTime=millis();
   }
 float oldapts[5];//old acceleration points
+long timer=0;
+float pitch=0;
 void loop(){
   sensors_event_t accel,mag,gyro,temp;
   lsm.getEvent(&accel,&mag,&gyro,&temp); 
+  int dt=millis()-oldTime;
   
   float dty=gyro.gyro.y;
   float ax=accel.acceleration.x;
@@ -40,13 +43,23 @@ void loop(){
   float netaccel=(ax)-sin(pitch*3.14157/180);//Compensate for gravity
   
   float apts[5];
+  apts[0]=(float)round(netaccel*10000)/10000;;
    for(int i=1;i<5;i++){
     apts[i]=oldapts[i-1];
   }
   for(int i=0;i<5;i++){
      oldapts[i]=apts[i]; 
   }
-  asum
-  
+  //netaccel=netaccel-.00000351*dt;//subtracting average drift
+  //netaccel=(float)round(netaccel*10000)/10000;
+  float asum=apts[0]+apts[1]+apts[2]+apts[3]+apts[4]+apts[5];
+  if((millis()-timer)>100){
+   lcd.clear();
+   lcd.print(asum/5*1000);
+   Serial.print(ax);
+   Serial.print(',');
+   Serial.println(asum/5);
+   timer=millis(); 
+  }
   
 }

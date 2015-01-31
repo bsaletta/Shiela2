@@ -9,7 +9,7 @@ void setup(){
  //WARNING!!! THIS LINE IS SPECIFIC TO YOUR COMPUTER
  //READ OUTPUT OF Serial.list THEN EDIT THIS LINE BEFORE CONTINUING
  //!!                     VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
-  arduino=new Serial(this,Serial.list()[Serial.list().length-1],9600);
+  arduino=new Serial(this,Serial.list()[Serial.list().length-1],115200);
  //!!                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
  arduino.clear();
  reading=arduino.readStringUntil(lf);
@@ -40,8 +40,10 @@ void draw(){
   String input[]=split(reading,','); //break into 2 values;
   float measured=Float.parseFloat(input[0]);
   float filtered=Float.parseFloat(input[1]);//Turn strings into Float values
-  float vx=Float.parseFloat(input[2]);
-  float x=Float.parseFloat(input[3]); 
+  //float vx=Float.parseFloat(input[2]);
+  //float x=Float.parseFloat(input[3]); 
+   float vx=0;
+   float x=0;
    fill(0);
    line(150,0,150,1000);
    textFont(f); //Set the Created font as the text font
@@ -80,10 +82,10 @@ void draw(){
   for(int i=0;i<valfs.length-1;i++){
     line(i,valfs[i],i+1,valfs[i+1]);
   }
-  stroke(#33CC33); //Set Velocity to Green
-  for(int i=0;i<valvs.length-1;i++){
-    line(i,valvs[i],i+1,valvs[i+1]);
-  }
+  //stroke(#33CC33); //Set Velocity to Green
+  //for(int i=0;i<valvs.length-1;i++){
+  //  line(i,valvs[i],i+1,valvs[i+1]);
+ // }
   oldVals=vals;
   oldValfs=valfs;
   oldValvs=valvs;
