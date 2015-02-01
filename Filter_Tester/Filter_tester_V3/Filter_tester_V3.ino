@@ -1,21 +1,21 @@
-#include <SPI.h>
+#include <SPI.h> // Included for SFE_LSM9DS0 library
 #include <Wire.h>
-#include <SFE_LSM9DSO.h>
+#include <SFE_LSM9DS0.h>
 
-#define LSM9DSO_XM 0x1D
-#define LSM9DSO_G 0x6B
+#define LSM9DS0_XM 0x1D
+#define LSM9DS0_G 0x6B
 
-LSM9DSO dof(MODE_I2C,LSM9DSO_G,LSM9D2O_XM);
+LSM9DS0 dof(MODE_I2C, LSM9DS0_G, LSM9DS0_XM);
 
 const byte INT1XM = 7;
 const byte INT2XM = 6;  //Define the pins where these are attached
 const byte DRDYG = 8;
 
 #define GyroMeasError PI*(40.0f/180.0f);
-#define GyroMEasDrift PI*(0.0f/180f);
+#define GyroMeasDrift PI*(0.0f/180.0f);
 
-#define beta sqrt(3.0f/4.0f)*GyroMeasError
-#define zeta sqrt(3.0f/4.0f)*GyroMeasDrift
+float beta=sqrt(3.0f/4.0f)*GyroMeasError
+float zeta=sqrt(3.0f/4.0f)*GyroMeasDrift
 #define Kp 2.0f*5.0f
 #define Ki 0.0f
 
@@ -24,13 +24,14 @@ uint32_t delt_t=0;
 float pitch,yaw,roll,heading;
 float deltat = 0.0f;
 uint32_t lastUpdate = 0;
-uint32_t Now= = 0;
+uint32_t Now = 0;
 
 float abias[3]={0,0,0},gbias[3]={0,0,0};
 float ax,ay,az,gx,gy,gz,mx,my,mz;
 float q[4] = {1.0f,0.0f,0.0f,0.0f};
-float eInt[3]={0.0f,0.0f0.0f}
+float eInt[3]={0.0f,0.0f,0.0f};
 float temperature;
+
 
 void setup(){
   Serial.begin(9600);
@@ -48,42 +49,42 @@ void setup(){
   dof.setMagScale(dof.M_SCALE_2GS);
   
   dof.setAccelODR(dof.A_ODR_200);
-  dof.SetAccelABW(dof.A_ABW_50);
+  dof.setAccelABW(dof.A_ABW_50);
   
   dof. setGyroODR(dof.G_ODR_190_BW_125);
   
   dof.setMagODR(dof.M_ODR_125);
     
-  dof.callLSM9DSO(gbias,abias);
+  dof.calLSM9DS0(gbias, abias);
 }
 void loop(){
    if(digitalRead(DRDYG)){
     dof.readGyro();
     gx=dof.calcGyro(dof.gx)-gbias[0];
     gy=dof.calcGyro(dof.gy)-gbias[1];
-    gz=dof.calcGyto(dof.gz)-gbias[2];
+    gz=dof.calcGyro(dof.gz)-gbias[2];
    } 
-   if(digitalRead(INT1XM){
+   if(digitalRead(INT1XM)){
     dof.readAccel();
     ax = dof.calcAccel(dof.ax)-abias[0];
     ay = dof.calcAccel(dof.ay)-abias[1];
     az = dof.calcAccel(dof.az)-abias[2]; 
    }
-   if(digitalRead(INT2MSX){
+   if(digitalRead(INT2XM)){
     dof.readMag();
-    mx.dof.calcMag(dof.mx);
-    my.dof.calcMag(dof.my);
-    mz.dof.calcMag(dof.mz);
+    mx=dof.calcMag(dof.mx);
+    my=dof.calcMag(dof.my);
+    mz=dof.calcMag(dof.mz);
     
-    dof.ReadTemp();
+    dof.readTemp();
     temperature = 21.0f+(float)dof.temperature/8;
    }
    Now=micros();
    deltat = ((Now - lastUpdate)/1000000.0f);
    lastUpdate=Now;
-   MadgwickQuaternionUpdate(ax,ay,az,gx*PI/180.0f,gy*PI/180.0f,gz*PI/180.0f,mx.my,mz);
-   delta_t = millis()-count;
-   if(delta_t > 500){
+   MadgwickQuaternionUpdate(ax,ay,az,gx*PI/180.0f,gy*PI/180.0f,gz*PI/180.0f,mx,my,mz);
+   delt_t = millis()-count;
+   if(delt_t > 500){
     printHeading(mx,my);
     printOrientation(ax,ay,az); 
    }
@@ -95,30 +96,37 @@ void loop(){
     yaw   -= 13.8; // Declination at Danville, California is 13 degrees 48 minutes and 47 seconds on 2014-04-04
     roll  *= 180.0f / PI;
     
-    Serial.print("ax = "); Serial.print((int)1000*ax);  
-    Serial.print(" ay = "); Serial.print((int)1000*ay); 
-    Serial.print(" az = "); Serial.print((int)1000*az); Serial.println(" mg");
-    Serial.print("gx = "); Serial.print( gx, 2); 
-    Serial.print(" gy = "); Serial.print( gy, 2); 
-    Serial.print(" gz = "); Serial.print( gz, 2); Serial.println(" deg/s");
-    Serial.print("mx = "); Serial.print( (int)1000*mx); 
-    Serial.print(" my = "); Serial.print( (int)1000*my); 
-    Serial.print(" mz = "); Serial.print( (int)1000*mz); Serial.println(" mG");
-    Serial.print("temperature = "); Serial.println(temperature, 2);
+    //Serial.print(","); Serial.print((int)1000*ax);  
+    //Serial.print(","); Serial.print((int)1000*ay); 
+    //Serial.print(","); Serial.print((int)1000*az);
+    //Serial.print( yaw, 5); 
+    //Serial.print(","); Serial.print( pitch, 5); 
+    //Serial.print(","); Serial.println( roll, 5);
+    //Serial.print(","); Serial.print( (int)1000*mx); 
+    //Serial.print(","); Serial.print( (int)1000*my); 
+    //Serial.print(","); Serial.print( (int)1000*mz); 
+    //Serial.print(","); Serial.println(temperature, 2);
+    float netx = ax - (pitch*PI/180.0f);
+    float nety= ay - (roll*PI/180.0f);
+    float netz= az-(1-(((pitch*PI/180.0f)+(roll*PI/180.0f)));
     
-    Serial.print("Yaw, Pitch, Roll: ");
-    Serial.print(yaw, 2);
-    Serial.print(", ");
-    Serial.print(pitch, 2);
-    Serial.print(", ");
-    Serial.println(roll, 2);
+    Serial.print( netx, 5); 
+    Serial.print(","); Serial.print( nety, 5); 
+    Serial.print(","); Serial.println( netz, 5);
     
-    Serial.print("q0 = "); Serial.print(q[0]);
-    Serial.print(" qx = "); Serial.print(q[1]); 
-    Serial.print(" qy = "); Serial.print(q[2]); 
-    Serial.print(" qz = "); Serial.println(q[3]); 
+    //Serial.print("Yaw, Pitch, Roll: ");
+   // Serial.print(yaw, 2);
+   // Serial.print(", ");
+   // Serial.print(pitch, 2);
+   // Serial.print(", ");
+   // Serial.println(roll, 2);
     
-    Serial.print("filter rate = "); Serial.println(1.0f/deltat, 1);
+    //Serial.print("q0 = "); Serial.print(q[0]);
+    //Serial.print(" qx = "); Serial.print(q[1]); 
+    //Serial.print(" qy = "); Serial.print(q[2]); 
+    //Serial.print(" qz = "); Serial.println(q[3]); 
+    
+    //Serial.print("filter rate = "); Serial.println(1.0f/deltat, 1);
     
     count = millis();
       
