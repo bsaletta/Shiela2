@@ -26,7 +26,7 @@ void setup(){
   pinMode(INT2XM,INPUT);
   pinMode(DRDYG,INPUT); 
   uint32_t status = dof.begin();
-  //lcd.begin(16,2);
+  lcd.begin(16,2);
   dof.setAccelScale(dof.A_SCALE_2G);
   dof.setGyroScale(dof.G_SCALE_245DPS);
   dof.setMagScale(dof.M_SCALE_2GS);
@@ -70,7 +70,8 @@ void loop(){
   long dt=now-lastUpdate;
   
   pitch=.5*(pitch+gy*((float)dt/1000000))+.5*(asin(ax)*(180/PI));
-  roll=.5*(pitch+gx*((float)dt/1000000))+.5*(asin(ay)*(180/PI));
+  roll=.5*(roll+gx*((float)dt/1000000))+.5*(asin(ay)*(180/PI));
+  
   if (my > 0){
     heading = 90 - (atan(mx / my) * (180 / PI));
   }else if (my < 0) {
@@ -82,11 +83,12 @@ void loop(){
   }
   
 
-  ax=filterX(ax,pitch);
-  ay=filterY(ay,roll);
-  az=filterZ(az);
-  if((millis()-count)>300){
-      lcd.clear();
+  //ax=filterX(ax,pitch);
+  //ay=filterY(ay,roll);
+  //az=filterZ(az);
+  if((millis()-count)>50){
+    Serial.println((ax+cos(pitch*(PI/180)))*1000,9);  
+    lcd.clear();
     lcd.print(ax*1000);
     lcd.setCursor(0,2);
     lcd.print(ay*1000);
@@ -97,7 +99,7 @@ float xs[5]={0,0,0,0,0};
 float filterX(float x,float angle){
   float holder[5];
 
-  x=x-sin(angle*(PI/180));
+  x=ax-cos(angle);
     //x=((floor(abs(x*100)))*x/abs(x))/100;
     holder[0]=x;
   for(int i=1;i<5;i++){
