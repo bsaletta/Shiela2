@@ -17,8 +17,12 @@ float abias[3]={0,0,0},gbias[3]={0,0,0};
 long now=0;
 long lastUpdate=0;
 long  count=0;
-float ax,ay,az,gx,gy,gz,mx,my,mz,pitch,roll;
-float heading,temperature;
+float a[3]={0,0,0},g[3]={0,0,0},m[3]={0,0,0};
+float P[3]={0,0,0},V[3]={0,0,0},o[3]={0,0,0},A[3]={0,0,0};
+
+float temperature;
+
+boolean aFlag=false,gFlag=false,mFlag=false;
 
 void setup(){
   Serial.begin(9600);
@@ -44,89 +48,151 @@ void setup(){
   
 }
 void loop(){
-     if(digitalRead(DRDYG)){
-    dof.readGyro();
-    gx=dof.calcGyro(dof.gx)-gbias[0];
-    gy=dof.calcGyro(dof.gy)-gbias[1];
-    gz=dof.calcGyro(dof.gz)-gbias[2];
+   if(digitalRead(DRDYG)){//Prepare for inturrupts
+      readGyro();
    } 
    if(digitalRead(INT1XM)){
-    dof.readAccel();
-    ax = dof.calcAccel(dof.ax)-abias[0];
-    ay = dof.calcAccel(dof.ay)-abias[1];
-    az = dof.calcAccel(dof.az)-abias[2]; 
+      readAccel(); 
    }
    if(digitalRead(INT2XM)){
-    dof.readMag();
-    mx=dof.calcMag(dof.mx);
-    my=dof.calcMag(dof.my);
-    mz=dof.calcMag(dof.mz);
-    
-    dof.readTemp();
-    temperature = 21.0f+(float)dof.temperature/8;
+      readMag();
    }
-   lastUpdate=now;
-   now=micros();
-  long dt=now-lastUpdate;
+   if(aFlag && gFlag && mFlag){
+     updatePosition(); 
+   }
   
-  pitch=.5*(pitch+gy*((float)dt/1000000))+.5*(asin(ax)*(180/PI));
-  roll=.5*(roll+gx*((float)dt/1000000))+.5*(asin(ay)*(180/PI));
-  
-  if (my > 0){
-    heading = 90 - (atan(mx / my) * (180 / PI));
-  }else if (my < 0) {
-    heading = - (atan(mx / my) * (180 / PI));
-  }
-  else{
-    if (mx < 0) heading = 180;
-    else heading = 0;
-  }
-  
-
-  //ax=filterX(ax,pitch);
-  //ay=filterY(ay,roll);
-  //az=filterZ(az);
   if((millis()-count)>50){
-    Serial.println((ax+cos(pitch*(PI/180)))*1000,9);  
-    lcd.clear();
-    lcd.print(ax*1000);
-    lcd.setCursor(0,2);
-    lcd.print(ay*1000);
+    Serial.print(P[0],5);
+    Serial.print(",");
+    Serial.print(P[1],5);
+    Serial.print(",");
+    Serial.println(P[2],5);  
+
     count=millis();
   }
 }
-float xs[5]={0,0,0,0,0};
-float filterX(float x,float angle){
-  float holder[5];
+void updatePosition(){
+  lastUpdate=now;
+  now=micros();
+  long dt=now-lastUpdate;
+  //calculate orientation
+  o[0]=.5*(o[0]+g[0]*(float)(dt/1000000))+.5*(asin(a[1])*(180/PI));
+  o[1]=.5*(o[1]+g[1]*(float)(dt/1000000))+.5*(asin(a[0])*(180/PI));
+  if (m[1] > 0){  
+    o[2] = 90 - (atan(m[0] / m[1]) * (180 / PI));
+  }else if (m[1] < 0) {
+    o[2] = - (atan(m[0] / m[1]) * (180 / PI));
+  }
+  else{
+    if (m[0] < 0) m[2] = 180;
+    else o[2] = 0;
+  }
+  //remove Gravity
+  float gravX=sin(o[1]*PI/180);
+  float gravY=sin(o[0]*PI/180);
+  a[0]=a[0]-gravX;
+  a[1]=a[1]-gravY;
+  a[2]=a[2]-(1-(gravX+gravY));
+  //Transform to Global Coordinates
+  float sx=sin(o[0]*PI/180);
+  float cx=cos(o[0]*PI/180);
+  float sy=sin(o[1]*PI/180);
+  float cy=cos(o[1]*PI/180);  
+  float sz=sin(o[2]*PI/180);
+  float cz=cos(o[2]*PI/180);
+  A[0]=cy*cx*a[0]+(sz*sy*cx-cz*sx)*a[1]+(cz*sy*cx+sz*sx)*a[2];
+  A[1]=cy*sx*a[0]+(sz*sy*sx+cz*cx)*a[1]+(cz*sy*sx-sz*cz)*a[2];
+  A[2]=-sy*a[0]+sz*cy*a[1]+cz*cy*a[2];
+  
+  //Calculate velocity
+  V[0]+=A[0]*(float)dt/1000000;
+  V[1]+=A[1]*(float)dt/1000000;
+  V[2]+=A[2]*(float)dt/1000000;
+  
+  //Calculate position
+  P[0]=V[0]*(float)dt/1000000;
+  P[1]=V[1]*(float)dt/1000000;
+  P[2]=V[2]*(float)dt/1000000;
+  
+  //Start timer
+  now=micros();
+}
 
-  x=ax-cos(angle);
-    //x=((floor(abs(x*100)))*x/abs(x))/100;
-    holder[0]=x;
-  for(int i=1;i<5;i++){
-   holder[i]=xs[i]; 
-  }
-  for(int i=0;i<5;i++){
-   xs[i]=holder[i]; 
-  }
-  x=(xs[0]+xs[1]+xs[2]+xs[3]+xs[4])/5;
-  return x;
+
+
+
+float aHolder[10][3]={{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}};
+int aCount=0;
+
+void readAccel(){
+    dof.readAccel();
+    aHolder[aCount][0] = dof.calcAccel(dof.ax)-abias[0];
+    aHolder[aCount][1] = dof.calcAccel(dof.ay)-abias[1];
+    aHolder[aCount][2] = dof.calcAccel(dof.az)-abias[2];
+    aCount++;
+    if(aCount==10){
+       aCount=0;
+       float axSum=0,aySum=0,azSum=0;
+       for(int i=0;i<10;i++){
+             axSum+=aHolder[i][0];
+             axSum+=aHolder[i][1];
+             axSum+=aHolder[i][3];
+       }
+       a[0]=axSum/10;
+       a[1]=aySum/10;
+       a[2]=azSum/10;
+       aFlag=true;
+    }
 }
-float ys[5]={0,0,0,0,0};
-float filterY(float y,float angle){
-  float holder[5];
-  y=y-sin(angle*(PI/180));
-  //y=((floor(abs(y*100)))*y/abs(y))/100;
-  holder[0]=y;
-  for(int i=1;i<5;i++){
-   holder[i]=ys[i]; 
-  }
-  for(int i=0;i<5;i++){
-   ys[i]=holder[i]; 
-  }
-    y=(ys[0]+ys[1]+ys[2]+ys[3]+ys[4])/5;
-  return y;
+float gHolder[10][3]={{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}};
+int gCount=0;
+
+void readGyro(){
+    dof.readGyro();
+    gHolder[gCount][0] = dof.calcGyro(dof.gx)-gbias[0];
+    gHolder[gCount][1] = dof.calcGyro(dof.gy)-gbias[1];
+    gHolder[gCount][2] = dof.calcGyro(dof.gz)-gbias[2];
+    gCount++;
+    if(gCount==10){
+       gCount=0;
+       float gxSum=0,gySum=0,gzSum=0;
+       for(int i=0;i<10;i++){
+             gxSum+=gHolder[i][0];
+             gxSum+=gHolder[i][1];
+             gxSum+=gHolder[i][3];
+       }
+       g[0]=gxSum/10;
+       g[1]=gySum/10;
+       g[2]=gzSum/10;
+       gFlag=true;
+    }
 }
-float filterZ(float x){
-  return x;
+float mHolder[10][3]={{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}};
+float tHolder[10]={0,0,0,0,0,0,0,0,0,0};
+int mCount=0;
+
+void readMag(){
+    dof.readMag();    
+    dof.readTemp();
+    tHolder[mCount] = 21.0f+(float)dof.temperature/8;
+    mHolder[mCount][0] = dof.calcMag(dof.mx);
+    mHolder[mCount][1] = dof.calcMag(dof.my);
+    mHolder[mCount][2] = dof.calcMag(dof.mz);
+    mCount++;
+    if(mCount==10){
+       mCount=0;
+       float mxSum=0,mySum=0,mzSum=0,tSum=0;
+       for(int i=0;i<10;i++){
+             mxSum+=mHolder[i][0];
+             mxSum+=mHolder[i][1];
+             mxSum+=mHolder[i][3];
+             tSum+=tHolder[i];
+       }
+       m[0]=mxSum/10;
+       m[1]=mySum/10;
+       m[2]=mzSum/10;
+       temperature=tSum/10;
+       mFlag=true;
+    }
 }
 
