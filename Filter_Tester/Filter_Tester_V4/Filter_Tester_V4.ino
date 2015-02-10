@@ -23,7 +23,7 @@ float P[3]={0,0,0},V[3]={0,0,0},o[3]={0,0,0},A[3]={0,0,0};
 float temperature;
 
 boolean aFlag=false,gFlag=false,mFlag=false;
-
+ int test=0;
 void setup(){
   Serial.begin(9600);
   pinMode(INT1XM,INPUT);
@@ -61,13 +61,15 @@ void loop(){
      updatePosition(); 
    }
   
-  if((millis()-count)>50){
-    Serial.print(P[0],5);
+  if((millis()-count)>100){
+    Serial.print(test);
     Serial.print(",");
-    Serial.print(P[1],5);
+    Serial.print(A[0],5);
     Serial.print(",");
-    Serial.println(P[2],5);  
-
+    Serial.print(A[1],5);
+    Serial.print(",");
+    Serial.println(A[2],5);  
+    test=0;
     count=millis();
   }
 }
@@ -76,8 +78,9 @@ void updatePosition(){
   now=micros();
   long dt=now-lastUpdate;
   //calculate orientation
-  o[0]=.5*(o[0]+g[0]*(float)(dt/1000000))+.5*(asin(a[1])*(180/PI));
-  o[1]=.5*(o[1]+g[1]*(float)(dt/1000000))+.5*(asin(a[0])*(180/PI));
+  o[0]=.9*(o[0]+g[0]*(float)(dt/1000000))+.1*(asin(a[1])*(180/PI));
+  o[1]=.9*(o[1]+g[1]*(float)(dt/1000000))+.1*(asin(a[0])*(180/PI));
+  o[2]=.5*(o[2]+g[2]*(float)(dt/1000000))+.5*o[2];
   if (m[1] > 0){  
     o[2] = 90 - (atan(m[0] / m[1]) * (180 / PI));
   }else if (m[1] < 0) {
@@ -135,8 +138,9 @@ void readAccel(){
        float axSum=0,aySum=0,azSum=0;
        for(int i=0;i<10;i++){
              axSum+=aHolder[i][0];
-             axSum+=aHolder[i][1];
-             axSum+=aHolder[i][3];
+             aySum+=aHolder[i][1];
+             azSum+=aHolder[i][2];
+             test+=1;
        }
        a[0]=axSum/10;
        a[1]=aySum/10;
@@ -149,23 +153,24 @@ int gCount=0;
 
 void readGyro(){
     dof.readGyro();
-    gHolder[gCount][0] = dof.calcGyro(dof.gx)-gbias[0];
-    gHolder[gCount][1] = dof.calcGyro(dof.gy)-gbias[1];
-    gHolder[gCount][2] = dof.calcGyro(dof.gz)-gbias[2];
-    gCount++;
-    if(gCount==10){
-       gCount=0;
-       float gxSum=0,gySum=0,gzSum=0;
-       for(int i=0;i<10;i++){
-             gxSum+=gHolder[i][0];
-             gxSum+=gHolder[i][1];
-             gxSum+=gHolder[i][3];
-       }
-       g[0]=gxSum/10;
-       g[1]=gySum/10;
-       g[2]=gzSum/10;
+    g[0] = dof.calcGyro(dof.gx)-gbias[0];
+    g[1] = dof.calcGyro(dof.gy)-gbias[1];
+    g[2] = dof.calcGyro(dof.gz)-gbias[2];
+   // gCount++;
+   // if(gCount==10){
+   //    gCount=0;
+   //    float gxSum=0,gySum=0,gzSum=0;
+   //    for(int i=0;i<10;i++){
+   //          gxSum+=gHolder[i][0];
+   //          gySum+=gHolder[i][1];
+   //          gzSum+=gHolder[i][2];
+   //    }
+   //    g[0]=gxSum/10;
+    //   g[1]=gySum/10;
+    //   g[2]=gzSum/10;
+       
        gFlag=true;
-    }
+    //}
 }
 float mHolder[10][3]={{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}};
 float tHolder[10]={0,0,0,0,0,0,0,0,0,0};
@@ -184,8 +189,8 @@ void readMag(){
        float mxSum=0,mySum=0,mzSum=0,tSum=0;
        for(int i=0;i<10;i++){
              mxSum+=mHolder[i][0];
-             mxSum+=mHolder[i][1];
-             mxSum+=mHolder[i][3];
+             mySum+=mHolder[i][1];
+             mzSum+=mHolder[i][2];
              tSum+=tHolder[i];
        }
        m[0]=mxSum/10;
