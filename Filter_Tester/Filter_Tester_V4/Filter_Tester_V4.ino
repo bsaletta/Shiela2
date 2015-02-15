@@ -1,7 +1,7 @@
 #include <SPI.h>
 #include <Wire.h>
 #include <SFE_LSM9DS0.h>
-//#include <LiquidCrystal.h>
+#include <LiquidCrystal.h>
 
 #define LSM9DS0_XM 0x1D
 #define LSM9DS0_G 0x6B
@@ -14,8 +14,11 @@
 #define mbuffer 5//magnometer buffer size
 #define headingTolerance 5 //degrees deviation between readings
 #define declination -12.15//declination in area of test
+#define truncateValue 10000000 //truncate values smaller than 1/this 
+
+
 LSM9DS0 dof(MODE_I2C, LSM9DS0_G, LSM9DS0_XM);
-//LiquidCrystal lcd(12,11,5,4,3,2);
+LiquidCrystal lcd(12,11,5,4,3,2);
 
 const byte INT1XM = 7;
 const byte INT2XM = 6;  //Define the pins where these are attached
@@ -29,7 +32,7 @@ long gyroLastUpdate=0;
 long  count=0;
 float a[3]={0,0,0},g[3]={0,0,0},m[3]={0,0,0};
 float P[3]={0,0,0},V[3]={0,0,0},o[3]={0,0,0},A[3]={0,0,0};
-float G[3]={0,0,0},D[3]={0,0,0};
+float G[3]={0,0,0},D[3]={0,0,0},oldV[3]={0,0,0};
 float dTheta[3]={0,0,0};
 float gravity=1.0;
 float temperature;
@@ -42,7 +45,7 @@ void setup(){
   pinMode(INT2XM,INPUT);
   pinMode(DRDYG,INPUT); 
   uint32_t status = dof.begin();
-  //lcd.begin(16,2);
+  lcd.begin(16,2);
   dof.setAccelScale(dof.A_SCALE_2G);
   dof.setGyroScale(dof.G_SCALE_245DPS);
   dof.setMagScale(dof.M_SCALE_2GS);
@@ -84,12 +87,13 @@ void loop(){
   if((millis()-count)>100){
     Serial.print(gravity,5);
     Serial.print(",");
-    Serial.print(o[0],5);
+    Serial.print(P[0],5);
     Serial.print(",");
-    Serial.print(o[1],5);
+    Serial.print(P[1],5);
     Serial.print(",");
-    Serial.println(o[2],5);  
-
+    Serial.println(P[2],5);  
+    lcd.clear();
+    
     count=millis();
   }
 }
@@ -158,20 +162,6 @@ void updatePosition(){
   G[1]=0;
   G[2]=0; 
 
-  //remove Gravity
-  float aSph[3]={aMag,atan(a[1]/a[0]),atan(sqrt(a[0]*a[0]+a[1]*a[1]))};
-  float gravSph[3]={gravity,0,PI};
-  for(int i=0;i<3;i++){
-     aSph[i]=aSph[i]-gravSph[i]; 
-  }
-  a[0]=aSph[0]*sin(aSph[2])*cos(aSph[1]);
-  a[1]=aSph[0]*sin(aSph[2])*sin(aSph[1]);
-  a[2]=aSph[0]*cos(aSph[2]);
-
-   // D[0]=atan(a[1]/a[2])*180/PI;
-   // D[1]=atan(a[2]/a[0])*180/PI;
-   // D[2]=atan(a[1]/a[0])*180/PI;
-  //D[0]=asin(a[2]);
   //Transform to Global Coordinates
   float sx=sin((o[0])*PI/180);
   float cx=cos((o[0])*PI/180);
@@ -184,15 +174,42 @@ void updatePosition(){
   A[1]=cy*sx*a[0]+(sz*sy*sx+cz*cx)*a[1]+(cz*sy*sx-sz*cz)*a[2];
   A[2]=-sy*a[0]+sz*cy*a[1]+cz*cy*a[2];
 
+  //remove Gravity
+  float aSph[3]={aMag,atan(A[1]/A[0]),atan(sqrt(A[0]*A[0]+A[1]*A[1]))};
+  float gravSph[3]={gravity,0,PI};
+  for(int i=0;i<3;i++){
+     aSph[i]=aSph[i]-gravSph[i]; 
+  }
+  A[0]=aSph[0]*sin(aSph[2])*cos(aSph[1]);
+  A[1]=aSph[0]*sin(aSph[2])*sin(aSph[1]);
+  A[2]=-aSph[0]*cos(aSph[2]);
+  
+  //Truncate values eliminate the trailing inaccuracy 
+  A[0]=(float)(round(A[0]*truncateValue))/truncateValue;
+  A[1]=(float)(round(A[1]*truncateValue))/truncateValue;
+  A[2]=(float)(round(A[2]*truncateValue))/truncateValue;
+
+
+
+
   //Calculate velocity
   V[0]+=A[0]*Gc*(float)dt/1000000;
   V[1]+=A[1]*Gc*(float)dt/1000000;
   V[2]+=A[2]*Gc*(float)dt/1000000;
+  
+  if(V[0]==oldV[0])V[0]=0;
+  if(V[1]==oldV[1])V[1]=0;
+  if(V[2]==oldV[2])V[2]=0;
+  
+  for(int i=0;i<3;i++){
+   oldV[i]=V[i]; 
+  }
+  
 
   //Calculate position
-  P[0]=V[0]*(float)dt/1000000;
-  P[1]=V[1]*(float)dt/1000000;
-  P[2]=V[2]*(float)dt/1000000;
+  P[0]+=V[0]*(float)dt/1000000;
+  P[1]+=V[1]*(float)dt/1000000;
+  P[2]+=V[2]*(float)dt/1000000;
 
   //Start timer
   now=micros();
