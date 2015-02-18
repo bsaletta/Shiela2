@@ -18,11 +18,11 @@
 
 
 LSM9DS0 dof(MODE_I2C, LSM9DS0_G, LSM9DS0_XM);
-LiquidCrystal lcd(12,11,5,4,3,2);
+//LiquidCrystal lcd(12,11,5,4,3,2);
 
-const byte INT1XM = 7;
-const byte INT2XM = 6;  //Define the pins where these are attached
-const byte DRDYG = 8;
+const byte INT1XM = 3;
+const byte INT2XM = 2;  //Define the pins where these are attached
+const byte DRDYG = 7;
 float abias[3]={0,0,0},gbias[3]={0,0,0};
 
 long now=0;
@@ -45,7 +45,7 @@ void setup(){
   pinMode(INT2XM,INPUT);
   pinMode(DRDYG,INPUT); 
   uint32_t status = dof.begin();
-  lcd.begin(16,2);
+  //lcd.begin(16,2);
   dof.setAccelScale(dof.A_SCALE_2G);
   dof.setGyroScale(dof.G_SCALE_245DPS);
   dof.setMagScale(dof.M_SCALE_2GS);
@@ -92,7 +92,7 @@ void loop(){
     Serial.print(P[1],5);
     Serial.print(",");
     Serial.println(P[2],5);  
-    lcd.clear();
+    //lcd.clear();
     
     count=millis();
   }
