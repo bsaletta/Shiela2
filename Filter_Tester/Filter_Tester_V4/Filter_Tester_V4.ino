@@ -41,11 +41,19 @@ boolean aFlag=false,gFlag=false,mFlag=false;
 
 void setup(){
   Serial.begin(9600);
+  while(!Serial){
+    ;
+  }
+  Serial.println("Connected!");
   pinMode(INT1XM,INPUT);
   pinMode(INT2XM,INPUT);
   pinMode(DRDYG,INPUT); 
   uint32_t status = dof.begin();
   //lcd.begin(16,2);
+  while(status!=0x49D4){
+   Serial.println("Not Hooked UP good!"); 
+  }
+  Serial.println(status,HEX);
   dof.setAccelScale(dof.A_SCALE_2G);
   dof.setGyroScale(dof.G_SCALE_245DPS);
   dof.setMagScale(dof.M_SCALE_2GS);
@@ -61,10 +69,11 @@ void setup(){
 
   now=micros();
   gyroNow=now;
-
+Serial.println("All set up!");
 }
 float aMag=0;
 void loop(){
+  Serial.println("Loop");
   if(digitalRead(DRDYG)){//Prepare for inturrupts
     readGyro();
   } 
