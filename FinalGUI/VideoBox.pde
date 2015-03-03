@@ -34,8 +34,14 @@ void movieEvent(Movie m) {
   m.read();
   if (count%15==0) { // % gives the remainder, test if the remainder of the number of frames/15 is zero
     cmdLines.add(data[count/15]);//print out the data to the command box
+    String[] parts=splitTokens(data[count/15],",");
+    orientation[0]=Integer.parseInt(parts[3]);
+    orientation[1]=Integer.parseInt(parts[4]);//Change from a string to an integer
+    orientation[2]=Integer.parseInt(parts[5]);
+    updateCmd=true;//make sure that the command box is updated
+    updateOrient=true;
   } 
-  updateCmd=true;//make sure that the command box is updated
+  
   count++;
 }
 void videoClick() {//handle a click on the video box
