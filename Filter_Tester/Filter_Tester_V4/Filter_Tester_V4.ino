@@ -9,7 +9,7 @@
 //Filter Variables
 #define abuffer 10 //accleration buffer size
 #define gMin 1 //dps
-#define gDeviation .02 //acceptable deviation from 1g as gravity
+#define gDeviation .01 //acceptable deviation from 1g as gravity
 #define Gc 32.174 //Gravitational Constant
 #define mbuffer 5//magnometer buffer size
 #define headingTolerance 5 //degrees deviation between readings
@@ -20,9 +20,9 @@
 LSM9DS0 dof(MODE_I2C, LSM9DS0_G, LSM9DS0_XM);
 //LiquidCrystal lcd(12,11,5,4,3,2);
 
-const byte INT1XM = 1;
+const byte INT1XM = 3;
 const byte INT2XM = 7;  //Define the pins where these are attached
-const byte DRDYG = 0;
+const byte DRDYG = 2;
 float abias[3]={0,0,0},gbias[3]={0,0,0};
 
 long now=0;
@@ -40,9 +40,9 @@ float heading;
 boolean aFlag=false,gFlag=false,mFlag=false;
 
 void setup(){
-   pinMode(INT1XM,INPUT);
-  pinMode(INT2XM,INPUT);
-  pinMode(DRDYG,INPUT);
+   //pinMode(INT1XM,INPUT);
+  //pinMode(INT2XM,INPUT);
+  //pinMode(DRDYG,INPUT);
   Serial.begin(9600);
   while(!Serial){
     ;
@@ -58,35 +58,37 @@ void setup(){
   dof.setAccelScale(dof.A_SCALE_2G);
   dof.setGyroScale(dof.G_SCALE_245DPS);
   dof.setMagScale(dof.M_SCALE_2GS);
-
+Serial.println("3");
   dof.setAccelODR(dof.A_ODR_200);
   dof.setAccelABW(dof.A_ABW_50);
-
+Serial.println("2");
   dof. setGyroODR(dof.G_ODR_190_BW_125);
-
+Serial.println("1");
   dof.setMagODR(dof.M_ODR_125);
 
   dof.calLSM9DS0(gbias, abias);
+  
   now=micros();
   gyroNow=now;
-  //attachInterrupt(3,readGyro,RISING);
-  //attachInterrupt(0,readAccel,RISING);
-  //attachInterrupt(4,readMag,RISING);
-  Serial.println("All set up!");
+    Serial.println("All set up!");
+  attachInterrupt(1,readGyro,FALLING);
+  attachInterrupt(0,readAccel,FALLING);
+  attachInterrupt(4,readMag,FALLING);
+
 
 }
 float aMag=0;
 void loop(){
   //Serial.println("Loop");
-  if(digitalRead(DRDYG)){//Prepare for inturrupts
-    readGyro();
-  } 
-  if(digitalRead(INT1XM)){
-    readAccel(); 
-  }
-  if(digitalRead(INT2XM)){
-    readMag();
-  }
+  //if(digitalRead(DRDYG)){//Prepare for inturrupts
+  //  readGyro();
+  //} 
+  //if(digitalRead(INT1XM)){
+  //  readAccel(); 
+ // }
+  //if(digitalRead(INT2XM)){
+  //  readMag();
+ // }
   if(gFlag){
     updateGyro();
   }
@@ -94,7 +96,13 @@ void loop(){
     updateMag();
   }
   if(aFlag && gFlag){
+     detachInterrupt(1);
+     detachInterrupt(0);
+     detachInterrupt(4);
     updatePosition(); 
+    attachInterrupt(1,readGyro,FALLING);
+    attachInterrupt(0,readAccel,FALLING);
+    attachInterrupt(4,readMag,FALLING);
   }
 
   if((millis()-count)>100){
