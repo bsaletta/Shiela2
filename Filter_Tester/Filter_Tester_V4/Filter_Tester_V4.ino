@@ -9,7 +9,7 @@
 //Filter Variables
 #define abuffer 10 //accleration buffer size
 #define gMin 1 //dps
-#define gDeviation .03 //acceptable deviation from 1g as gravity
+#define gDeviation .02 //acceptable deviation from 1g as gravity
 #define Gc 32.174 //Gravitational Constant
 #define mbuffer 5//magnometer buffer size
 #define headingTolerance 5 //degrees deviation between readings
@@ -20,9 +20,9 @@
 LSM9DS0 dof(MODE_I2C, LSM9DS0_G, LSM9DS0_XM);
 //LiquidCrystal lcd(12,11,5,4,3,2);
 
-const byte INT1XM = 3;
-const byte INT2XM = 2;  //Define the pins where these are attached
-const byte DRDYG = 7;
+const byte INT1XM = 1;
+const byte INT2XM = 7;  //Define the pins where these are attached
+const byte DRDYG = 0;
 float abias[3]={0,0,0},gbias[3]={0,0,0};
 
 long now=0;
@@ -40,18 +40,19 @@ float heading;
 boolean aFlag=false,gFlag=false,mFlag=false;
 
 void setup(){
+   pinMode(INT1XM,INPUT);
+  pinMode(INT2XM,INPUT);
+  pinMode(DRDYG,INPUT);
   Serial.begin(9600);
   while(!Serial){
     ;
   }
   Serial.println("Connected!");
-  pinMode(INT1XM,INPUT);
-  pinMode(INT2XM,INPUT);
-  pinMode(DRDYG,INPUT); 
   uint32_t status = dof.begin();
   //lcd.begin(16,2);
   while(status!=0x49D4){
-   Serial.println("Not Hooked UP good!"); 
+   Serial.println("Not Hooked UP good!");
+   status = dof.begin(); 
   }
   Serial.println(status,HEX);
   dof.setAccelScale(dof.A_SCALE_2G);
@@ -66,14 +67,17 @@ void setup(){
   dof.setMagODR(dof.M_ODR_125);
 
   dof.calLSM9DS0(gbias, abias);
-
   now=micros();
   gyroNow=now;
-Serial.println("All set up!");
+  //attachInterrupt(3,readGyro,RISING);
+  //attachInterrupt(0,readAccel,RISING);
+  //attachInterrupt(4,readMag,RISING);
+  Serial.println("All set up!");
+
 }
 float aMag=0;
 void loop(){
-  Serial.println("Loop");
+  //Serial.println("Loop");
   if(digitalRead(DRDYG)){//Prepare for inturrupts
     readGyro();
   } 
@@ -96,11 +100,11 @@ void loop(){
   if((millis()-count)>100){
     Serial.print(gravity,5);
     Serial.print(",");
-    Serial.print(P[0],5);
+    Serial.print(A[0],5);
     Serial.print(",");
-    Serial.print(P[1],5);
+    Serial.print(A[1],5);
     Serial.print(",");
-    Serial.println(P[2],5);  
+    Serial.println(A[2],5);  
     //lcd.clear();
     
     count=millis();

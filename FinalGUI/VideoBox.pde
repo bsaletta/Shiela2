@@ -29,9 +29,14 @@ void movieEvent(Movie m){
 void videoClick(){
   if(isPlaying){
    video.pause();
+        lines.remove("Playing, Click Video to Pause");
+    lines.add("Paused,Click Video to Play");
     isPlaying=false; 
   }else{
     video.play();
+    lines.remove("Paused,Click Video to Play");
+    lines.add("Playing, Click Video to Pause");
+
     isPlaying=true;
   }
 }
