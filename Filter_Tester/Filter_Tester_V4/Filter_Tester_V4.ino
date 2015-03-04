@@ -1,3 +1,26 @@
+/*
+HOW TO USE AND READ THIS FILE:
+Be sure to import the SparkFun Library to the apropreate directory before use 
+
+Acceleration data is stored in the A vector
+Velocity data is stored in the V vecotor
+Position data is stored in the P vecotor
+Orientation data is stored in the o Vector
+Temperature data is stored in the temperature varible
+
+Data should be writen to an SD card as Follows (for the bare minimum)
+
+"P[0],P[1],P[2],o[0],o[1],o[2]\n"
+
+This gives the three positions and the three orientation, for this phase I think that is enough!
+
+The defines at the top of the code are used to ajust the major filter parameters to better narrow
+the filter and tune it to the proper results, each variable is commented so they should be 
+pretty self explanitaory, if not just let me know and I will elaborate!
+
+also, all of the Serial communication is only there for debuging, it should be removed for final production
+
+*/
 #include <SPI.h>
 #include <Wire.h>
 #include <SFE_LSM9DS0.h>
@@ -7,15 +30,16 @@
 #define LSM9DS0_G 0x6B
 
 //Filter Variables
-#define abuffer 5 //accleration buffer size
+#define abuffer 10 //accleration buffer size
 #define gMin 1 //dps
-#define gDeviation .01 //acceptable deviation from 1g as gravity
+#define gDeviation 0.025 //acceptable deviation from 1g as gravity
 #define Gc 32.174 //Gravitational Constant
-#define mbuffer 10//magnometer buffer size
-#define headingTolerance 5 //degrees deviation between readings
+#define mbuffer 20//magnometer buffer size
+#define headingTolerance 50 //degrees deviation between readings
 #define declination -12.15//declination in area of test
-#define truncateValue 10000000 //truncate values smaller than 1/this 
-
+#define truncateValue 10000 //truncate values smaller than 1/this 
+#define maxVelocity 10 //Maximum anticipated velocity in m/s
+#define maxAccel 1.5 //Maximum g (remember gravity)
 
 LSM9DS0 dof(MODE_I2C, LSM9DS0_G, LSM9DS0_XM);
 //LiquidCrystal lcd(12,11,5,4,3,2);
@@ -75,7 +99,7 @@ Serial.println("1");
   gyroNow=now;
     Serial.println("All set up!");
  // attachInterrupt(1,readGyro,FALLING);
-  attachInterrupt(4,readAccel,RISING);
+ // attachInterrupt(4,readAccel,RISING);
  // attachInterrupt(4,readMag,FALLING);
 
 
@@ -86,9 +110,9 @@ void loop(){
   if(digitalRead(DRDYG)){//Prepare for inturrupts
     readGyro();
   } 
-  //if(digitalRead(INT1XM)){
-  //  readAccel(); 
- // }
+  if(digitalRead(INT1XM)){
+    readAccel(); 
+  }
  if(digitalRead(INT2XM)){
    readMag();
   }
@@ -101,22 +125,22 @@ void loop(){
   if(aFlag && gFlag){
  //  detachInterrupt(1);
  //    detachInterrupt(0);
-     detachInterrupt(4);
-     Serial.println("Updating Position");
+     //detachInterrupt(4);
+    // Serial.println("Updating Position");
      updatePosition(); 
  //   attachInterrupt(1,readGyro,FALLING);
  //   attachInterrupt(0,readAccel,FALLING);
-    attachInterrupt(4,readAccel,RISING);
+    //attachInterrupt(4,readAccel,RISING);
   }
 
-  if((millis()-count)>1000){
+  if((millis()-count)>10){
     Serial.print(gravity,5);
     Serial.print(",");
-    Serial.print(A[0],5);
+    Serial.print(o[0],5);
     Serial.print(",");
-    Serial.print(A[1],5);
+    Serial.print(o[1],5);
     Serial.print(",");
-    Serial.println(A[2],5);  
+    Serial.println(o[2],5);  
     //lcd.clear();
     
     count=millis();
@@ -222,12 +246,13 @@ void updatePosition(){
   V[1]+=A[1]*Gc*(float)dt/1000000;
   V[2]+=A[2]*Gc*(float)dt/1000000;
   
-  if(V[0]==oldV[0])V[0]=0;
-  if(V[1]==oldV[1])V[1]=0;
-  if(V[2]==oldV[2])V[2]=0;
-  
+   
   for(int i=0;i<3;i++){
-   oldV[i]=V[i]; 
+     //V[i]=V[i]-abias[i]*(float)dt/10000;
+     if(V[i]==oldV[i])V[i]=0;
+     if(V[i]>=maxVelocity)V[i]=0;
+     
+    oldV[i]=V[i]; 
   }
   
 
@@ -249,9 +274,9 @@ int aCount=0;
 
 void readAccel(){
   dof.readAccel();
-  aHolder[aCount][0] = dof.calcAccel(dof.ax)-abias[0];
-  aHolder[aCount][1] = dof.calcAccel(dof.ay)-abias[1];
-  aHolder[aCount][2] = dof.calcAccel(dof.az)-abias[2];
+  aHolder[aCount][0] = ((dof.calcAccel(dof.ax)-abias[0])>maxAccel)?0:dof.calcAccel(dof.ax)-abias[0];
+  aHolder[aCount][1] =  ((dof.calcAccel(dof.ay)-abias[1])>maxAccel)?0:dof.calcAccel(dof.ay)-abias[1];
+  aHolder[aCount][2] =  ((dof.calcAccel(dof.az)-abias[2])>maxAccel)?0:dof.calcAccel(dof.az)-abias[2];
   aCount++;
   if(aCount==abuffer){
 
