@@ -7,11 +7,11 @@
 #define LSM9DS0_G 0x6B
 
 //Filter Variables
-#define abuffer 10 //accleration buffer size
+#define abuffer 5 //accleration buffer size
 #define gMin 1 //dps
 #define gDeviation .01 //acceptable deviation from 1g as gravity
 #define Gc 32.174 //Gravitational Constant
-#define mbuffer 5//magnometer buffer size
+#define mbuffer 10//magnometer buffer size
 #define headingTolerance 5 //degrees deviation between readings
 #define declination -12.15//declination in area of test
 #define truncateValue 10000000 //truncate values smaller than 1/this 
@@ -20,9 +20,10 @@
 LSM9DS0 dof(MODE_I2C, LSM9DS0_G, LSM9DS0_XM);
 //LiquidCrystal lcd(12,11,5,4,3,2);
 
-const byte INT1XM = 3;
-const byte INT2XM = 7;  //Define the pins where these are attached
-const byte DRDYG = 2;
+const byte INT1XM = 7;
+const byte INT2XM = 6;  //Define the pins where these are attached
+const byte DRDYG = 5;
+
 float abias[3]={0,0,0},gbias[3]={0,0,0};
 
 long now=0;
@@ -40,21 +41,16 @@ float heading;
 boolean aFlag=false,gFlag=false,mFlag=false;
 
 void setup(){
-   //pinMode(INT1XM,INPUT);
+   pinMode(INT1XM,INPUT);
   //pinMode(INT2XM,INPUT);
-  //pinMode(DRDYG,INPUT);
+  pinMode(DRDYG,INPUT);
   Serial.begin(9600);
   while(!Serial){
     ;
   }
   Serial.println("Connected!");
-  uint32_t status = dof.begin();
-  //lcd.begin(16,2);
-  while(status!=0x49D4){
-   Serial.println("Not Hooked UP good!");
-   status = dof.begin(); 
-  }
-  Serial.println(status,HEX);
+
+ 
   dof.setAccelScale(dof.A_SCALE_2G);
   dof.setGyroScale(dof.G_SCALE_245DPS);
   dof.setMagScale(dof.M_SCALE_2GS);
@@ -66,29 +62,36 @@ Serial.println("2");
 Serial.println("1");
   dof.setMagODR(dof.M_ODR_125);
 
-  dof.calLSM9DS0(gbias, abias);
   
+    uint32_t status = dof.begin();
+  //lcd.begin(16,2);
+  while(status!=0x49D4){
+   Serial.println("Not Hooked up good!");
+   status = dof.begin(); 
+  }
+   Serial.println(status,HEX);
   now=micros();
+  dof.calLSM9DS0(gbias, abias);
   gyroNow=now;
     Serial.println("All set up!");
-  attachInterrupt(1,readGyro,FALLING);
-  attachInterrupt(0,readAccel,FALLING);
-  attachInterrupt(4,readMag,FALLING);
+ // attachInterrupt(1,readGyro,FALLING);
+  attachInterrupt(4,readAccel,RISING);
+ // attachInterrupt(4,readMag,FALLING);
 
 
 }
 float aMag=0;
 void loop(){
   //Serial.println("Loop");
-  //if(digitalRead(DRDYG)){//Prepare for inturrupts
-  //  readGyro();
-  //} 
+  if(digitalRead(DRDYG)){//Prepare for inturrupts
+    readGyro();
+  } 
   //if(digitalRead(INT1XM)){
   //  readAccel(); 
  // }
-  //if(digitalRead(INT2XM)){
-  //  readMag();
- // }
+ if(digitalRead(INT2XM)){
+   readMag();
+  }
   if(gFlag){
     updateGyro();
   }
@@ -96,16 +99,17 @@ void loop(){
     updateMag();
   }
   if(aFlag && gFlag){
-     detachInterrupt(1);
-     detachInterrupt(0);
+ //  detachInterrupt(1);
+ //    detachInterrupt(0);
      detachInterrupt(4);
-    updatePosition(); 
-    attachInterrupt(1,readGyro,FALLING);
-    attachInterrupt(0,readAccel,FALLING);
-    attachInterrupt(4,readMag,FALLING);
+     Serial.println("Updating Position");
+     updatePosition(); 
+ //   attachInterrupt(1,readGyro,FALLING);
+ //   attachInterrupt(0,readAccel,FALLING);
+    attachInterrupt(4,readAccel,RISING);
   }
 
-  if((millis()-count)>100){
+  if((millis()-count)>1000){
     Serial.print(gravity,5);
     Serial.print(",");
     Serial.print(A[0],5);
