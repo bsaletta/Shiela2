@@ -27,7 +27,7 @@ void selectedFile(File selection){
 int count=0;
 void movieEvent(Movie m){
  m.read();
- if(count==15){
+ if((count%15)==0){
     String[] h=splitTokens(data[count/15],",");
     for(int i=0;i<3;i++){
       Position[i]=Integer.parseInt(h[i]);

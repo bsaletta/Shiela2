@@ -7,8 +7,6 @@ void setupCommandBox(int x,int y,int h,int w){
   mono = createFont("Courier",12);
   textFont(mono);
   cmdLines.add("Console Initated...");
-  cmdLines.add("Position: "+Position[0]+","+Position[1]+","+Position[2]);
-  cmdLines.add("Orientation: "+Orientation[0]+","+Orientation[1]+","+Orientation[2]);
   if(isPlaying){
     cmdLines.remove("Paused,Click Video to Play");
     cmdLines.add("Playing, Click Video to Pause"); 
@@ -24,11 +22,16 @@ void drawCommandBox(){
   fill(0);
   rect(cmdx,cmdy,cmdh,cmdw);//draw bounding rectangle
   fill(0,255,0);
-
+  cmdLines.add("Position: "+Position[0]+","+Position[1]+","+Position[2]);
+  cmdLines.add("Orientation: "+Orientation[0]+","+Orientation[1]+","+Orientation[2]);
+  while(cmdLines.size()*12>cmdh/1.5){
+   cmdLines.remove(0); 
+  }
   for(int i=0;i<cmdLines.size();i++){
-   text(cmdLines.get(i),cmdx+5,cmdy+(i+1)*12); 
+   text(cmdLines.get(i),cmdx+5,cmdy+(i+1)*lineheight); 
   }
   fill(255);
+  updateCmd=false;
 }
 void comandClick(){
   updateCmd=true;
