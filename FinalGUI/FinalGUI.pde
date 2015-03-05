@@ -1,6 +1,8 @@
 String[] data;
 boolean updateCmd=true;
 boolean updateOrient=true;
+int[] Position={0,0,0};
+int[] Orientation={0,0,0};
 void setup(){
   frame.setTitle("Edna's Adventure"); //SEt the title of the box
   size(900,600,OPENGL); //Set the intiial dimentions of the box

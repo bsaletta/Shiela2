@@ -14,9 +14,9 @@ void drawOrientationBox(){
   fill(204);
   model.translate(orh/2,orw/2,10); //translate the model to the origin
   model.scale(10); //Scale it to 10% so it fits in the box
-  model.rotateX((orientation[0]/180)*PI*100);
-  model.rotateY((orientation[1]/180)*PI*100);//<<<<<NOT CURRENTLY WORKING>>>>>
-  model.rotateZ((orientation[2]/180)*PI*100);
+  model.rotateX((Orientation[0]/180)*PI*100);
+  model.rotateY((Orientation[1]/180)*PI*100);//<<<<<NOT CURRENTLY WORKING>>>>>
+  model.rotateZ((Orientation[2]/180)*PI*100);
   shape(model,orx,ory); //draw the shape
   fill(255);
   updateOrient=false;//orientation has been update so this should be set to false

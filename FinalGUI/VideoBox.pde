@@ -6,6 +6,7 @@ boolean isPlaying=false;
 void setupVideoBox(int x, int y, int h, int w){
   selectInput("Select Video File","selectedFile");
   vidx=x;vidy=y;vidw=w;vidh=h;
+  frameRate(30);
   
 }
 void drawVideoBox(){
@@ -23,19 +24,30 @@ void selectedFile(File selection){
    video=new Movie(this,selection.getAbsolutePath()); 
   }
 }
+int count=0;
 void movieEvent(Movie m){
- m.read(); 
+ m.read();
+ if(count==15){
+    String[] h=splitTokens(data[count/15],",");
+    for(int i=0;i<3;i++){
+      Position[i]=Integer.parseInt(h[i]);
+      Orientation[i]=Integer.parseInt(h[3+i]);
+    }
+    updateCmd=true;
+    updateOrient=true;
+ }
+count++; 
 }
 void videoClick(){
   if(isPlaying){
    video.pause();
-        lines.remove("Playing, Click Video to Pause");
-    lines.add("Paused,Click Video to Play");
+        cmdLines.remove("Playing, Click Video to Pause");
+    cmdLines.add("Paused,Click Video to Play");
     isPlaying=false; 
   }else{
     video.play();
-    lines.remove("Paused,Click Video to Play");
-    lines.add("Playing, Click Video to Pause");
+    cmdLines.remove("Paused,Click Video to Play");
+    cmdLines.add("Playing, Click Video to Pause");
 
     isPlaying=true;
   }
