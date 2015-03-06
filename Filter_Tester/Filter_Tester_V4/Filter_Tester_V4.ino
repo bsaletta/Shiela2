@@ -40,6 +40,8 @@ also, all of the Serial communication is only there for debuging, it should be r
 #define truncateValue 10000 //truncate values smaller than 1/this 
 #define maxVelocity 10 //Maximum anticipated velocity in m/s
 #define maxAccel 1.5 //Maximum g (remember gravity)
+#define angleError 1.5 //acceptible angle error
+
 
 LSM9DS0 dof(MODE_I2C, LSM9DS0_G, LSM9DS0_XM);
 //LiquidCrystal lcd(12,11,5,4,3,2);
@@ -229,6 +231,12 @@ void updatePosition(){
   for(int i=0;i<3;i++){
      aSph[i]=aSph[i]-gravSph[i]; 
   }
+  if(aSph[2]<angleError){
+   aSph[2]=0; 
+  }
+  
+  
+  
   A[0]=aSph[0]*sin(aSph[2])*cos(aSph[1]);
   A[1]=aSph[0]*sin(aSph[2])*sin(aSph[1]);
   A[2]=-aSph[0]*cos(aSph[2]);
