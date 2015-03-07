@@ -30,18 +30,18 @@ also, all of the Serial communication is only there for debuging, it should be r
 #define LSM9DS0_G 0x6B
 
 //Filter Variables
-#define abuffer 10 //accleration buffer size
-#define gMin 1 //dps
-#define gDeviation 0.025 //acceptable deviation from 1g as gravity
+#define abuffer 5 //accleration buffer size
+#define gMin 2 //dps
+#define gDeviation 0.015 //acceptable deviation from 1g as gravity
 #define Gc 32.174 //Gravitational Constant
 #define mbuffer 20//magnometer buffer size
 #define headingTolerance 50 //degrees deviation between readings
 #define declination -12.15//declination in area of test
-#define truncateValue 10000 //truncate values smaller than 1/this 
+#define truncateValue 1000000 //truncate values smaller than 1/this 
 #define maxVelocity 10 //Maximum anticipated velocity in m/s
 #define maxAccel 1.5 //Maximum g (remember gravity)
-#define angleError 1.5 //acceptible angle error
-
+#define angleError 0 //acceptible angle error
+#define gyroSettlingTime 2000000//Delay for gyro to settle microseconds
 
 LSM9DS0 dof(MODE_I2C, LSM9DS0_G, LSM9DS0_XM);
 //LiquidCrystal lcd(12,11,5,4,3,2);
@@ -65,6 +65,9 @@ float gravity=1.0;
 float temperature;
 float heading;
 boolean aFlag=false,gFlag=false,mFlag=false;
+
+long firstUpdate=0;
+boolean beGentle=true;
 
 void setup(){
    pinMode(INT1XM,INPUT);
@@ -135,19 +138,21 @@ void loop(){
     //attachInterrupt(4,readAccel,RISING);
   }
 
-  if((millis()-count)>10){
+  if((millis()-count)>500){
     Serial.print(gravity,5);
     Serial.print(",");
-    Serial.print(o[0],5);
+    Serial.print(P[0],5);
     Serial.print(",");
-    Serial.print(o[1],5);
+    Serial.print(P[1],5);
     Serial.print(",");
-    Serial.println(o[2],5);  
+    Serial.println(P[2],5);  
     //lcd.clear();
     
     count=millis();
   }
 }
+
+
 float oldHeading;
 void updateMag(){
  
@@ -197,23 +202,28 @@ void updatePosition(){
   if(abs(1-aMag)<gDeviation){
     gravity=aMag;
       accelOrient[1] = atan2(a[0], sqrt(a[1] * a[1]) + (a[2] * a[2]))*180.0 / PI;
-      accelOrient[0] = atan2(a[2], sqrt(a[0] * a[0]) + (a[2] * a[2]))*180.0 / PI;
+      accelOrient[0] = atan2(a[1], sqrt(a[0] * a[0]) + (a[2] * a[2]))*180.0 / PI;
     //accelOrient[2]=atan(a[1]/a[0])*180/PI;
     o[0]=.8*(o[0]+G[0])+.2*accelOrient[0];
     o[1]=.8*(o[1]+G[1])+.2*accelOrient[1];
-  }else{
+ }else{
   //calculate orientation
-    o[0]=(o[0]+G[0]);
-    o[1]=(o[1]+G[1]);
+   o[0]=(o[0]+G[0]);
+   o[1]=(o[1]+G[1]);
   }
-  o[2]=heading*180/24;
+  o[2]=heading;
 
   //o[2]=.9*(oldZtheta+G[2])+.1*o[2];
   G[0]=0;
   G[1]=0;
   G[2]=0; 
-
-  //Transform to Global Coordinates
+   //give time for the gyroscope to stabalize and find an accurate orientation
+ //if(beGentle){
+  //  firstUpdate=now;
+  //  beGentle=false;
+  //}
+ //if((now-firstUpdate)>gyroSettlingTime){
+ //Transform to Global Coordinates
   float sx=sin((o[0])*PI/180);
   float cx=cos((o[0])*PI/180);
   float sy=sin((o[1])*PI/180);
@@ -226,13 +236,14 @@ void updatePosition(){
   A[2]=-sy*a[0]+sz*cy*a[1]+cz*cy*a[2];
 
   //remove Gravity
-  float aSph[3]={aMag,atan(A[1]/A[0]),atan(sqrt(A[0]*A[0]+A[1]*A[1]))};
-  float gravSph[3]={gravity,0,PI};
+  float aSph[3]={aMag,atan(A[1]/A[0]),atan(sqrt(A[0]*A[0]+A[1]*A[1])/A[2])};
+  
+//test to see if we're pretty much level
+//Serial.println(A[2]);
+
+float gravSph[3]={gravity,0,PI};
   for(int i=0;i<3;i++){
      aSph[i]=aSph[i]-gravSph[i]; 
-  }
-  if(aSph[2]<angleError){
-   aSph[2]=0; 
   }
   
   
@@ -245,10 +256,7 @@ void updatePosition(){
   A[0]=(float)(round(A[0]*truncateValue))/truncateValue;
   A[1]=(float)(round(A[1]*truncateValue))/truncateValue;
   A[2]=(float)(round(A[2]*truncateValue))/truncateValue;
-
-
-
-
+ 
   //Calculate velocity
   V[0]+=A[0]*Gc*(float)dt/1000000;
   V[1]+=A[1]*Gc*(float)dt/1000000;
@@ -268,7 +276,7 @@ void updatePosition(){
   P[0]+=V[0]*(float)dt/1000000;
   P[1]+=V[1]*(float)dt/1000000;
   P[2]+=V[2]*(float)dt/1000000;
-
+  //}
   //Start timer
   now=micros();
   aFlag=false;

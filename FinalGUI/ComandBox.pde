@@ -15,8 +15,7 @@ void drawCommandBox(){
   fill(0);
   rect(cmdx,cmdy,cmdh,cmdw);//draw bounding rectangle
   fill(0,255,0);
-  cmdLines.add("Position: "+Position[0]+","+Position[1]+","+Position[2]);
-  cmdLines.add("Orientation: "+Orientation[0]+","+Orientation[1]+","+Orientation[2]);//put the position and orientation data on the command screen
+  
   while(cmdLines.size()*12>cmdh/1.6){
    cmdLines.remove(0); 
   }

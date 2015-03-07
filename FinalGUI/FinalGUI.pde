@@ -1,6 +1,7 @@
 String[] data;
 boolean updateCmd=true;
 boolean updateOrient=true;
+boolean updateMap=true;
 int[] Position={0,0,0};
 int[] Orientation={0,0,0};
 void setup(){
