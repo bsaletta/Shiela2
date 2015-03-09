@@ -43,6 +43,8 @@ boolean aFlag=false,gFlag=false,mFlag=false;
 
 float aMag=0;
 
+long timer; //Used to time things with in the loop
+long lastTime;
 void setup() {
   pinMode(INT1XM,INPUT);
   pinMode(INT2XM,INPUT);
@@ -62,15 +64,23 @@ void setup() {
   
   now=micros();
   gyroNow=now;
-  
+  lastTime=millis();  
 }
 
 void loop() {
+  timer=millis();
  if(digitalRead(DRDYG))readGyro(); //if Gyro Data is ready read Gyro
  if(digitalRead(INT1XM))readAccel(); //if Acceleration Data is ready read Acceleration
  if(digitalRead(INT2XM))readMag(); //if Mag is ready read heading
  if(gFlag)updateGyro(); //if enough data has been collected update gyroscope
  if(mFlag)updateMag(); //if enough data has been collected update mag
  if(aFlag && gFlag)updatePosition(); //if both acceleration and gyro are ready updatePosition
+ if((timer-lastTime)>500){ //If .5 seconds has passed
+  //save to SD card
+  //Position is in the P vector
+  //orientation is in the o vector
+ }
+
+lastTime=timer;
 }
 
