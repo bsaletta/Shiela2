@@ -28,14 +28,23 @@
 \contentsline {subsection}{\numberline {2.4.14}Wanda II}{12}
 \contentsline {subsection}{\numberline {2.4.15}Control Surface Basics}{13}
 \contentsline {subsection}{\numberline {2.4.16}Materials and Stealth}{13}
-\contentsline {subsection}{\numberline {2.4.17}Funding}{13}
+\contentsline {subsection}{\numberline {2.4.17}Funding}{14}
 \contentsline {subsection}{\numberline {2.4.18}Testing}{14}
-\contentsline {subsection}{\numberline {2.4.19}Thrust Augmentation}{14}
-\contentsline {subsection}{\numberline {2.4.20}Owl Stealth}{14}
-\contentsline {subsection}{\numberline {2.4.21}Submarine Hydrostatics}{15}
-\contentsline {subsection}{\numberline {2.4.22}Submarine Design Process}{15}
-\contentsline {subsection}{\numberline {2.4.23}Buoyancy Control}{15}
-\contentsline {subsection}{\numberline {2.4.24}Underwater Coatings}{15}
-\contentsline {subsection}{\numberline {2.4.25}Currents}{16}
-\contentsline {section}{\numberline {2.5}TeamUV.org}{16}
-\contentsline {section}{\numberline {2.6}Summer Testing}{16}
+\contentsline {subsection}{\numberline {2.4.19}Thrust Augmentation}{15}
+\contentsline {subsection}{\numberline {2.4.20}Owl Stealth}{15}
+\contentsline {subsection}{\numberline {2.4.21}Submarine Hydrostatics}{16}
+\contentsline {subsection}{\numberline {2.4.22}Submarine Design Process}{17}
+\contentsline {subsection}{\numberline {2.4.23}Buoyancy Control}{17}
+\contentsline {subsection}{\numberline {2.4.24}Underwater Coatings}{17}
+\contentsline {subsection}{\numberline {2.4.25}Currents}{17}
+\contentsline {section}{\numberline {2.5}TeamUV.org}{18}
+\contentsline {section}{\numberline {2.6}Summer Testing}{18}
+\contentsline {chapter}{\numberline {3}Phase III}{20}
+\contentsline {section}{\numberline {3.1}Lessons Learned}{20}
+\contentsline {section}{\numberline {3.2}Subsystem Decomposition}{20}
+\contentsline {subsection}{\numberline {3.2.1}Propulsor}{20}
+\contentsline {subsubsection}{Control Volumes}{20}
+\contentsline {subsubsection}{MatLab Code}{20}
+\contentsline {subsubsection}{Excel Narrowing of Results}{21}
+\contentsline {subsubsection}{CFD}{21}
+\contentsline {subsubsection}{Manufacturing}{21}
