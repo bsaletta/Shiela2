@@ -1,19 +1,4 @@
 
-void updateGyro(){
-  gyroLastUpdate=gyroNow;
-  gyroNow=micros();
-  long dt=gyroNow-gyroLastUpdate;
-  if(abs(g[0])>gMin){
-    G[0]+=g[0]*(float)dt/1000000;
-  }
-  if(abs(g[1])>gMin){
-    G[1]+=g[1]*(float)dt/1000000;
-  }
-  if(abs(g[2])>gMin){
-    G[2]+=g[2]*(float)dt/1000000;
-  }
-}
-
 float oldHeading;
 void updateMag(){
  oldHeading=heading;
@@ -29,11 +14,11 @@ void updateMag(){
     holder = 0;
   }
   holder+=declination;
-  if(abs(oldHeading-holder)<headingTolerance){
+ // if(abs(oldHeading-holder)<headingTolerance){
     heading=holder;
-  }else{
-    heading=oldHeading;
-  } 
+ // }else{
+ //   heading=oldHeading;
+ // } 
   
 }
 
@@ -46,16 +31,20 @@ void updatePosition(){
   float accelOrient[3]={0,0,0};
   if(abs(1-aMag)<gDeviation){
     gravity=aMag;
+  }else{
+   gravity=1; 
+  }
       accelOrient[1] = atan2(a[0], sqrt(a[1] * a[1]) + (a[2] * a[2]))*180.0 / PI;
       accelOrient[0] = atan2(a[1], sqrt(a[0] * a[0]) + (a[2] * a[2]))*180.0 / PI;
     //accelOrient[2]=atan(a[1]/a[0])*180/PI;
     o[0]=.8*(o[0]+G[0])+.2*accelOrient[0];
     o[1]=.8*(o[1]+G[1])+.2*accelOrient[1];
- }else{
+ //}else{
   //calculate orientation
-   o[0]=(o[0]+G[0]);
-   o[1]=(o[1]+G[1]);
-  }
+ //  o[0]=(o[0]+G[0]);
+  // o[1]=(o[1]+G[1]);
+  // gravity=1;
+ // }
   o[2]=heading;
 
   //o[2]=.9*(oldZtheta+G[2])+.1*o[2];
@@ -153,35 +142,46 @@ void readGyro(){
   g[0] = dof.calcGyro(dof.gx)-gbias[0];
   g[1] = dof.calcGyro(dof.gy)-gbias[1];
   g[2] = dof.calcGyro(dof.gz)-gbias[2];
-
+    gyroLastUpdate=gyroNow;
+  gyroNow=micros();
+  long dt=gyroNow-gyroLastUpdate;
+  if(abs(g[0])>gMin){
+    G[0]+=g[0]*(float)dt/1000000;
+  }
+  if(abs(g[1])>gMin){
+    G[1]+=g[1]*(float)dt/1000000;
+  }
+  if(abs(g[2])>gMin){
+    G[2]+=g[2]*(float)dt/1000000;
+  }
   gFlag=true;
   //}
 }
 float mHolder[mbuffer][3];
-float tHolder[mbuffer];
+//float tHolder[mbuffer];
 int mCount=0;
 
 void readMag(){
   dof.readMag();    
-  dof.readTemp();
-  tHolder[mCount] = 21.0f+(float)dof.temperature/8;
+ // dof.readTemp();
+ // tHolder[mCount] = 21.0f+(float)dof.temperature/8;
   mHolder[mCount][0] = dof.calcMag(dof.mx);
   mHolder[mCount][1] = dof.calcMag(dof.my);
   mHolder[mCount][2] = dof.calcMag(dof.mz);
   mCount++;
   if(mCount==mbuffer){
     mCount=0;
-    float mxSum=0,mySum=0,mzSum=0,tSum=0;
+    float mxSum=0,mySum=0,mzSum=0;
     for(int i=0;i<mbuffer;i++){
       mxSum+=mHolder[i][0];
       mySum+=mHolder[i][1];
       mzSum+=mHolder[i][2];
-      tSum+=tHolder[i];
+      //tSum+=tHolder[i];
     }
     m[0]=mxSum/mbuffer;
     m[1]=mySum/mbuffer;
     m[2]=mzSum/mbuffer;
-    temperature=tSum/mbuffer;
+    //temperature=tSum/mbuffer;
     mFlag=true;
   }
 }
