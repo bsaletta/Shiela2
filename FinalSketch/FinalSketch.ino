@@ -1,6 +1,23 @@
 #include <SPI.h>
 #include <Wire.h>
 #include <SFE_LSM9DS0.h>
+#include <SD.h>
+//#include <SabertoothSimplified.h>
+//#include <Servo.h>
+
+//Set data line for SD Card
+//const int chipSelect = 10;
+//Establish MotorShield Mode
+//SabertoothSimplified ST;
+
+//Name servos
+//Servo myservo1;
+//Servo myservo2;
+//Servo myservo3;
+//Set initial position to zero degrees
+//int pos = 0;
+//Set camera on/off switch to pin 7
+//const int camerapin = 7;
 
 #define LSM9DS0_XM 0x1D
 #define LSM9DS0_G 0x6B
@@ -45,7 +62,24 @@ float aMag=0;
 
 long timer; //Used to time things with in the loop
 long lastTime;
+
 void setup() {
+  //Establish communication to motorshield
+//  SabertoothTXPinSerial.begin(9600);
+  
+  //Switch camera on
+//  pinMode(camerapin, INPUT);
+//  digitalWrite(camerapin, LOW);
+//  pinMode(camerapin, OUTPUT);
+//  delay(500);
+//  pinMode(camerapin, INPUT);
+  
+  //assign each servo a communication pin
+//  myservo1.attach(9);
+//  myservo2.attach(8);
+//  myservo3.attach(6);
+  
+  pinMode(10,OUTPUT); //define the chipselect for SD Card
   pinMode(INT1XM,INPUT);
   pinMode(INT2XM,INPUT);
   pinMode(DRDYG,INPUT);
@@ -79,8 +113,21 @@ void loop() {
   //save to SD card
   //Position is in the P vector
   //orientation is in the o vector
- }
+  File dataFile = SD.open("03111501.txt", FILE_WRITE);
+  
+  if (dataFile){
+    int i;
+    for (i = 0; i < 3; i = i + 1){ 
+    dataFile.print(P[i]);
+    dataFile.print(",");
+    }
+    for (i = 0; i < 3; i = i + 1){
+    dataFile.print(o[i]);
+    dataFile.print(",");
+    }
+    dataFile.close();
+   }
 
 lastTime=timer;
+  }
 }
-
