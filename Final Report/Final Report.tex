@@ -6,7 +6,7 @@
 \setlength{\parindent}{4em}
 \author{Andrew Blancarte\\ Ketton James\\ Brian Martin\\ Abraham Paucar\\ Ben Saletta}
 \date{\today}
-\renewcommand{\chaptername}{Section}
+\renewcommand{\chaptername}{}
 \begin{document}
 \maketitle
 \tableofcontents
@@ -205,16 +205,181 @@ Establishing TeamUV.org was the obvious next step after a Summer filled with pro
 \section{Summer Testing}
 Along with delving into Summer research pertaining to many aspects of engineering design, Team UV also performed a couple of tests.  Another trip to Sailboat Cove was made to test the benefits of attaching control surfaces to Sheila-D.  Spring Quarter testing resulted in the formation of a free exit jet but minimal displacement of the vehicle.  Due to stacking inefficiencies with material availability, available manufacturing methods, and unaddressed torque transfer issues, Sheila-D was in need of support.  Scrap square pieces of aluminum flashing were roughly attached to the sides of the propulsor which controlled the overturning moments caused by torque transfer in the device.  This resulted in linear travel along the dock, verifying the projects potential.\par
 Testing the importance of the exit cone was also performed during the summer session.  2-liter soda bottles were modified to resemble the flow through Sheila-D.  Water was passed through the model’s nozzle. with and without an exit cone, and discharge times were recorded.  The use of the exit cone was verified by the faster exit times of the cone-equipped soda bottle.  Tests were also performed as to the effects of pre-swirl into the nozzle caused by the vane shell.  Tests using modified soda bottles showed promising results as the water look to discharge out the nozzle faster with pre-swirl but were eventually ruled inconclusive.  Controlling the swirl of the exiting water was difficult to accomplish giving the tests poor repeatability.\\
-\chapter{Phase III}
+\chapter{Phase III: Final Prototype Design and Manufacture}
 \section{Lessons Learned}
 \section{Subsystem Decomposition}
 \subsection{Propulsor}
 \subsubsection{Control Volumes}
+In order to perform our internal fluids analysis on the propulsor with the goal of optimizing the vane shell, we had to treat the problem as a basic fluid mechanics problem and start with the same foundational elements of all fluid mechanics problems; we had to define some control volumes.\par
+Before jumping right into defining our control volumes, we had to identify the parameters of interest to us; of these, we highlighted four main parameters that were to be treated as unknowns:
+\begin{enumerate}
+\item Inlet velocity at the front of the propulsor $v_1$
+\item Pressure at the end of the vane shell and prior to the nozzle $P_2$
+\item Exit velocity at the rear of the nozzle $v_3$
+\item Thrust force produced by the vehicle $F_T$
+\end{enumerate}
+Additionally, these values would be evaluated at three main state points:
+\begin{itemize}
+\item The free stream inlet region ahead of the propulsor $(1)$
+\item The interface between the back of the vane shell and the start of the nozzle/cone$(2)$
+\item The exit region immediately behind the nozzle $(3)$
+\end{itemize}
+To properly solve for these four unknowns, we needed four equations and thus we developed four control volumes $(A, B, C, D)$, each with a distinct equation associated with it as will be shown below.  Once we had these four equations developed, the plan was to use an iterative programming technique to solve the four equations for the four unknowns, thus yielding the parameters necessary for finding the basic performance characteristics associated with the propulsor.  This will be discussed in greater detail in the programming section of the report that follows.\par
+As will be seen below, the basic types of equations utilized in the analysis consisted of the conservation of energy and the conservation momentum; conservation of mass was not utilized as it did not yield any helpful information with regards to the problem solving process.\par
+\begin{equation}
+\frac{P_i}{\gamma}+\frac{v_i^2}{2g}+h_{L_{i-f}}=\frac{P_f}{\gamma}+\frac{v_f^2}{2g}+h_{s_{i-f}}
+\end{equation}
+\begin{equation}
+\Sigma F=P_iA_i+\dot{m}v_i+P_fA_f-\dot{m}v_f-F_T+F_D=ma
+\end{equation}
+\paragraph{Control Volume A}
+For control volume $A$, the energy equation was adopted, with the unknowns of $v_1$ and $P_2$.
+\begin{figure}[h]
+\centering
+\includegraphics{"Ctrl Volume A"}
+\caption{Schematic of Control Volume A}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics{"Eqn A"}
+\caption{Simplified Energy Equation for Control Volume A}
+\end{figure}
+As can be seen, the inlet pressure term was set equal to zero, as this was taken to be gage pressure since it is simply the free-stream hydrostatic field pressure.  The two elevation terms also cancel, because even if the propulsor was stood up vertically, the change in elevation would only be one to three feet (this length had yet to be determined), which would be negligible; additionally, the vast majority of the time, the vehicle would be travelling at roughly zero angle of attack (and therefore would not have a change in elevation from front to back of the propulsor).\par
+This leaves a few terms remaining; $g$ is simply the gravitational acceleration (32.2 $\frac{ft}{s^2}$), $\gamma$ is simply the specific weight of the fluid (water; 62.4 $\frac{lb}{ft^3}$), $v_1$ is the inlet velocity (an unknown, as defined earlier), $P_2$ is the pressure at the end of the vane shell (another unknown, as defined earlier), $v_2$ is the velocity at the end of the vane shell, $h_{L_{1-2}}$ is the energy loss term from front to back of the vane shell, and $h_{s_{1-2}}$ is the shaft input energy term from front to back of the vane shell.\par
+In order to reduce this equation further to the original two unknown values we wished to solve for, we had to come up with equations for the $v_2$, $h_{L_{1-2}}$, and $h_{s_{1-2}}$ terms.\par
+Using the fact that $v_2$ represents the maximum speed our vane shell could get the fluid moving without slip, we defined the maximum vane shell axial fluid speed to be equal to the angular velocity times the effective screw pitch associated with the vane shell, which is a function of the average radius (average between the base radius, or outside radius of the cylinder onto which the vanes attach and the maximum radius, or the radius to the tips of the vanes) and the angle of twist of the vanes:
+\begin{equation}
+v_2=\omega P;p=\frac{2\pi r_{avg}}{\tan(\theta)}
+\end{equation}
+The next term is the head loss term along the length of the vane shell ($h_{L_{1-2}}$); this term would normally include both major (due to friction) and minor losses (due to components), but since there is not any major bends/corners/etc., the minor losses were neglecting, reducing the head loss term to that of purely major loss.
+\begin{equation}
+h_{L_{1-2}}=f\frac{L}{D_h}\frac{v^2}{2g}
+\end{equation}
+The velocity ($v$) used above would be taken as the average between the free stream velocity ($v_1$, an unknown) and the maximum/end of vane shell velocity ($v_2$) and thus would require iteration in the program.  The length of the vane shell ($L$) would be assumed in the iteration at different values in order to determine the desired unknown values over a range of lengths.  The hydraulic diameter ($D_h$) would be determined for each set of iterations on the basis of assumed vane shell geometry (just like the length), through the formula:
+\begin{equation}
+D_h=\frac{4A}{P}
+\end{equation}
+where $A$ is the area of the flow (determined by finding the sum of all inter-vane flow areas, as restrained by vanes on either side of the flow, the rotating cylinder on the bottom of the flow, and the stationary body cylinder on the top of the flow).  Lastly, the friction factor ($f$) was determined as the Darcy-Weisbach friction factor through the use of the Swamee-Jain approximation of the Colebrokk-White equation:
+\begin{equation}
+f=\left\{\begin{array}{ll}
+\frac{64}{Re}&:Re\leq2000~~Laminar\\
+.25[\log(\frac{\epsilon}{3.7D_h}+\frac{5.74}{Re^{.9}})]^{-2} &:Re>2000~~Turbulent\\
+\end{array}
+\right.
+\end{equation}
+\begin{equation}
+Re=\frac{v_{avg}D_h}{\nu}
+\end{equation}
+where $\eta$ is the material roughness,$Re$ is the Reynolds number as defined in equation 3.7, and $\nu$ is the kinematic viscosity of the fluid.
+Lastly, the shaft head ($h_{s_{1-2}}$) was taken as:
+\begin{equation}
+h_{s_{1-2}}=\frac{T\omega}{\gamma Q}
+\end{equation}
+where $\omega$ is the rotational speed (as defined earlier), $\gamma$ is the specific weight (as defined earlier), $Q$ is the volumetric flow rate (the product of the average velocity and the flow area, as both defined earlier), and $T$ is the torque.  Torque was defined as a fluid torque through its relation to the rotational speed of the screw-like vane shell and the twist of the path of water (more details about this may be found in the appended original Phase I report calculations, appendix A):
+\begin{equation}
+T=\frac{(r_avg\omega)^2}{2g}\gamma A \cos(\Phi)(r_avg)
+\end{equation}
+With all of these equations developed, it becomes apparent that the original energy equation (after substitution of assumed geometry and iterated angular velocities) has been reduced to two unknowns ($v_1$ and $P_2$), albeit in a highly intertwined fashion.
+\paragraph{Control Volume B}\par
+For control volume $B$, the energy equation was again adopted, this time with the unknowns of $P_2$ and $v_3$.
+\begin{figure}[h]
+\centering
+\includegraphics{"Control Volume B"}
+\caption{Schematic of Control Volume B}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics{"Eqn B"}
+\caption{Simplified Energy Equation for Control Volume B}
+\end{figure}
+Once again, elevations cancel, one pressure (this time the exit pressure) interfaces with the hydrostatic pressure field and is thus set to zero gage pressure, and this time the shaft input energy term is set to zero because we are now beyond the vane shell and only have stationary components.  $P_2$ (an unknown) is defined the same as before, $v_2$ is the maximum/end of vane shell velocity (as defined earlier), and $v_3$ (also an unknown) is the free jet exit velocity, as defined earlier.  This just leaves the head loss term, which unlike before now contains both major (due to friction and calculated the exact same way as before, except between points 2 \& 3, rather than 1 \& 2) and minor losses (due to components).  The minor losses were modeled through use of the following general minor loss equation:
+\begin{equation}
+h_{L_{2-3}(minor)}=K\frac{v_{avg}^2}{2g}
+\end{equation}
+where $K$ is the component loss coefficient, which in this case was taken conservatively as the worst case non-reentrant scenario entrance loss coefficient ($K=0.5$), although our situation would never come near this scenario.
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{"Nozzel Minor Losses"}
+\caption{K values for Minor Losses due to Diameter Change}
+\end{figure}
+With all of these equations developed, it becomes apparent that the original energy equation (after substitution of assumed geometry and iterated angular velocities) has been reduced to two unknowns ($v_3$ and $P_2$), albeit in a highly intertwined fashion.
+\paragraph{Control Volume C}\par
+For control volume $C$, the momentum equation was adopted, with the unknowns of $P_2$, $v_3$, and the thrust force $F_T$.
+\begin{figure}[h]
+\centering
+\includegraphics{"Control Volume C"}
+\caption{Schematic of Control Volume C}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics{"Eqn C"}
+\caption{Simplified Energy Equation for Control Volume C}
+\end{figure}
+$P_3$ is once again set to zero gage as it is the hydrostatic field pressure, drag force ($F_D$) is assumed zero for the small nozzle section, and acceleration ($a$) is taken to be zero due to the assumption that steady state velocity (no acceleration) has been reached.  $P_2$, $v_2$, and $v_3$ are defined as before and the thrust force ($F_T$) is one of the desired unknowns.  $A_2$ is the area of the annular flow region between the circular nozzle and the circular pressure hull/start of cone (not pictured).  This just leaves the mass flow rate ($\dot{m}$), which is the product of the average velocity from point 2 to 3, the density of the fluid (water), and the effective flow area as previously discussed.\par
+Once again, with all of these equations developed, it becomes apparent that the original momentum equation (after substitution of assumed geometry and iterated angular velocities) has been reduced to three unknowns ($v_3$, $P_2$, and $F_T$).
+\paragraph{Control Volume D}
+For control volume D, the momentum equation was adopted, with the unknowns of $v_1$, $v_3$, and the thrust force $F_T$.
+\begin{figure}[h]
+\centering
+\includegraphics{"Control Volume D"}
+\caption{Schematic of Control Volume D}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics{"Eqn D"}
+\caption{Simplified Energy Equation for Control Volume D}
+\end{figure}
+Just as before, $P_1$ and $P_3$ are both taken to be zero gage due to their interfacing with the hydrostatic field pressure and the acceleration is set to zero due to assumed steady state operation; also as seen previously, $v_1$, $v_3$, and $F_T$ are all desired unknowns and mass flow rate is calculated the same as before, with the average velocity being taken between points 1 and 3.  The only new term being introduced here is the drag force ($F_D$).\par
+The drag force is calculated with the classic algebraic form of the drag force equation:
+\begin{equation}
+F_D=0.5\rho C_D v^2 A
+\end{equation}
+where $\rho$ is the fluid (water) density, $v$ is the average velocity between points 1 and 3, $A$ is the reference area (in this case taken as the outermost circular cross-sectional area of the body cylinder), and $C_D$ is the drag coefficient, which has been taken conservatively to be $1.2$.\par
+One last time, with all of these equations developed, it becomes apparent that the original momentum equation (after substitution of assumed geometry) has been reduced to three unknowns ($v_1$, $v_3$, and $F_T$).
+\paragraph{Integration of Control Volumes}
+With all of these control volumes and the associated equations, it can be seen that we have developed four equations (the ones boxed in red in the previous sections) as a function of four desired unknowns ($v_1$, $P_2$, $v_3$, $F_T$).  As can be seen the system of four equations is statically determinant with the right assumptions made, but is nonlinear in nature and highly inter-dependent, requiring a very complex computer program to be written in order to integrate the four equations together to solve for the desired unknowns, as will be discussed in the next section.  A summary of the desired unknowns for each control volume is provided below.
+\begin{enumerate}
+\item Control Volume A (Energy Equation from 1 to 2): $v_1$ and $P_2$
+\item Control Volume B (Energy Equation from 2 to 3): $P_2$ and $V_3$
+\item Control Volume C (Momentum Equation from 2 to 3): $P_2$,$v_3$, and $F_T$
+\item Control Volume D (Momentum Equation from 1 to 3): $v_1$, $v_3$ and $F_T$
+\end{enumerate}
+
 \subsubsection{MatLab Code}
 The mathematical model rendered through the above control volume analysis still contained many unknowns. With the above equations the relationship between these unknowns could be determined, however finding the optimal value of each of the 5 geometrical dimensions and the one dynamic variable would have required exhaustive iterations and guess work. To facilitate the design process and ensure optimal design a program was written in the MatLab coding environment that would cycle through ranges of each of these variables, creating every possible combination of designs and rank them on an efficiency. This would allow for the most efficient design to be selected.\par
-The majority of the variables in question described the geometry of the propulsor. To reduce the complexity of the design some variable were designated before the program began. The length of the nozzle was fixed to 5 inches, providing a reference size so that the most efficient design would still have a reasonable package size. The number of vanes was set to 5, in previous iterations of the program a value of 5 vanes commonly populated the highest efficiency and therefore it was set, freeing up processing time for more volatile variables. The outer radius, inner radius, length, angle of the vane helix, and nozzle radius were allowed to vary. Each variable had to have a range to vary within because without a finite range the program would loop infinitely. The maximum outer radius was set to 6 inches, the minimum inner radius was set to 1 inch, length ranged between 12 and 36 inches, the vane angle varied between 30 and 60 degrees, the minimum nozzle radius was .001 inches.\par
+The majority of the variables in question described the geometry of the propulsor. To reduce the complexity of the design some variable were designated before the program began. The length of the nozzle was fixed to 5 inches, providing a reference size so that the most efficient design would still have a reasonable package size. The number of vanes was set to 5, in previous iterations of the program a value of 5 vanes commonly populated the highest efficiency and therefore it was set, freeing up processing time for more volatile variables. The outer radius, inner radius, length, angle of the vane helix, and nozzle radius were allowed to vary. Each variable had to have a range to vary within because without a finite range the program would loop infinitely. The maximum outer radius was set to 5 inches, the minimum inner radius was set to 2 inch, length ranged between 18 and 26 inches, the vane angle varied between 42 and 48 degrees, the minimum nozzle radius was .75 inches.\par
 %INSERT TABLE WITH INITIAL RANGES AND VARIABLES%
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{l|c|c}
+Variable&Minimum Value& Maximum Value\\
+\hline
+Outer Radius, $r_o$&& 5 in\\
+Inner Radius, $r_i$&2 in&\\
+Length, $L$ &18 in&26 in\\
+Vane Angle, $\theta$&42$^{\circ}$&48$^{\circ}$\\
+Nozzle Radius $r_n$&.75 in&\\
+Rotational Velocity $\omega$ & 220 RPM & 320 RPM\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Iteration Ranges for Design Variables}
+\end{table}
 The dynamics of the system also had to be coded into the program. The angular velocity was the only parameter allowed to vary from a low speed of 50 rad/sec to 200 rad/sec. A pump efficiency of .75 was used to account for losses in energy transfer from the vanes to the fluid itself, the surface roughness of PVC was used because it most accurately modeled the material we anticipated the vane shell to be made of. A drag coefficient of 1.2 was used as a conservative estimate, the real drag will be much less because the outer surface will be streamlined.\par
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{l|c|c}
+Variable&Value& Source\\
+\hline
+Acceleration due to Gravity, $g$&32.2$\frac{ft}{s^2}$&\\
+Specific Weight, $\gamma$&62.4 $\frac{lb}{ft^3}$&\\
+Kinematic Viscosity, $\nu$&12.1$*10^{-6}\frac{ft^2}{s}$&\\
+Surface Roughness, $\epsilon$&0.0015mm&\\
+\hline 
+\end{tabular}
+\end{center}
+\caption{Material Constants for Design}
+\end{table}
  %INSERT TABLE OF VARIABLES WITH REFERENCES%
 Not every variable needed a range to vary within because certain relationships were established. This allowed for more accurate results while still minimizing the amount of processing time. The minimum outer radius was limited to be at least .25in greater than the inner radius to allow for a practical vane height. The nozzle maximum value was limited so that the exit area would never exceed the area of the annular region between the inner cylinder and the outer cylinder. This was done to ensure that the the nozzle would be converging and provide increased thrust rather than the diverging nozzle that would slow the fluid and reduce the overall thrust.  \par
 With these relationships and ranges established the order of the nested loops needed to be established. The loops were ordered so that the more depended on the variable being changed the farther out of the nest it was placed. This led to the following order: angular velocity, inner radius, outer radius, nozzle radius, length, then vane angle. By nesting the loops in this order all of the relationships between the different range limits could be satisfied and once in the center of the loops one complete set of design variables was established.\par
@@ -225,6 +390,19 @@ All of the designs were exported in a comma separated value format to be manipul
 %INSERT TABLE WITH FINAL GEOMETRY%
 \subsubsection{CFD}
 \subsubsection{Manufacturing}
+\section{Programming}
+\subsection{Firmware}
+\subsection{Software, The Graphical User Interface}
+hile the vehicle was designed to collect and log data while maneuvering through a marine environment there still needed to be a way to visualize the collected data in a manner that facilitated understanding. Most of the data for this design comes from the 1080p camera positioned to film through the front dome while the rest of the data serves to provide the context for the footage, specifically orientation and position. With this the analyst needed a way to easily watch the footage and know where it was taken and where the camera was pointed. This led to the creation of a graphical user interface. The GUI was broken down into 4 parts: the video, the orientation model, the map, and a control screen thus fulfilling the needs of the analyst.
+\subsubsection{Video Box}
+The video from the camera is saved onto an SD card while the device is in the water. This SD card can be retrieved from the device once it returns and the video can be analyzed to further understand the underwater environment in question. The coding for the video box is used to synchronize the updating of data in all of the other boxes because a factor of time is inherent in the video. The video is shot a 30 frames per second, and position and orientation data is logged every half a second. This means that for every 15 frames all the other boxes need to be updated. This relationship is easily used to maintain synchronization across the entire interface.
+\subsubsection{The Orientation Model}
+While traveling through water there usually is not clear horizon line to use as a reference for orientation. This is why the orientation model was a necessary part of the GUI. Located to the right of the main video a solid three dimensional model of the device rotates in sync with the video giving a visual representation of the orientation of the device at the time of the recording. These rotations are kept in sync with the video through the system described in the above video section.
+\subsubsection{The Map}
+The location of the device at the time of the recording is another very important aspect required to satisfy the ISR capabilities. If some anomaly is seen in the footage it is imperative that the analyst can retrieve the location of the device at the time of the siting for further inspection.
+\subsubsection{The Control Screen}
+
+\section{CVs and Team Bios}
 \begin{thebibliography}{9}
 \bibitem{Rorres00}
 Rorres, Chris. "The Turn of the Screw: Optimal Design of an Archimedes Screw." Journal of Hydraulic Engineering (2000): 72. Print.
