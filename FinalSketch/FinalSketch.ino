@@ -13,8 +13,8 @@ const char* saveFile="03141501.txt"; //file name for this run
 
 //Arduino Hookup Pins-------------------------
 //PWM: 3,5,6,9,10,11
-#define buotancyOutTrigger 1 //Trip when buoyancy plunger is all the way out 
-#define bouyancyInTrigger 9//Trip when buoyancy plunger is all the way in
+#define buoyancyOutTrigger 1 //Trip when buoyancy plunger is all the way out 
+#define buoyancyInTrigger 9//Trip when buoyancy plunger is all the way in
 #define servoPin1 5 //Signal Pin for Servo 1
 #define servoPin2 6 //Signal Pin for Servo 2
 #define servoPin3 8 //Signal Pin for Servo 3
@@ -44,7 +44,7 @@ const char* saveFile="03141501.txt"; //file name for this run
 #define gMin 2 //dps
 #define gDeviation 0.035 //acceptable deviation from 1g as gravity
 #define Gc 32.174 //Gravitational Constant
-#define mbuffer 20//magnometer buffer size
+#define mbuffer 10//magnometer buffer size
 //#define headingTolerance 100 //degrees deviation between readings
 #define declination -12.15//declination in area of test
 #define truncateValue 1000000 //truncate values smaller than 1/this 

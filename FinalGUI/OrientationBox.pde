@@ -1,6 +1,6 @@
 int orx,ory,orh,orw;
 import processing.opengl.*;
-import saito.objloader.*;
+//import saito.objloader.*;
 int[] orientation={0,0,0};
 //OBJModel model;
 PShape model;
@@ -15,7 +15,7 @@ void setupOrientationBox(int x, int y,int h, int w){
   rect(orx,ory,orh,orw);//draw bounding rectangle
   fill(255);
   
-   model.translate(orw,orh,10);
+  // model.translate(orw,orh,10);
 }
 void drawOrientationBox(){
   
@@ -26,7 +26,7 @@ void drawOrientationBox(){
   fill(color(#006994));
   rect(orx,ory,orh,orw);//draw bounding rectangle
   fill(255);
- shape(model,orx,ory);
+ shape(model,orx+orw/2,ory+orw/2);
     //PVector translation=new PVector(orx+orw/2,ory+orh/2,0);
      //translates model to origin of orientation box
    //translate(width/1.6,height/2.7,0.0f);
