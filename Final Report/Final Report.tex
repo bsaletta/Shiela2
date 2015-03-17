@@ -389,6 +389,11 @@ These results from the fluid analysis were used to determine the efficiency of t
 All of the designs were exported in a comma separated value format to be manipulated in Excel. First all efficiency values less than or equal to zero were removed as poor designs, then each variable was graphed with respect to efficiency. Due to the cyclic nature of the analysis data was plotted as clusters around certain values. Using these plots the clusters of data with low efficiency could be eliminated. Certain geometrical values were limited by realistic manufacturing constraints. This means that very small clearances between the inner radius and outer radius were removed along with  excessively small nozzle radi. By narrowing these results in this fashion final design values were arrived upon with a resulting efficiency of between 77.8\% and 80.7\% for a range of angular velocities. The final geometry was.
 %INSERT TABLE WITH FINAL GEOMETRY%
 \subsubsection{CFD}
+Computational Fluid Dynamics, or CFD, is a numerical technique for solving the Navier-Stokes equations and mathematical modeling a fluid’s behavior under specific circumstances. The Navier-Stokes equations do not have an explicit analytical solution but they are commonly used to model ideal cases where certain simplifying assumptions can be made, such as neglecting viscosity or compressibility. Before these computational techniques complicated fluid analysis was performed using experimentation with models. As designs involved more complicated geometries and fluid reactions such as with a super sonic jet iterative modeling experiments became excessively expensive in both time and money.  This, along with the evolution of computers, led to the development of these computational techniques. To understand further look at the Navier-Stokes Equaton:
+\begin{equation}
+\frac{\partial{\vec{V}}}{\partial{t}}+(\vec{V}\cdot\nabla)\vec{V}=\frac{-\nabla P}{\rho}+\nu\nabla^2\vec{V} 
+\end{equation}
+The $(\vec V\cdot\nabla)\vec V$ adds non-linearity to the equation while $\nu\nabla^2\vec{V}$ makes the system second order. These added complexities make the analytical solution of the equations practically impossible. Computational techniques can only handle addition, subtraction, multiplication, and division, no calculus. This means the equation needs to be transformed into a numericaly solvable form. For this the Taylor Series expansion can be used  
 \subsubsection{Manufacturing}
 \section{Programming}
 \subsection{Firmware}
@@ -406,5 +411,7 @@ The location of the device at the time of the recording is another very importan
 \begin{thebibliography}{9}
 \bibitem{Rorres00}
 Rorres, Chris. "The Turn of the Screw: Optimal Design of an Archimedes Screw." Journal of Hydraulic Engineering (2000): 72. Print.
+\bibitem{Anderson95}
+Anderson, John D. \textit{Computational Fluid Dynamics: The Basics with Applications}. New York: McGraw-Hill, 1995. Print.
 \end{thebibliography}
 \end{document}
