@@ -1,40 +1,55 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Drive Train Design Section View}}{5}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Drive Train Design Section View}}{6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Close up of Shark Skin}}{8}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Vantablack on Aluminum Substrate}}{8}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Cephalopod Skin}}{9}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Potting and Conformal Coating}}{9}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Arduino Uno Microprocessor}}{10}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Contacted and Loaded Tip Propellers}}{11}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Thrust Vectoring Smart Duct}}{11}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Vortex Generators on the Wing of a Fighter Jet}}{12}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Wrasse-inspired Agile, Near-shore, Deformable-fin Automation}}{12}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Representation of Euler Angles}}{13}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Sonar Detection of a Submarine}}{13}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Underside of a Boat in a Tow Tank}}{14}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Thrust Augmentation on the Hull of a Ship}}{15}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Wing Features on an Owl that Provide Stealthy Flight}}{16}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Center of Buoyancy and Center of Mass of a Submarine}}{16}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Design Considerations for Underwater Vehicles}}{17}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Currents and Overall Fluid Transport}}{18}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Close up of Shark Skin}}{9}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Vantablack on Aluminum Substrate}}{9}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Cephalopod Skin}}{10}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Potting and Conformal Coating}}{10}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Arduino Uno Microprocessor}}{11}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Contacted and Loaded Tip Propellers}}{12}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Thrust Vectoring Smart Duct}}{12}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Vortex Generators on the Wing of a Fighter Jet}}{13}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Wrasse-inspired Agile, Near-shore, Deformable-fin Automation}}{13}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Representation of Euler Angles}}{14}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Sonar Detection of a Submarine}}{14}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Underside of a Boat in a Tow Tank}}{15}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Thrust Augmentation on the Hull of a Ship}}{16}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Wing Features on an Owl that Provide Stealthy Flight}}{17}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Center of Buoyancy and Center of Mass of a Submarine}}{17}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Design Considerations for Underwater Vehicles}}{18}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Currents and Overall Fluid Transport}}{19}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Schematic of Control Volume A}}{22}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Simplified Energy Equation for Control Volume A}}{22}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Schematic of Control Volume B}}{23}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Simplified Energy Equation for Control Volume B}}{24}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces K values for Minor Losses due to Diameter Change}}{24}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Schematic of Control Volume C}}{25}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Simplified Energy Equation for Control Volume C}}{25}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Schematic of Control Volume D}}{26}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Simplified Energy Equation for Control Volume D}}{26}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Overview of the Buoyancy Control Device}}{30}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Details of the Buoyancy Control Device}}{30}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces The Pressure Hull Design}}{31}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces (LEFT) Dome Front Cap fixed to the pressure hull. (RIGHT) Inside Cap Camera Door}}{31}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Wire standoffs before being trimmed of excess material.}}{32}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces (LEFT) Top view of slider tray. (RIGHT) Logic Command Center on slider tray. Note riveted handle.}}{32}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces The Orientation Model For Viewing in the GUI}}{37}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Schematic of Control Volume A}}{23}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Simplified Energy Equation for Control Volume A}}{23}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Schematic of Control Volume B}}{24}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Simplified Energy Equation for Control Volume B}}{25}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces K values for Minor Losses due to Diameter Change}}{25}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Schematic of Control Volume C}}{26}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Simplified Energy Equation for Control Volume C}}{26}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Schematic of Control Volume D}}{27}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Simplified Energy Equation for Control Volume D}}{27}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces CFD Analysis of the Vane Shell}}{31}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces CFD Analysis of the Vane Shell with the Body}}{31}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces CFD Analysis of the Vane Shell and Body with the Nozzle}}{32}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces CFD Analysis of the Entire Propulsor Design}}{32}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Isometric View of the Von Mises Stresses on the Vane Shell}}{33}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces (LEFT) Original team designed airfoil, (RIGHT) UIUC airfoil.}}{34}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces EPPLER E838 HYDROFOIL AIRFOIL (e838-il)}}{34}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Original Control Surfaces Idea with Flaps}}{35}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Rotary Shaft Driver Idea Design}}{35}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Torque Transfer for Control Surfaces}}{36}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces 3D Printed Pectoral Fin Control Surface}}{36}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces CFD of pectoral fin with surface plot of flow trajectories.}}{37}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Rudder shape cut out on paper positioned on sheet of ABS}}{37}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces 3D printed ABS servo mounts}}{38}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Control surface assembly: servo, shaft, ball bearing, and shaft seal.}}{38}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Overview of the Buoyancy Control Device}}{39}
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Details of the Buoyancy Control Device}}{40}
+\contentsline {figure}{\numberline {3.27}{\ignorespaces The Pressure Hull Design}}{40}
+\contentsline {figure}{\numberline {3.28}{\ignorespaces (LEFT) Dome Front Cap fixed to the pressure hull. (RIGHT) Inside Cap Camera Door}}{41}
+\contentsline {figure}{\numberline {3.29}{\ignorespaces Wire standoffs before being trimmed of excess material.}}{41}
+\contentsline {figure}{\numberline {3.30}{\ignorespaces (LEFT) Top view of slider tray. (RIGHT) Logic Command Center on slider tray. Note riveted handle.}}{42}
+\contentsline {figure}{\numberline {3.31}{\ignorespaces The Orientation Model For Viewing in the GUI}}{46}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

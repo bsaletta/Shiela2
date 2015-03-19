@@ -1,92 +1,100 @@
-\contentsline {chapter}{\numberline {1}Propulsor Development, SHEILA-D}{4}
-\contentsline {section}{\numberline {1.1}Overview}{4}
-\contentsline {section}{\numberline {1.2}Constraints}{4}
-\contentsline {section}{\numberline {1.3}Design}{4}
-\contentsline {subsection}{\numberline {1.3.1}Fluids Calculations}{4}
-\contentsline {subsection}{\numberline {1.3.2}Drive Train}{5}
-\contentsline {subsection}{\numberline {1.3.3}Power Supply}{5}
-\contentsline {section}{\numberline {1.4}Construction}{5}
-\contentsline {section}{\numberline {1.5}Testing}{5}
-\contentsline {chapter}{\numberline {2}Summer Research and Testing}{7}
-\contentsline {section}{\numberline {2.1}Open Mind}{7}
-\contentsline {section}{\numberline {2.2}Well-Read}{7}
-\contentsline {section}{\numberline {2.3}Presentation}{8}
-\contentsline {section}{\numberline {2.4}Summer Research Summaries}{8}
-\contentsline {subsection}{\numberline {2.4.1}Shark Skin}{8}
-\contentsline {subsection}{\numberline {2.4.2}Vantablack}{8}
-\contentsline {subsection}{\numberline {2.4.3}Cephalopod Skin}{9}
-\contentsline {subsection}{\numberline {2.4.4}Waterproofing Sensors}{9}
-\contentsline {subsection}{\numberline {2.4.5}Arduino}{9}
-\contentsline {subsection}{\numberline {2.4.6}CFD and Python}{10}
-\contentsline {subsection}{\numberline {2.4.7}Physical Understanding of Fluids Equations and their Application to CFD}{10}
-\contentsline {subsection}{\numberline {2.4.8}Optimal Design of an Archimedes screw}{10}
-\contentsline {subsection}{\numberline {2.4.9}Tom's Effect}{10}
-\contentsline {subsection}{\numberline {2.4.10}WHOI Acoustic Modem}{10}
-\contentsline {subsection}{\numberline {2.4.11}CLT Propellers}{11}
-\contentsline {subsection}{\numberline {2.4.12}Smart Duct}{11}
-\contentsline {subsection}{\numberline {2.4.13}Vortex Generators}{12}
-\contentsline {subsection}{\numberline {2.4.14}Wanda II}{12}
-\contentsline {subsection}{\numberline {2.4.15}Control Surface Basics}{13}
-\contentsline {subsection}{\numberline {2.4.16}Materials and Stealth}{13}
-\contentsline {subsection}{\numberline {2.4.17}Funding}{14}
-\contentsline {subsection}{\numberline {2.4.18}Testing}{14}
-\contentsline {subsection}{\numberline {2.4.19}Thrust Augmentation}{15}
-\contentsline {subsection}{\numberline {2.4.20}Owl Stealth}{15}
-\contentsline {subsection}{\numberline {2.4.21}Submarine Hydrostatics}{16}
-\contentsline {subsection}{\numberline {2.4.22}Submarine Design Process}{17}
-\contentsline {subsection}{\numberline {2.4.23}Buoyancy Control}{17}
-\contentsline {subsection}{\numberline {2.4.24}Underwater Coatings}{17}
-\contentsline {subsection}{\numberline {2.4.25}Currents}{18}
-\contentsline {section}{\numberline {2.5}TeamUV.org}{18}
-\contentsline {section}{\numberline {2.6}Summer Testing}{18}
-\contentsline {chapter}{\numberline {3}Final Prototype Design and Manufacture, DORY}{20}
-\contentsline {section}{\numberline {3.1}Lessons Learned}{20}
-\contentsline {section}{\numberline {3.2}Subsystem Decomposition}{21}
-\contentsline {subsection}{\numberline {3.2.1}Propulsor}{21}
-\contentsline {subsubsection}{Control Volumes}{21}
-\contentsline {paragraph}{Control Volume A}{21}
-\contentsline {paragraph}{Control Volume B}{23}
-\contentsline {paragraph}{Control Volume C}{24}
-\contentsline {paragraph}{Control Volume D}{24}
-\contentsline {paragraph}{Integration of Control Volumes}{25}
-\contentsline {subsubsection}{MatLab Code}{26}
-\contentsline {subsubsection}{Excel Narrowing of Results}{28}
-\contentsline {subsubsection}{CFD}{28}
-\contentsline {subsubsection}{Manufacturing}{29}
-\contentsline {subsection}{\numberline {3.2.2}Body}{29}
-\contentsline {subsection}{\numberline {3.2.3}Control Surfaces}{29}
-\contentsline {subsection}{\numberline {3.2.4}Buoyancy Control}{29}
-\contentsline {subsection}{\numberline {3.2.5}Pressure Hull}{30}
-\contentsline {subsection}{\numberline {3.2.6}Drive Train}{33}
-\contentsline {subsection}{\numberline {3.2.7}Sealing}{33}
-\contentsline {subsection}{\numberline {3.2.8}Electronics}{33}
-\contentsline {subsubsection}{Motor Controller}{33}
-\contentsline {subsubsection}{Micro SD Card Breakout Board}{33}
-\contentsline {subsubsection}{Camera}{33}
-\contentsline {subsubsection}{Inertial Measurement Unit}{33}
-\contentsline {subsubsection}{Batteries, Charging, and Power Budgeting}{34}
-\contentsline {section}{\numberline {3.3}Programming}{34}
-\contentsline {subsection}{\numberline {3.3.1}Firmware}{34}
-\contentsline {subsubsection}{Inertial Measurement Unit}{35}
-\contentsline {paragraph}{Initial Filtering}{35}
-\contentsline {paragraph}{Orientation}{35}
-\contentsline {paragraph}{Acceleration of the Vehicle}{35}
-\contentsline {paragraph}{Velocity and Position}{36}
-\contentsline {paragraph}{Error Analysis}{36}
-\contentsline {subsection}{\numberline {3.3.2}Software, The Graphical User Interface}{36}
-\contentsline {subsubsection}{Video Box}{36}
-\contentsline {subsubsection}{The Orientation Model}{36}
-\contentsline {subsubsection}{The Map}{37}
-\contentsline {subsubsection}{The Control Screen}{37}
-\contentsline {section}{\numberline {3.4}Fundraising, Pricing, Time Decomposition}{37}
-\contentsline {section}{\numberline {3.5}Testing}{37}
-\contentsline {section}{\numberline {3.6}Conferences}{37}
-\contentsline {section}{\numberline {3.7}CVs and Team Bios}{37}
-\contentsline {subsection}{\numberline {3.7.1}Ben}{37}
-\contentsline {subsection}{\numberline {3.7.2}Brian}{38}
-\contentsline {subsection}{\numberline {3.7.3}Andrew}{38}
-\contentsline {subsection}{\numberline {3.7.4}Ketton}{38}
-\contentsline {subsection}{\numberline {3.7.5}Abraham}{38}
-\contentsline {chapter}{\numberline {A}Phase I Report}{39}
-\contentsline {chapter}{\numberline {B}Presentation Format}{40}
-\contentsline {chapter}{\numberline {C}Electronics Data Sheets}{41}
+\contentsline {chapter}{\numberline {1}Propulsor Development, SHEILA-D}{5}
+\contentsline {section}{\numberline {1.1}Overview}{5}
+\contentsline {section}{\numberline {1.2}Constraints}{5}
+\contentsline {section}{\numberline {1.3}Design}{5}
+\contentsline {subsection}{\numberline {1.3.1}Fluids Calculations}{5}
+\contentsline {subsection}{\numberline {1.3.2}Drive Train}{6}
+\contentsline {subsection}{\numberline {1.3.3}Power Supply}{6}
+\contentsline {section}{\numberline {1.4}Construction}{6}
+\contentsline {section}{\numberline {1.5}Testing}{6}
+\contentsline {chapter}{\numberline {2}Summer Research and Testing}{8}
+\contentsline {section}{\numberline {2.1}Open Mind}{8}
+\contentsline {section}{\numberline {2.2}Well-Read}{8}
+\contentsline {section}{\numberline {2.3}Presentation}{9}
+\contentsline {section}{\numberline {2.4}Summer Research Summaries}{9}
+\contentsline {subsection}{\numberline {2.4.1}Shark Skin}{9}
+\contentsline {subsection}{\numberline {2.4.2}Vantablack}{9}
+\contentsline {subsection}{\numberline {2.4.3}Cephalopod Skin}{10}
+\contentsline {subsection}{\numberline {2.4.4}Waterproofing Sensors}{10}
+\contentsline {subsection}{\numberline {2.4.5}Arduino}{10}
+\contentsline {subsection}{\numberline {2.4.6}CFD and Python}{11}
+\contentsline {subsection}{\numberline {2.4.7}Physical Understanding of Fluids Equations and their Application to CFD}{11}
+\contentsline {subsection}{\numberline {2.4.8}Optimal Design of an Archimedes screw}{11}
+\contentsline {subsection}{\numberline {2.4.9}Tom's Effect}{11}
+\contentsline {subsection}{\numberline {2.4.10}WHOI Acoustic Modem}{11}
+\contentsline {subsection}{\numberline {2.4.11}CLT Propellers}{12}
+\contentsline {subsection}{\numberline {2.4.12}Smart Duct}{12}
+\contentsline {subsection}{\numberline {2.4.13}Vortex Generators}{13}
+\contentsline {subsection}{\numberline {2.4.14}Wanda II}{13}
+\contentsline {subsection}{\numberline {2.4.15}Control Surface Basics}{14}
+\contentsline {subsection}{\numberline {2.4.16}Materials and Stealth}{14}
+\contentsline {subsection}{\numberline {2.4.17}Funding}{15}
+\contentsline {subsection}{\numberline {2.4.18}Testing}{15}
+\contentsline {subsection}{\numberline {2.4.19}Thrust Augmentation}{16}
+\contentsline {subsection}{\numberline {2.4.20}Owl Stealth}{16}
+\contentsline {subsection}{\numberline {2.4.21}Submarine Hydrostatics}{17}
+\contentsline {subsection}{\numberline {2.4.22}Submarine Design Process}{18}
+\contentsline {subsection}{\numberline {2.4.23}Buoyancy Control}{18}
+\contentsline {subsection}{\numberline {2.4.24}Underwater Coatings}{18}
+\contentsline {subsection}{\numberline {2.4.25}Currents}{19}
+\contentsline {section}{\numberline {2.5}TeamUV.org}{19}
+\contentsline {section}{\numberline {2.6}Summer Testing}{19}
+\contentsline {chapter}{\numberline {3}Final Prototype Design and Manufacture, DORY}{21}
+\contentsline {section}{\numberline {3.1}Lessons Learned}{21}
+\contentsline {section}{\numberline {3.2}Subsystem Decomposition}{22}
+\contentsline {subsection}{\numberline {3.2.1}Propulsor}{22}
+\contentsline {subsubsection}{Control Volumes}{22}
+\contentsline {paragraph}{Control Volume A}{22}
+\contentsline {paragraph}{Control Volume B}{24}
+\contentsline {paragraph}{Control Volume C}{25}
+\contentsline {paragraph}{Control Volume D}{26}
+\contentsline {paragraph}{Integration of Control Volumes}{27}
+\contentsline {subsubsection}{MatLab Code}{28}
+\contentsline {subsubsection}{Excel Narrowing of Results}{29}
+\contentsline {subsubsection}{CFD}{29}
+\contentsline {paragraph}{Analysis of the Vane Shell}{30}
+\contentsline {paragraph}{Analysis of the Vane Shell and Body}{31}
+\contentsline {paragraph}{Analysis of the Vane Shell, Body and Nozzle}{31}
+\contentsline {paragraph}{CFD Analysis of the Whole Propulsor Design}{32}
+\contentsline {subsubsection}{Manufacturing}{32}
+\contentsline {subsection}{\numberline {3.2.2}Body}{33}
+\contentsline {subsection}{\numberline {3.2.3}Control Surfaces}{33}
+\contentsline {subsubsection}{Hydrofoil/Airfoil Design}{33}
+\contentsline {subsubsection}{Design of Control Surfaces}{34}
+\contentsline {subsubsection}{Control Surface Assembly}{37}
+\contentsline {subsubsection}{Further Development of the Control Surfaces}{38}
+\contentsline {subsection}{\numberline {3.2.4}Buoyancy Control}{38}
+\contentsline {subsection}{\numberline {3.2.5}Pressure Hull}{39}
+\contentsline {subsection}{\numberline {3.2.6}Drive Train}{42}
+\contentsline {subsection}{\numberline {3.2.7}Sealing}{42}
+\contentsline {subsection}{\numberline {3.2.8}Electronics}{42}
+\contentsline {subsubsection}{Motor Controller}{42}
+\contentsline {subsubsection}{Micro SD Card Breakout Board}{42}
+\contentsline {subsubsection}{Camera}{43}
+\contentsline {subsubsection}{Inertial Measurement Unit}{43}
+\contentsline {subsubsection}{Batteries, Charging, and Power Budgeting}{43}
+\contentsline {section}{\numberline {3.3}Programming}{44}
+\contentsline {subsection}{\numberline {3.3.1}Firmware}{44}
+\contentsline {subsubsection}{Inertial Measurement Unit}{44}
+\contentsline {paragraph}{Initial Filtering}{44}
+\contentsline {paragraph}{Orientation}{44}
+\contentsline {paragraph}{Acceleration of the Vehicle}{45}
+\contentsline {paragraph}{Velocity and Position}{45}
+\contentsline {paragraph}{Error Analysis}{45}
+\contentsline {subsection}{\numberline {3.3.2}Software, The Graphical User Interface}{45}
+\contentsline {subsubsection}{Video Box}{45}
+\contentsline {subsubsection}{The Orientation Model}{46}
+\contentsline {subsubsection}{The Map}{46}
+\contentsline {subsubsection}{The Control Screen}{46}
+\contentsline {section}{\numberline {3.4}Fundraising, Pricing, Time Decomposition}{47}
+\contentsline {section}{\numberline {3.5}Testing}{47}
+\contentsline {section}{\numberline {3.6}Conferences}{47}
+\contentsline {section}{\numberline {3.7}CVs and Team Bios}{47}
+\contentsline {subsection}{\numberline {3.7.1}Ben}{47}
+\contentsline {subsection}{\numberline {3.7.2}Brian}{47}
+\contentsline {subsection}{\numberline {3.7.3}Andrew}{47}
+\contentsline {subsection}{\numberline {3.7.4}Ketton}{47}
+\contentsline {subsection}{\numberline {3.7.5}Abraham}{48}
+\contentsline {chapter}{\numberline {A}Phase I Report}{49}
+\contentsline {chapter}{\numberline {B}Presentation Format}{50}
+\contentsline {chapter}{\numberline {C}Electronics Data Sheets}{51}

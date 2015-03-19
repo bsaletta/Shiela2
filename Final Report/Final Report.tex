@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage{pdfpages}
 \usepackage{amsmath}
+\usepackage{float}
 \graphicspath{{figures/}}
 \title{Design of An Innovative, Highly Maneuverable, Stealthy Unmanned Underwater Vehicle with ISR Capabilities }
 \setlength{\parindent}{4em}
@@ -245,12 +246,12 @@ As will be seen below, the basic types of equations utilized in the analysis con
 \end{equation}
 \paragraph{Control Volume A}
 For control volume $A$, the energy equation was adopted, with the unknowns of $v_1$ and $P_2$.
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics{"Ctrl Volume A"}
 \caption{Schematic of Control Volume A}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics{"Eqn A"}
 \caption{Simplified Energy Equation for Control Volume A}
@@ -293,12 +294,12 @@ T=\frac{(r_avg\omega)^2}{2g}\gamma A \cos(\Phi)(r_avg)
 With all of these equations developed, it becomes apparent that the original energy equation (after substitution of assumed geometry and iterated angular velocities) has been reduced to two unknowns ($v_1$ and $P_2$), albeit in a highly intertwined fashion.
 \paragraph{Control Volume B}\par
 For control volume $B$, the energy equation was again adopted, this time with the unknowns of $P_2$ and $v_3$.
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics{"Control Volume B"}
 \caption{Schematic of Control Volume B}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics{"Eqn B"}
 \caption{Simplified Energy Equation for Control Volume B}
@@ -308,7 +309,7 @@ Once again, elevations cancel, one pressure (this time the exit pressure) interf
 h_{L_{2-3}(minor)}=K\frac{v_{avg}^2}{2g}
 \end{equation}
 where $K$ is the component loss coefficient, which in this case was taken conservatively as the worst case non-reentrant scenario entrance loss coefficient ($K=0.5$), although our situation would never come near this scenario.
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{"Nozzel Minor Losses"}
 \caption{K values for Minor Losses due to Diameter Change}
@@ -316,12 +317,12 @@ where $K$ is the component loss coefficient, which in this case was taken conser
 With all of these equations developed, it becomes apparent that the original energy equation (after substitution of assumed geometry and iterated angular velocities) has been reduced to two unknowns ($v_3$ and $P_2$), albeit in a highly intertwined fashion.
 \paragraph{Control Volume C}\par
 For control volume $C$, the momentum equation was adopted, with the unknowns of $P_2$, $v_3$, and the thrust force $F_T$.
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics{"Control Volume C"}
 \caption{Schematic of Control Volume C}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics{"Eqn C"}
 \caption{Simplified Energy Equation for Control Volume C}
@@ -330,12 +331,12 @@ $P_3$ is once again set to zero gage as it is the hydrostatic field pressure, dr
 Once again, with all of these equations developed, it becomes apparent that the original momentum equation (after substitution of assumed geometry and iterated angular velocities) has been reduced to three unknowns ($v_3$, $P_2$, and $F_T$).
 \paragraph{Control Volume D}
 For control volume D, the momentum equation was adopted, with the unknowns of $v_1$, $v_3$, and the thrust force $F_T$.
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics{"Control Volume D"}
 \caption{Schematic of Control Volume D}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics{"Eqn D"}
 \caption{Simplified Energy Equation for Control Volume D}
@@ -431,14 +432,117 @@ Solving the Taylor series for the $f^{(n)}$ term allows for the numerical solvin
 \end{equation}
 If the grid spacing,$(x_{i+1}-x_i)$, is close enough the equation can be truncated with an error of $\frac{x_{x+1}-x_i}{2!}\frac{\partial^2u}{\partial x^2}\big|_i$. This allows for a simply algebraic solution to a partial derivative and is the function that gives CFD its power.\par
 These solutions still need set boundary conditions, such as velocity or pressure, the properties of the fluid, such as density and viscosity, as well as the properties of the design being tested, most significantly the geometry. Once these characteristics are imputed the program iterates through each point in space, solving the Navier-Stokes equations with the appropriate Taylor substitutions, then it moves to the next point in time and solves again until the designated amount of time has passed. The inputed conditions give the program a place to begin and therefor are an important consideration in the overall solution.\par
-With a good understanding of the basics of CFD the student version of AutoCAD CFD was used along with SolidWorks FlowAnalysis to find the solutions for our specific geometry. 
+With a good understanding of the basics of CFD the student version of AutoCAD CFD was used along with SolidWorks FlowAnalysis to find the solutions for our specific geometry. To prove our concept with CFD the design was steped through and analysis was done with each added flow component.
+\paragraph{Analysis of the Vane Shell}
+Traditional propellors have no ducting around them and this is one of the major things this design improves. As a starting point CFD analysis was done on just the vane shell.
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{CFDvs}
+\caption{CFD Analysis of the Vane Shell}
+\end{figure}
+This image shows that much of the energy added to the fluid by the propulsion system is lost by accelerating the fluid radially.
+\paragraph{Analysis of the Vane Shell and Body}
+Analysis was run again with the addition of a bounding duct around the vane shell to constrain the fluid so that all acceleration of the fluid with be along the length of the propulsor. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{CFDvsb}
+\caption{CFD Analysis of the Vane Shell with the Body}
+\end{figure}
+As this figure shows the fluid is now directed along the length of the device, however at the tail end there is a triangular section of flow recirculation and the flow is not fully constrained and deviates at the rear. This reduces the amount of thrust produces as well as increasing amount of drag acting on the device.
+\paragraph{Analysis of the Vane Shell, Body and Nozzle}
+The addition of a nozzle at the end of the device constrains the flow and increases the velocity of the fluid leaving the device increasing the amount of thrust produced due to the conservation of momentum.
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{CFDvsbn}
+\caption{CFD Analysis of the Vane Shell and Body  with the Nozzle} 
+\end{figure}
+The CFD analysis shows a maximum velocity right at the nozzle where it would be expected, however there is still a large area of recirculation and low velocity at the end of the vane shell. This reduces the total fluid velocity.
+\paragraph{CFD Analysis of the Whole Propulsor Design}
+The addition of the cone completes the propulsor design and removes the area of recirculation behind the vane shell. By removing this section the nozzle steadily converges the flow and increases its speed, sending a jet of high speed fluid out the back of the device. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{CFDvsbnc}
+\caption{CFD Analysis of the Entire Propulsor Design} 
+\end{figure}
+	As seen in the figure the high speed jet of fluid generates the thrust that propels the vehicle through the water.
 \subsubsection{Manufacturing}
 The complicated geometry of the vane shell presented a challenge for manufacturing due to our limited resources. Any form of traditional manufacturing via removal of material, such as CNC milling or lathing, presented to high of a cost. Aluminum would be used for these methods due to the development of a protective Aluminum Oxide coat in a corrosive environment as well as the materials ease of manufacturing. \par
 Selective Laser Sintering, SLS, was also considered due to the ease of production for complicated geometries. This method would be expensive, but has a shorter lead time than traditional manufacturing. This process would also produce a metal part. Metal parts would be significantly heavy, which would remove some of the need for permanent balast, however it would add a significant inertial load to the drive train.\par
 Using an ABS 3D printer was also considered. This process had the lowest cost and lead time. There were some concerns about the strength of the part and the fact that it was quite large. Some further analysis was done on the part and was found that the loads would be low enough to be handled by the ABS. The vane shell was broken into six identical pieces so that it would fit within the print volume. \par
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{"Vane Shell Von Mises Isometric"}
+\caption{Isometric View of the Von Mises Stresses on the Vane Shell} 
+\end{figure}
 The Cal Poly Chapter of the Southern California Engineering Technologists Association, SCETA, was chosen to manufacture these six sections that comprised the vane shell.  Once these parts were received they were linked together using aluminum rods along the length and marine epoxy on the surfaces. This provided a strong bond between each of the six pieces. Once the epoxy had hardened the surfaces were sanded to remove epoxy overspill and printing errors. Then the entire surface was coated with ABS cement to smooth the surface, ensure bonding, and fortify strength.
 \subsection{Body}
 \subsection{Control Surfaces}
+\subsubsection{Hydrofoil/Airfoil Design}
+The purpose of including control surfaces into the vehicle design was to add maneuverability. They would ultimately control roll, pitch, and yaw for the vehicle by a combination of biomimetic pectoral fins and tail fin. Initially, the team designed an original foil shape, as seen in Figure 1. This design was arbitrary as it only served as an example to run CFD analysis, however, the pressure distribution at the leading edge would cause excessive drag as it was too bulbous.  It was decided to use a hydrofoil/airfoil found in a UIUC Airfoil Coordinate Database as CFD results for lift force and torque the vehicle would experience were more reliable also seen in the figure. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{hfl}
+\includegraphics[width=8cm]{hfr}
+\caption{(LEFT) Original team designed airfoil, (RIGHT) UIUC airfoil.}
+\end{figure}
+The control surfaces were designed using a symmetric foil as opposed to a cambered geometry that most airplanes use. The reason for this was to not create lift fluid forces when the angle of attack is at 0$^\circ$ relative to the axis of propulsion of the UV.  Also, the control surfaces would be operating at lower angles of attack (up to about $\pm12^\circ$) both symmetric and cambered airfoils would produce near identical amounts of lift.  With this design criteria in mind the vehicle would be able cruise at a certain plane of depth without moving vertically. The EPPLER E838 HYDROFOIL AIRFOIL (e838-il), seen in the below Figure,  was chosen for the design of the two pectoral fins and the tail fin and their angle of attack would be controlled by revolute servos. Servos were chosen over stepper motors because of the accurate feedback on position that servos provide.
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{eppler}
+\caption{EPPLER E838 HYDROFOIL AIRFOIL (e838-il)}
+Courtesy of: http://airfoiltools.com
+\end{figure}
+\subsubsection{Design of Control Surfaces}
+Originally, the control surfaces were designed to have moveable flaps via a rotary shaft driver assembly, as seen in the following two figures, which would only control the trailing edge much like the design of ailerons on airplanes.
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{cso}
+\caption{Original Control Surfaces Idea with Flaps}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{Hinge}
+\caption{Rotary Shaft Driver Idea Design}
+courtesy of: http://www.irfmachineworks.com
+\end{figure}
+However this design was abandoned as it would put high torque loads on the flaps themselves which would increase the cost of the servos as they would have be larger and  rated for a much higher holding torque. It was later decided that the entire control surface would revolve around of the axis of rotation of the servo and through the, as seen in the following figure, center of mass of the control surface and an angled driver shaft would transfer torque. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{ttcs}
+\caption{Torque Transfer for Control Surfaces}
+\end{figure}
+This would theoretically cancel out most reactant torque couples that the control surface would experience from incoming flow of water, making the design holding torque for the servos much lower than originally planned. Generic High Torque Servos (rated at about 5.2 lb-in of maximum deliverable torque) were chosen control the surfaces. The shape of the control surfaces was biomimetic in terms of geometry as it tapered away from the body, was curved at both the leading and trailing edge, and ended at point almost resembling a shark’s pectoral fin as seen in the following figure. They would be 3D printed in ABS, for its corrosion resistance and high fracture toughness, in two parts and marine epoxied together and coated with ABS cement to strengthen and fill in voids and discontinuities that may have occurred in manufacturing.
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{csbw}
+\caption{3D Printed Pectoral Fin Control Surface}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{cscfd}
+\caption{CFD of pectoral fin with surface plot of flow trajectories.}
+\end{figure}
+The tail fin (rudder) was designed using the same foil as mentioned above but larger and angled near the base to avoid seizing with the body of the vehicle upon changing angles of attack. Unfortunately due time and size constraints in 3D printing, the design could not be manufactured the same way as the pectoral fins. Instead, the geometry was cut out from three sheets of $1\over4$” ABS and fastened together using threaded screws as seen in the following figure. Then it was coated with ABS Cement to increase smoothness and fill voids and discontinuities. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{rudder}
+\caption{Rudder shape cut out on paper positioned on sheet of ABS}
+\end{figure}
+\subsubsection{Control Surface Assembly}
+For the pectoral control surfaces, servos were fastened onto 3D printed ABS mounts, as seen in Figure 9, which would mate with to the outer surface of the body cylinder. Marine epoxy would be used to fix the mounts at the theoretical center of mass of the vehicle, perpendicular to the vertical line of symmetry, on both sides of the vehicle.
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{servomounts}
+\caption{3D printed ABS servo mounts}
+\end{figure}
+The rudder however would have the servo epoxied directly to the straight aft extension coupler as time constraints did not allow for a 3D printed mount like the pectoral fins. The angled shaft was made of precision ground 0.25 inch 6061 aluminum rod mainly due to the oxide layer that would form when the rod was submerged, allowing it to passivate and not corrode any further. The shafts would mated to the servo’s spline via a shaft coupler made of 316 stainless steel. A 0.25 inch steel ball bearing was added to the assembly to react to any misalignment or deflections that shaft might experience in positioning and/or operation to avoid applying that load to the body entirely. A graphite-reinforced, spring loaded, corrosion resistant PTFE shaft seal was used to seal out water due to its high corrosion resistance and high maximum pressure resistance (250 psi) for slow rotary motion of the control surfaces. The maximum amount of operational hydrostatic pressure the seal would experience would roughly be around 30 psi but the dynamic load was still unknown during the design phase so a 250 psi rated shaft seal was the best choice for the price allowing for a high factor of safety to account for the unknown maximum pressure. The shaft seal and ball bearing were set into a 3D printed cylindrical mount that would be epoxied to a bore in the wall of the body of the vehicle. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{servoshaft}
+\caption{Control surface assembly: servo, shaft, ball bearing, and shaft seal.}
+\end{figure}
+\subsubsection{Further Development of the Control Surfaces}
+The final size of the control surfaces were about 30\% smaller than originally desired. This was due the size of the control surface being incorrectly dimensioned for the size of the propulsor, not the overall length of the vehicle which includes the straight aft extension coupler and nozzle. 
 \subsection{Buoyancy Control}
 The underwater vehicle was designed to be neutrally buoyant. Therefore the need of a device to control the device to dive deeper into the water or rise to the surface was important. Buoyancy force is determined by the following equation Fb = ρ x g x V. Since the density of the water does not change significantly with respect to depth the team decided to change the density of the device itself by changing it mass by using a piston ballast tank. The piston ballast tank is made by the company Alexander Kengel KD located in Germany. Components of the ballast assembly are the following: 12V motor, threaded rod with piston, gear reduction system of 15:1, hollow metal cylinder, and limit switches. The main function of the ballast tank is to intake and expel water to control the buoyancy of the underwater vehicle. Voltage is ran through the motor that is connected to the gear reduction system. The gear reduction system is attached to the threaded rod and with rotational power given from the motor displacement of the threaded rod occurs to expel or intake water. A figure of the device is seen below.
 \begin{figure}[h]
