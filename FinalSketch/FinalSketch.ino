@@ -119,6 +119,11 @@ void setup() {
   
   dof.calLSM9DS0(gbias, abias);
   
+  
+  //LOOK HERE VVVVV
+  delay(1000);//GRENADE FUSE TIMER HERE!!!!
+ //^^^^^^^^^^^^^^^ 
+  
   now=micros();
   gyroNow=now;
   lastTime=millis();  
