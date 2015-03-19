@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  18 MAR 2015 22:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  19 MAR 2015 01:12
 entering extended mode
 **Final*Report.tex
 ("E:\Users\Ben\Documents\GitHub\Shiela2\Final Report\Final Report.tex"
@@ -230,23 +230,48 @@ LaTeX Font Info:    ... okay on input line 14.
 ])
 \tf@lof=\write4
  [4]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [5]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 50.
+ ("E:\New Program Files\MiKTeX 2.9\tex/latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+
+[6]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+ [7] [8]
 Phase 1.
 
-Overfull \hbox (2.2726pt too wide) in paragraph at lines 20--21
+Overfull \hbox (2.2726pt too wide) in paragraph at lines 94--95
 \OT1/cmr/m/n/10 SHEILA-D stands for Sub-aquatic Hy-dro-dy-nam-i-caly pro-pelled
  Ex-plorer Im-ple-men-ta-tion Los An-ge-les - Demon-
  []
 
-[5
+[9
 
-] <figures/"Section View".png, id=25, 784.43062pt x 255.20343pt>
+] <figures/"Section View".png, id=39, 784.43062pt x 255.20343pt>
 File: figures/"Section View".png Graphic file (type png)
 
 <use figures/"Section View".png>
-Package pdftex.def Info: figures/"Section View".png used on input line 31.
+Package pdftex.def Info: figures/"Section View".png used on input line 105.
 (pdftex.def)             Requested size: 426.79134pt x 138.85141pt.
- [6 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Section View.pn
-g>] [7]
+ [10 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Section View.p
+ng>] [11]
 Phase 2.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -254,20 +279,20 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-[8
+[12
 
-] <figures/"Shark Skin".png, id=36, 301.125pt x 204.01219pt>
+] <figures/"Shark Skin".png, id=50, 301.125pt x 204.01219pt>
 File: figures/"Shark Skin".png Graphic file (type png)
 
 <use figures/"Shark Skin".png>
-Package pdftex.def Info: figures/"Shark Skin".png used on input line 52.
+Package pdftex.def Info: figures/"Shark Skin".png used on input line 126.
 (pdftex.def)             Requested size: 142.26378pt x 96.38692pt.
 
-<figures/"Vantablack".png, id=38, 477.28313pt x 392.21532pt>
+<figures/"Vantablack".png, id=52, 477.28313pt x 392.21532pt>
 File: figures/"Vantablack".png Graphic file (type png)
 
 <use figures/"Vantablack".png>
-Package pdftex.def Info: figures/"Vantablack".png used on input line 60.
+Package pdftex.def Info: figures/"Vantablack".png used on input line 134.
 (pdftex.def)             Requested size: 142.26378pt x 116.90544pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -276,34 +301,34 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-<figures/"Cephalopod Skin".png, id=39, 564.60938pt x 375.65344pt>
+<figures/"Cephalopod Skin".png, id=53, 564.60938pt x 375.65344pt>
 File: figures/"Cephalopod Skin".png Graphic file (type png)
 
 <use figures/"Cephalopod Skin".png>
-Package pdftex.def Info: figures/"Cephalopod Skin".png used on input line 68.
+Package pdftex.def Info: figures/"Cephalopod Skin".png used on input line 142.
 (pdftex.def)             Requested size: 142.26378pt x 94.65254pt.
- [9 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Shark Skin.png>
- <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Vantablack.png>]
-<figures/"Potting".png, id=45, 392.21532pt x 602.25pt>
+ [13 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Shark Skin.png
+> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Vantablack.png>]
+<figures/"Potting".png, id=59, 392.21532pt x 602.25pt>
 File: figures/"Potting".png Graphic file (type png)
 
 <use figures/"Potting".png>
-Package pdftex.def Info: figures/"Potting".png used on input line 76.
+Package pdftex.def Info: figures/"Potting".png used on input line 150.
 (pdftex.def)             Requested size: 113.81102pt x 174.7583pt.
 
-<figures/"Conformal Coating".png, id=46, 225.84375pt x 148.30406pt>
+<figures/"Conformal Coating".png, id=60, 225.84375pt x 148.30406pt>
 File: figures/"Conformal Coating".png Graphic file (type png)
 
 <use figures/"Conformal Coating".png>
-Package pdftex.def Info: figures/"Conformal Coating".png used on input line 77.
-
+Package pdftex.def Info: figures/"Conformal Coating".png used on input line 151
+.
 (pdftex.def)             Requested size: 170.71652pt x 112.11029pt.
 
-<figures/"Arduino UNO".png, id=47, 697.10437pt x 301.125pt>
+<figures/"Arduino UNO".png, id=61, 697.10437pt x 301.125pt>
 File: figures/"Arduino UNO".png Graphic file (type png)
 
 <use figures/"Arduino UNO".png>
-Package pdftex.def Info: figures/"Arduino UNO".png used on input line 84.
+Package pdftex.def Info: figures/"Arduino UNO".png used on input line 158.
 (pdftex.def)             Requested size: 142.26378pt x 61.45073pt.
 
 
@@ -312,51 +337,51 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-[10 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Cephalopod Skin
+[14 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Cephalopod Skin
 .png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Potting.png> 
 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Conformal Coating.p
 ng>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [11 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Arduino UNO.pn
-g>] <figures/"CLT".png, id=58, 722.7pt x 542.025pt>
+ [15 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Arduino UNO.pn
+g>] <figures/"CLT".png, id=72, 722.7pt x 542.025pt>
 File: figures/"CLT".png Graphic file (type png)
 
 <use figures/"CLT".png>
-Package pdftex.def Info: figures/"CLT".png used on input line 101.
+Package pdftex.def Info: figures/"CLT".png used on input line 175.
 (pdftex.def)             Requested size: 142.26378pt x 106.69933pt.
 
-<figures/"Smart Duct".png, id=59, 150.5625pt x 263.48438pt>
+<figures/"Smart Duct".png, id=73, 150.5625pt x 263.48438pt>
 File: figures/"Smart Duct".png Graphic file (type png)
 
 <use figures/"Smart Duct".png>
-Package pdftex.def Info: figures/"Smart Duct".png used on input line 108.
+Package pdftex.def Info: figures/"Smart Duct".png used on input line 182.
 (pdftex.def)             Requested size: 142.26378pt x 248.986pt.
- [12 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/CLT.png> <E:/U
+ [16 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/CLT.png> <E:/U
 sers/Ben/Documents/GitHub/Shiela2/Final Report/figures/Smart Duct.png>]
-<figures/"Vortex Generators".png, id=66, 414.04688pt x 196.48407pt>
+<figures/"Vortex Generators".png, id=79, 414.04688pt x 196.48407pt>
 File: figures/"Vortex Generators".png Graphic file (type png)
 
 <use figures/"Vortex Generators".png>
-Package pdftex.def Info: figures/"Vortex Generators".png used on input line 115
+Package pdftex.def Info: figures/"Vortex Generators".png used on input line 189
 .
 (pdftex.def)             Requested size: 142.26378pt x 67.51125pt.
 
-<figures/"Wanda II".png, id=67, 188.20313pt x 142.28156pt>
+<figures/"Wanda II".png, id=80, 188.20313pt x 142.28156pt>
 File: figures/"Wanda II".png Graphic file (type png)
 
 <use figures/"Wanda II".png>
-Package pdftex.def Info: figures/"Wanda II".png used on input line 122.
+Package pdftex.def Info: figures/"Wanda II".png used on input line 196.
 (pdftex.def)             Requested size: 142.26378pt x 107.55977pt.
- [13 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Vortex Generat
+ [17 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Vortex Generat
 ors.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Wanda II.p
 ng>]
-<figures/"Pitch Roll Yaw".png, id=73, 602.25pt x 390.70969pt>
+<figures/"Pitch Roll Yaw".png, id=86, 602.25pt x 390.70969pt>
 File: figures/"Pitch Roll Yaw".png Graphic file (type png)
 
 <use figures/"Pitch Roll Yaw".png>
-Package pdftex.def Info: figures/"Pitch Roll Yaw".png used on input line 129.
+Package pdftex.def Info: figures/"Pitch Roll Yaw".png used on input line 203.
 (pdftex.def)             Requested size: 142.26378pt x 92.29372pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -368,11 +393,11 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-<figures/"Submarine Stealth".png, id=74, 350.81062pt x 242.40562pt>
+<figures/"Submarine Stealth".png, id=87, 350.81062pt x 242.40562pt>
 File: figures/"Submarine Stealth".png Graphic file (type png)
 
 <use figures/"Submarine Stealth".png>
-Package pdftex.def Info: figures/"Submarine Stealth".png used on input line 138
+Package pdftex.def Info: figures/"Submarine Stealth".png used on input line 212
 .
 (pdftex.def)             Requested size: 142.26378pt x 98.30319pt.
 Missing character: There is no ‚ in font cmr10!
@@ -381,69 +406,60 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [14 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Pitch Roll Yaw
+ [18 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Pitch Roll Yaw
 .png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Submarine Ste
 alth.png>]
-<figures/"Test Tank".png, id=80, 336.50719pt x 224.33812pt>
+<figures/"Test Tank".png, id=94, 336.50719pt x 224.33812pt>
 File: figures/"Test Tank".png Graphic file (type png)
 
 <use figures/"Test Tank".png>
-Package pdftex.def Info: figures/"Test Tank".png used on input line 152.
+Package pdftex.def Info: figures/"Test Tank".png used on input line 226.
 (pdftex.def)             Requested size: 142.26378pt x 94.84094pt.
- [15 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Test Tank.png>
+ [19 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Test Tank.png>
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 160.
-
-
-("E:\New Program Files\MiKTeX 2.9\tex/latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 160.
-
-<figures/"Thrust Augmentation".png, id=85, 192.72pt x 295.1025pt>
+<figures/"Thrust Augmentation".png, id=99, 192.72pt x 295.1025pt>
 File: figures/"Thrust Augmentation".png Graphic file (type png)
 
 <use figures/"Thrust Augmentation".png>
-Package pdftex.def Info: figures/"Thrust Augmentation".png used on input line 1
-66.
+Package pdftex.def Info: figures/"Thrust Augmentation".png used on input line 2
+40.
 (pdftex.def)             Requested size: 142.26378pt x 217.84106pt.
 
-<figures/"Owl Stealth".png, id=86, 395.97937pt x 222.8325pt>
+<figures/"Owl Stealth".png, id=100, 395.97937pt x 222.8325pt>
 File: figures/"Owl Stealth".png Graphic file (type png)
 
 <use figures/"Owl Stealth".png>
-Package pdftex.def Info: figures/"Owl Stealth".png used on input line 174.
+Package pdftex.def Info: figures/"Owl Stealth".png used on input line 248.
 (pdftex.def)             Requested size: 227.62204pt x 128.09369pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Thrust Augmenta
+[20 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Thrust Augmenta
 tion.png>]
-<figures/"Submarine Hydrostatics".png, id=92, 371.88937pt x 207.77625pt>
+<figures/"Submarine Hydrostatics".png, id=105, 371.88937pt x 207.77625pt>
 File: figures/"Submarine Hydrostatics".png Graphic file (type png)
 
 <use figures/"Submarine Hydrostatics".png>
 Package pdftex.def Info: figures/"Submarine Hydrostatics".png used on input lin
-e 183.
+e 257.
 (pdftex.def)             Requested size: 227.62204pt x 127.17766pt.
 
-<figures/"Submarine Design".png, id=93, 401.24907pt x 203.25937pt>
+<figures/"Submarine Design".png, id=106, 401.24907pt x 203.25937pt>
 File: figures/"Submarine Design".png Graphic file (type png)
 
 <use figures/"Submarine Design".png>
-Package pdftex.def Info: figures/"Submarine Design".png used on input line 193.
+Package pdftex.def Info: figures/"Submarine Design".png used on input line 267.
 
 (pdftex.def)             Requested size: 142.26378pt x 72.06607pt.
- [17 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Owl Stealth.pn
+ [21 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Owl Stealth.pn
 g> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Submarine Hydros
 tatics.png>]
-<figures/"Currents".png, id=99, 626.34pt x 469.00218pt>
+<figures/"Currents".png, id=112, 626.34pt x 469.00218pt>
 File: figures/"Currents".png Graphic file (type png)
 
 <use figures/"Currents".png>
-Package pdftex.def Info: figures/"Currents".png used on input line 206.
+Package pdftex.def Info: figures/"Currents".png used on input line 280.
 (pdftex.def)             Requested size: 142.26378pt x 106.52283pt.
 
 
@@ -455,7 +471,7 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-[18 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Submarine Desig
+[22 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Submarine Desig
 n.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -466,334 +482,553 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [19 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Currents.png>]
+ [23 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Currents.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 
  []
 
-[20]
+[24]
 Phase 3.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-[21
+[25
 
-] <figures/"Ctrl Volume A".png, id=116, 415.5525pt x 136.25906pt>
+] <figures/"Ctrl Volume A".png, id=129, 415.5525pt x 136.25906pt>
 File: figures/"Ctrl Volume A".png Graphic file (type png)
 
 <use figures/"Ctrl Volume A".png>
-Package pdftex.def Info: figures/"Ctrl Volume A".png used on input line 251.
+Package pdftex.def Info: figures/"Ctrl Volume A".png used on input line 325.
 (pdftex.def)             Requested size: 415.55148pt x 136.25871pt.
 
-<figures/"Eqn A".png, id=117, 387.69844pt x 81.30376pt>
+<figures/"Eqn A".png, id=130, 387.69844pt x 81.30376pt>
 File: figures/"Eqn A".png Graphic file (type png)
 
 <use figures/"Eqn A".png>
-Package pdftex.def Info: figures/"Eqn A".png used on input line 256.
+Package pdftex.def Info: figures/"Eqn A".png used on input line 330.
 (pdftex.def)             Requested size: 387.69748pt x 81.30354pt.
- [22] [23 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Ctrl Volu
+ [26] [27 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Ctrl Volu
 me A.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn A.png
 >]
-<figures/"Control Volume B".png, id=130, 301.125pt x 146.04562pt>
+<figures/"Control Volume B".png, id=143, 301.125pt x 146.04562pt>
 File: figures/"Control Volume B".png Graphic file (type png)
 
 <use figures/"Control Volume B".png>
-Package pdftex.def Info: figures/"Control Volume B".png used on input line 299.
+Package pdftex.def Info: figures/"Control Volume B".png used on input line 373.
 
 (pdftex.def)             Requested size: 301.12425pt x 146.04524pt.
 
-<figures/"Eqn B".png, id=131, 387.69844pt x 92.59593pt>
+<figures/"Eqn B".png, id=144, 387.69844pt x 92.59593pt>
 File: figures/"Eqn B".png Graphic file (type png)
 
 <use figures/"Eqn B".png>
-Package pdftex.def Info: figures/"Eqn B".png used on input line 304.
+Package pdftex.def Info: figures/"Eqn B".png used on input line 378.
 (pdftex.def)             Requested size: 387.69748pt x 92.59569pt.
- [24 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volume
+ [28 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volume
  B.png>]
-<figures/"Nozzel Minor Losses".jpg, id=138, 402.00188pt x 336.50719pt>
+<figures/"Nozzel Minor Losses".jpg, id=150, 402.00188pt x 336.50719pt>
 File: figures/"Nozzel Minor Losses".jpg Graphic file (type jpg)
 
 <use figures/"Nozzel Minor Losses".jpg>
 Package pdftex.def Info: figures/"Nozzel Minor Losses".jpg used on input line 3
-14.
+88.
 (pdftex.def)             Requested size: 227.62204pt x 190.53767pt.
 
-<figures/"Control Volume C".png, id=139, 331.99031pt x 187.45032pt>
+<figures/"Control Volume C".png, id=151, 331.99031pt x 187.45032pt>
 File: figures/"Control Volume C".png Graphic file (type png)
 
 <use figures/"Control Volume C".png>
-Package pdftex.def Info: figures/"Control Volume C".png used on input line 322.
+Package pdftex.def Info: figures/"Control Volume C".png used on input line 396.
 
 (pdftex.def)             Requested size: 331.98949pt x 187.44984pt.
 
-<figures/"Eqn C".png, id=140, 423.08063pt x 72.27pt>
+<figures/"Eqn C".png, id=152, 423.08063pt x 72.27pt>
 File: figures/"Eqn C".png Graphic file (type png)
  <use figures/"Eqn C".png>
-Package pdftex.def Info: figures/"Eqn C".png used on input line 327.
+Package pdftex.def Info: figures/"Eqn C".png used on input line 401.
 (pdftex.def)             Requested size: 423.07959pt x 72.2698pt.
 
-[25 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn B.png> <E:/
+[29 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn B.png> <E:/
 Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Nozzel Minor Losses.jpg
->] <figures/"Control Volume D".png, id=144, 434.37282pt x 155.83218pt>
+>] <figures/"Control Volume D".png, id=156, 434.37282pt x 155.83218pt>
 File: figures/"Control Volume D".png Graphic file (type png)
 
 <use figures/"Control Volume D".png>
-Package pdftex.def Info: figures/"Control Volume D".png used on input line 336.
+Package pdftex.def Info: figures/"Control Volume D".png used on input line 410.
 
 (pdftex.def)             Requested size: 434.37175pt x 155.8318pt.
 
-<figures/"Eqn D".png, id=145, 450.18187pt x 68.50594pt>
+<figures/"Eqn D".png, id=157, 450.18187pt x 68.50594pt>
 File: figures/"Eqn D".png Graphic file (type png)
 
 <use figures/"Eqn D".png>
-Package pdftex.def Info: figures/"Eqn D".png used on input line 341.
+Package pdftex.def Info: figures/"Eqn D".png used on input line 415.
 (pdftex.def)             Requested size: 450.18077pt x 68.50577pt.
- [26 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volume
+ [30 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volume
  C.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn C.png>]
- [27 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volume
+ [31 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volume
  D.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn D.png>]
- [28]
+ [32]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [29]
-<figures/CFDvs.png, id=158, 722.7pt x 359.84438pt>
+ [33]
+<figures/CFDvs.png, id=171, 722.7pt x 359.84438pt>
 File: figures/CFDvs.png Graphic file (type png)
  <use figures/CFDvs.png>
-Package pdftex.def Info: figures/CFDvs.png used on input line 440.
+Package pdftex.def Info: figures/CFDvs.png used on input line 514.
 (pdftex.def)             Requested size: 341.43306pt x 170.0054pt.
 
-[30] <figures/CFDvsb.png, id=163, 722.7pt x 359.84438pt>
+[34] <figures/CFDvsb.png, id=175, 722.7pt x 359.84438pt>
 File: figures/CFDvsb.png Graphic file (type png)
 
 <use figures/CFDvsb.png>
-Package pdftex.def Info: figures/CFDvsb.png used on input line 448.
+Package pdftex.def Info: figures/CFDvsb.png used on input line 522.
 (pdftex.def)             Requested size: 341.43306pt x 170.0054pt.
- <figures/CFDvsbn.jpg, id=164, 722.7pt x 361.87752pt>
+ <figures/CFDvsbn.jpg, id=176, 722.7pt x 361.87752pt>
 File: figures/CFDvsbn.jpg Graphic file (type jpg)
 
 <use figures/CFDvsbn.jpg>
-Package pdftex.def Info: figures/CFDvsbn.jpg used on input line 456.
+Package pdftex.def Info: figures/CFDvsbn.jpg used on input line 530.
 (pdftex.def)             Requested size: 341.43306pt x 170.96594pt.
- [31 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/CFDvs.png> <E:
+ [35 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/CFDvs.png> <E:
 /Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/CFDvsb.png>] <figures/
-CFDvsbnc.jpg, id=170, 722.7pt x 352.90971pt>
+CFDvsbnc.jpg, id=182, 722.7pt x 352.90971pt>
 File: figures/CFDvsbnc.jpg Graphic file (type jpg)
 
 <use figures/CFDvsbnc.jpg>
-Package pdftex.def Info: figures/CFDvsbnc.jpg used on input line 464.
+Package pdftex.def Info: figures/CFDvsbnc.jpg used on input line 538.
 (pdftex.def)             Requested size: 341.43306pt x 166.72917pt.
- [32 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/CFDvsbn.jpg> <
+ [36 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/CFDvsbn.jpg> <
 E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/CFDvsbnc.jpg>]
-<figures/"Vane Shell Von Mises Isometric".jpg, id=174, 1594.45688pt x 871.75688
+<figures/"Vane Shell Von Mises Isometric".jpg, id=187, 1594.45688pt x 871.75688
 pt>
 File: figures/"Vane Shell Von Mises Isometric".jpg Graphic file (type jpg)
  <use figures/"Vane Shell Von Mises Isometric".jpg>
 Package pdftex.def Info: figures/"Vane Shell Von Mises Isometric".jpg used on i
-nput line 474.
+nput line 548.
 (pdftex.def)             Requested size: 284.52756pt x 155.55267pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [37 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Vane Shell Von
+ Mises Isometric.jpg>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
 
-<figures/hfl.png, id=175, 292.09125pt x 192.72pt>
-File: figures/hfl.png Graphic file (type png)
- <use figures/hfl.png>
-Package pdftex.def Info: figures/hfl.png used on input line 484.
-(pdftex.def)             Requested size: 227.62204pt x 150.18864pt.
+<figures/concept.jpg, id=191, 470.0835pt x 200.7135pt>
+File: figures/concept.jpg Graphic file (type jpg)
 
-<figures/hfr.png, id=176, 646.66594pt x 382.42876pt>
-File: figures/hfr.png Graphic file (type png)
- <use figures/hfr.png>
-Package pdftex.def Info: figures/hfr.png used on input line 485.
-(pdftex.def)             Requested size: 227.62204pt x 134.61066pt.
+<use figures/concept.jpg>
+Package pdftex.def Info: figures/concept.jpg used on input line 582.
+(pdftex.def)             Requested size: 341.43306pt x 145.78766pt.
 
-[33 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Vane Shell Von 
-Mises Isometric.jpg>] <figures/eppler.png, id=180, 590.95781pt x 133.24782pt>
-File: figures/eppler.png Graphic file (type png)
+<figures/future.jpg, id=192, 852.18375pt x 467.49657pt>
+File: figures/future.jpg Graphic file (type jpg)
 
-<use figures/eppler.png>
-Package pdftex.def Info: figures/eppler.png used on input line 491.
-(pdftex.def)             Requested size: 341.43306pt x 76.98692pt.
- <figures/cso.png, id=181, 444.15938pt x 360.59718pt>
-File: figures/cso.png Graphic file (type png)
+<use figures/future.jpg>
+Package pdftex.def Info: figures/future.jpg used on input line 587.
+(pdftex.def)             Requested size: 341.43306pt x 187.30917pt.
+ [38 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/concept.jpg>]
+<figures/future2.jpg, id=196, 548.80031pt x 411.78844pt>
+File: figures/future2.jpg Graphic file (type jpg)
 
-<use figures/cso.png>
-Package pdftex.def Info: figures/cso.png used on input line 499.
-(pdftex.def)             Requested size: 227.62204pt x 184.799pt.
- <figures/Hinge.png, id=182, 293.59688pt x 232.61906pt>
-File: figures/Hinge.png Graphic file (type png)
+<use figures/future2.jpg>
+Package pdftex.def Info: figures/future2.jpg used on input line 596.
+(pdftex.def)             Requested size: 227.62204pt x 170.79475pt.
 
-<use figures/Hinge.png>
-Package pdftex.def Info: figures/Hinge.png used on input line 504.
-(pdftex.def)             Requested size: 227.62204pt x 180.34534pt.
- [34 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/hfl.png> <E:/U
-sers/Ben/Documents/GitHub/Shiela2/Final Report/figures/hfr.png> <E:/Users/Ben/D
-ocuments/GitHub/Shiela2/Final Report/figures/eppler.png>] <figures/ttcs.png, id
-=186, 375.65344pt x 359.09157pt>
-File: figures/ttcs.png Graphic file (type png)
- <use figures/ttcs.png>
-Package pdftex.def Info: figures/ttcs.png used on input line 511.
-(pdftex.def)             Requested size: 227.62204pt x 217.58804pt.
+<figures/future3.jpg, id=197, 548.80031pt x 411.78844pt>
+File: figures/future3.jpg Graphic file (type jpg)
 
-[35 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/cso.png> <E:/Us
-ers/Ben/Documents/GitHub/Shiela2/Final Report/figures/Hinge.png>]
+<use figures/future3.jpg>
+Package pdftex.def Info: figures/future3.jpg used on input line 597.
+(pdftex.def)             Requested size: 227.62204pt x 170.79475pt.
+
+<figures/manta.jpg, id=198, 572.1375pt x 411.78844pt>
+File: figures/manta.jpg Graphic file (type jpg)
+ <use figures/manta.jpg>
+Package pdftex.def Info: figures/manta.jpg used on input line 598.
+(pdftex.def)             Requested size: 227.62204pt x 163.82649pt.
+
+[39 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/future.jpg>]
+<figures/cfdbody.png, id=202, 764.8575pt x 527.72156pt>
+File: figures/cfdbody.png Graphic file (type png)
+
+<use figures/cfdbody.png>
+Package pdftex.def Info: figures/cfdbody.png used on input line 607.
+(pdftex.def)             Requested size: 341.43306pt x 235.57214pt.
+ [40 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/future2.jpg> <
+E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/future3.jpg> <E:/Use
+rs/Ben/Documents/GitHub/Shiela2/Final Report/figures/manta.jpg>] <figures/conto
+urs.png, id=206, 254.45062pt x 306.39468pt>
+File: figures/contours.png Graphic file (type png)
+
+<use figures/contours.png>
+Package pdftex.def Info: figures/contours.png used on input line 616.
+(pdftex.def)             Requested size: 170.71652pt x 205.57323pt.
+ <figures/foam.jpg, id=207, 539.0685pt x 304.191pt>
+File: figures/foam.jpg Graphic file (type jpg)
+
+<use figures/foam.jpg>
+Package pdftex.def Info: figures/foam.jpg used on input line 617.
+(pdftex.def)             Requested size: 227.62204pt x 128.44165pt.
+ <figures/cutfoam.jpg, id=208, 539.7255pt x 304.191pt>
+File: figures/cutfoam.jpg Graphic file (type jpg)
+
+<use figures/cutfoam.jpg>
+Package pdftex.def Info: figures/cutfoam.jpg used on input line 618.
+(pdftex.def)             Requested size: 227.62204pt x 128.28848pt.
+ [41 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/cfdbody.png>]
+<figures/wrappedfoam.jpg, id=212, 541.0395pt x 303.534pt>
+File: figures/wrappedfoam.jpg Graphic file (type jpg)
+
+<use figures/wrappedfoam.jpg>
+Package pdftex.def Info: figures/wrappedfoam.jpg used on input line 624.
+(pdftex.def)             Requested size: 341.43306pt x 191.55164pt.
+ [42 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/contours.png> 
+<E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/foam.jpg> <E:/Users
+/Ben/Documents/GitHub/Shiela2/Final Report/figures/cutfoam.jpg>] <figures/fglas
+s.jpg, id=217, 453.19313pt x 275.52937pt>
+File: figures/fglass.jpg Graphic file (type jpg)
+
+<use figures/fglass.jpg>
+Package pdftex.def Info: figures/fglass.jpg used on input line 631.
+(pdftex.def)             Requested size: 284.52756pt x 172.9832pt.
+ [43 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/wrappedfoam.jp
+g> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/fglass.jpg>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
 
-<figures/csbw.png, id=191, 526.96875pt x 399.74344pt>
-File: figures/csbw.png Graphic file (type png)
- <use figures/csbw.png>
-Package pdftex.def Info: figures/csbw.png used on input line 517.
-(pdftex.def)             Requested size: 227.62204pt x 172.66707pt.
-
-<figures/cscfd.png, id=192, 810.77907pt x 428.35031pt>
-File: figures/cscfd.png Graphic file (type png)
- <use figures/cscfd.png>
-Package pdftex.def Info: figures/cscfd.png used on input line 522.
-(pdftex.def)             Requested size: 227.62204pt x 120.25754pt.
-
-[36 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/ttcs.png> <E:/U
-sers/Ben/Documents/GitHub/Shiela2/Final Report/figures/csbw.png>]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 525.
+(amsmath)                 on input line 636.
 
+<figures/hotbox.jpg, id=221, 469.755pt x 264.114pt>
+File: figures/hotbox.jpg Graphic file (type jpg)
+ <use figures/hotbox.jpg>
+Package pdftex.def Info: figures/hotbox.jpg used on input line 639.
+(pdftex.def)             Requested size: 284.52756pt x 159.97282pt.
+
+<figures/hotbox2.jpg, id=222, 407.997pt x 229.6215pt>
+File: figures/hotbox2.jpg Graphic file (type jpg)
+
+<use figures/hotbox2.jpg>
+Package pdftex.def Info: figures/hotbox2.jpg used on input line 645.
+(pdftex.def)             Requested size: 284.52756pt x 160.14182pt.
+ [44 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/hotbox.jpg>]
+<figures/finishedFglass.png, id=226, 523.9575pt x 372.64218pt>
+File: figures/finishedFglass.png Graphic file (type png)
+
+<use figures/finishedFglass.png>
+Package pdftex.def Info: figures/finishedFglass.png used on input line 652.
+(pdftex.def)             Requested size: 284.52756pt x 202.361pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-<figures/rudder.png, id=197, 301.8778pt x 353.06906pt>
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+
+<figures/openFglass.jpg, id=227, 411.78844pt x 411.78844pt>
+File: figures/openFglass.jpg Graphic file (type jpg)
+
+<use figures/openFglass.jpg>
+Package pdftex.def Info: figures/openFglass.jpg used on input line 658.
+(pdftex.def)             Requested size: 284.52756pt x 284.53017pt.
+ [45 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/hotbox2.jpg> <
+E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/finishedFglass.png>]
+
+<figures/teamFglass.jpg, id=231, 731.73375pt x 411.78844pt>
+File: figures/teamFglass.jpg Graphic file (type jpg)
+
+<use figures/teamFglass.jpg>
+Package pdftex.def Info: figures/teamFglass.jpg used on input line 665.
+(pdftex.def)             Requested size: 284.52756pt x 160.1193pt.
+ [46 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/openFglass.jpg
+>]
+<figures/hfl.png, id=235, 292.09125pt x 192.72pt>
+File: figures/hfl.png Graphic file (type png)
+ <use figures/hfl.png>
+Package pdftex.def Info: figures/hfl.png used on input line 675.
+(pdftex.def)             Requested size: 227.62204pt x 150.18864pt.
+
+<figures/hfr.png, id=236, 646.66594pt x 382.42876pt>
+File: figures/hfr.png Graphic file (type png)
+ <use figures/hfr.png>
+Package pdftex.def Info: figures/hfr.png used on input line 676.
+(pdftex.def)             Requested size: 227.62204pt x 134.61066pt.
+
+<figures/eppler.png, id=237, 590.95781pt x 133.24782pt>
+File: figures/eppler.png Graphic file (type png)
+
+<use figures/eppler.png>
+Package pdftex.def Info: figures/eppler.png used on input line 682.
+(pdftex.def)             Requested size: 341.43306pt x 76.98692pt.
+ [47 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/teamFglass.jpg
+> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/hfl.png> <E:/User
+s/Ben/Documents/GitHub/Shiela2/Final Report/figures/hfr.png>] <figures/cso.png,
+ id=241, 444.15938pt x 360.59718pt>
+File: figures/cso.png Graphic file (type png)
+
+<use figures/cso.png>
+Package pdftex.def Info: figures/cso.png used on input line 690.
+(pdftex.def)             Requested size: 227.62204pt x 184.799pt.
+ <figures/Hinge.png, id=242, 293.59688pt x 232.61906pt>
+File: figures/Hinge.png Graphic file (type png)
+
+<use figures/Hinge.png>
+Package pdftex.def Info: figures/Hinge.png used on input line 695.
+(pdftex.def)             Requested size: 227.62204pt x 180.34534pt.
+ [48 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/eppler.png> <E
+:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/cso.png>] <figures/tt
+cs.png, id=247, 375.65344pt x 359.09157pt>
+File: figures/ttcs.png Graphic file (type png)
+
+<use figures/ttcs.png>
+Package pdftex.def Info: figures/ttcs.png used on input line 702.
+(pdftex.def)             Requested size: 227.62204pt x 217.58804pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ <figures/csbw.png, id=248, 526.96875pt x 399.74344pt>
+File: figures/csbw.png Graphic file (type png)
+
+<use figures/csbw.png>
+Package pdftex.def Info: figures/csbw.png used on input line 708.
+(pdftex.def)             Requested size: 227.62204pt x 172.66707pt.
+ [49 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Hinge.png> <E:
+/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/ttcs.png>] <figures/cs
+cfd.png, id=253, 810.77907pt x 428.35031pt>
+File: figures/cscfd.png Graphic file (type png)
+
+<use figures/cscfd.png>
+Package pdftex.def Info: figures/cscfd.png used on input line 713.
+(pdftex.def)             Requested size: 227.62204pt x 120.25754pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ <figures/rudder.png, id=254, 301.8778pt x 353.06906pt>
 File: figures/rudder.png Graphic file (type png)
 
 <use figures/rudder.png>
-Package pdftex.def Info: figures/rudder.png used on input line 528.
+Package pdftex.def Info: figures/rudder.png used on input line 719.
 (pdftex.def)             Requested size: 227.62204pt x 266.21802pt.
-
-<figures/servomounts.png, id=198, 618.81187pt x 176.91093pt>
+ [50 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/csbw.png> <E:/
+Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/cscfd.png>] <figures/se
+rvomounts.png, id=258, 618.81187pt x 176.91093pt>
 File: figures/servomounts.png Graphic file (type png)
 
 <use figures/servomounts.png>
-Package pdftex.def Info: figures/servomounts.png used on input line 535.
+Package pdftex.def Info: figures/servomounts.png used on input line 726.
 (pdftex.def)             Requested size: 341.43306pt x 97.61444pt.
- [37 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/cscfd.png> <E:
-/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/rudder.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- <figures/servoshaft.png, id=202, 516.42938pt x 325.215pt>
+
+<figures/servoshaft.png, id=259, 516.42938pt x 325.215pt>
 File: figures/servoshaft.png Graphic file (type png)
 
 <use figures/servoshaft.png>
-Package pdftex.def Info: figures/servoshaft.png used on input line 541.
+Package pdftex.def Info: figures/servoshaft.png used on input line 732.
 (pdftex.def)             Requested size: 227.62204pt x 143.34315pt.
+ [51 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/rudder.png> <E
+:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/servomounts.png>]
 Missing character: There is no œ in font cmr10!
 Missing character: There is no Å in font cmr10!
 
-<figures/bcOverview.jpg, id=203, 544.28343pt x 453.19313pt>
+<figures/bcOverview.jpg, id=263, 544.28343pt x 453.19313pt>
 File: figures/bcOverview.jpg Graphic file (type jpg)
 
 <use figures/bcOverview.jpg>
-Package pdftex.def Info: figures/bcOverview.jpg used on input line 550.
+Package pdftex.def Info: figures/bcOverview.jpg used on input line 741.
 (pdftex.def)             Requested size: 227.62204pt x 189.52382pt.
 
-<figures/bcDetails.jpg, id=204, 599.99156pt x 415.5525pt>
+<figures/bcDetails.jpg, id=264, 599.99156pt x 415.5525pt>
 File: figures/bcDetails.jpg Graphic file (type jpg)
 
 <use figures/bcDetails.jpg>
-Package pdftex.def Info: figures/bcDetails.jpg used on input line 556.
+Package pdftex.def Info: figures/bcDetails.jpg used on input line 747.
 (pdftex.def)             Requested size: 227.62204pt x 157.65161pt.
- [38 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/servomounts.pn
-g> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/servoshaft.png>]
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/"Pressure Hull".png, id=208, 713.66624pt x 376.40625pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/"Pressure Hull".png, id=265, 713.66624pt x 376.40625pt>
 File: figures/"Pressure Hull".png Graphic file (type png)
 
 <use figures/"Pressure Hull".png>
-Package pdftex.def Info: figures/"Pressure Hull".png used on input line 563.
+Package pdftex.def Info: figures/"Pressure Hull".png used on input line 754.
 (pdftex.def)             Requested size: 227.62204pt x 120.0504pt.
+ [52 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/servoshaft.png
+>] [53 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/bcOverview.j
+pg> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/bcDetails.jpg>]
 
-<figures/"PHFront".jpg, id=209, 225.0225pt x 126.801pt>
+<figures/"PHFront".jpg, id=272, 225.0225pt x 126.801pt>
 File: figures/"PHFront".jpg Graphic file (type jpg)
 
 <use figures/"PHFront".jpg>
-Package pdftex.def Info: figures/"PHFront".jpg used on input line 569.
+Package pdftex.def Info: figures/"PHFront".jpg used on input line 760.
 (pdftex.def)             Requested size: 227.62204pt x 128.2692pt.
 
-<figures/"CameraDome".jpg, id=210, 228.3075pt x 128.4435pt>
+<figures/"CameraDome".jpg, id=273, 228.3075pt x 128.4435pt>
 File: figures/"CameraDome".jpg Graphic file (type jpg)
 
 <use figures/"CameraDome".jpg>
-Package pdftex.def Info: figures/"CameraDome".jpg used on input line 570.
+Package pdftex.def Info: figures/"CameraDome".jpg used on input line 761.
 (pdftex.def)             Requested size: 227.62204pt x 128.06296pt.
 
-<figures/"standoffs".jpg, id=211, 234.2205pt x 131.7285pt>
+<figures/"standoffs".jpg, id=274, 234.2205pt x 131.7285pt>
 File: figures/"standoffs".jpg Graphic file (type jpg)
 
 <use figures/"standoffs".jpg>
-Package pdftex.def Info: figures/"standoffs".jpg used on input line 576.
+Package pdftex.def Info: figures/"standoffs".jpg used on input line 767.
 (pdftex.def)             Requested size: 227.62204pt x 128.01767pt.
+ [54 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Pressure Hull.
+png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/PHFront.jpg> <
+E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/CameraDome.jpg>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-
-<figures/"tray".jpg, id=212, 228.9645pt x 128.772pt>
+ <figures/"tray".jpg, id=279, 228.9645pt x 128.772pt>
 File: figures/"tray".jpg Graphic file (type jpg)
- <use figures/"tray".jpg>
-Package pdftex.def Info: figures/"tray".jpg used on input line 582.
-(pdftex.def)             Requested size: 227.62204pt x 128.02107pt.
 
-<figures/"brains".jpg, id=213, 229.95pt x 129.429pt>
+<use figures/"tray".jpg>
+Package pdftex.def Info: figures/"tray".jpg used on input line 773.
+(pdftex.def)             Requested size: 227.62204pt x 128.02107pt.
+ <figures/"brains".jpg, id=280, 229.95pt x 129.429pt>
 File: figures/"brains".jpg Graphic file (type jpg)
 
 <use figures/"brains".jpg>
-Package pdftex.def Info: figures/"brains".jpg used on input line 583.
+Package pdftex.def Info: figures/"brains".jpg used on input line 774.
 (pdftex.def)             Requested size: 227.62204pt x 128.12521pt.
+ [55 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/standoffs.jpg>
+ <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/tray.jpg> <E:/User
+s/Ben/Documents/GitHub/Shiela2/Final Report/figures/brains.jpg>] <figures/gearb
+ox.png, id=284, 371.88937pt x 354.57469pt>
+File: figures/gearbox.png Graphic file (type png)
 
+<use figures/gearbox.png>
+Package pdftex.def Info: figures/gearbox.png used on input line 783.
+(pdftex.def)             Requested size: 227.62204pt x 217.03146pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<figures/motormount.png, id=285, 455.45157pt x 346.29375pt>
+File: figures/motormount.png Graphic file (type png)
 
-[39 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/bcOverview.jpg>
+<use figures/motormount.png>
+Package pdftex.def Info: figures/motormount.png used on input line 789.
+(pdftex.def)             Requested size: 227.62204pt x 173.07246pt.
+ [56 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/gearbox.png>]
+<figures/cone.png, id=289, 351.56343pt x 401.24907pt>
+File: figures/cone.png Graphic file (type png)
+ <use figures/cone.png>
+Package pdftex.def Info: figures/cone.png used on input line 795.
+(pdftex.def)             Requested size: 227.62204pt x 259.78633pt.
+
+[57 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/motormount.png>
+ <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/cone.png>]
+<figures/"loctite".jpg, id=293, 401.5pt x 401.5pt>
+File: figures/"loctite".jpg Graphic file (type jpg)
+ <use figures/"loctite".jpg>
+Package pdftex.def Info: figures/"loctite".jpg used on input line 803.
+(pdftex.def)             Requested size: 227.62204pt x 227.62596pt.
+
+<figures/"silicon".jpg, id=294, 361.35pt x 361.35pt>
+File: figures/"silicon".jpg Graphic file (type jpg)
+
+<use figures/"silicon".jpg>
+Package pdftex.def Info: figures/"silicon".jpg used on input line 804.
+(pdftex.def)             Requested size: 227.62204pt x 227.62413pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+<figures/"sabertooth".png, id=295, 451.6875pt x 429.85594pt>
+File: figures/"sabertooth".png Graphic file (type png)
+
+<use figures/"sabertooth".png>
+Package pdftex.def Info: figures/"sabertooth".png used on input line 813.
+(pdftex.def)             Requested size: 227.62204pt x 216.62624pt.
+ [58 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/loctite.jpg> <
+E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/silicon.jpg>] <figur
+es/"sd".jpg, id=299, 219.1095pt x 164.5785pt>
+File: figures/"sd".jpg Graphic file (type jpg)
+
+<use figures/"sd".jpg>
+Package pdftex.def Info: figures/"sd".jpg used on input line 820.
+(pdftex.def)             Requested size: 227.62204pt x 170.98431pt.
+ [59 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/sabertooth.png
+>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+<figures/"camera".jpg, id=304, 178.3755pt x 178.3755pt>
+File: figures/"camera".jpg Graphic file (type jpg)
+
+<use figures/"camera".jpg>
+Package pdftex.def Info: figures/"camera".jpg used on input line 827.
+(pdftex.def)             Requested size: 227.62204pt x 227.62035pt.
+ [60 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/sd.jpg> <E:/Us
+ers/Ben/Documents/GitHub/Shiela2/Final Report/figures/camera.jpg>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ <figures/"singleBattery".jpg, id=309, 232.9065pt x 131.0715pt>
+File: figures/"singleBattery".jpg Graphic file (type jpg)
+
+<use figures/"singleBattery".jpg>
+Package pdftex.def Info: figures/"singleBattery".jpg used on input line 837.
+(pdftex.def)             Requested size: 227.62204pt x 128.10518pt.
+
+<figures/"batteries".jpg, id=310, 232.9065pt x 131.0715pt>
+File: figures/"batteries".jpg Graphic file (type jpg)
+
+<use figures/"batteries".jpg>
+Package pdftex.def Info: figures/"batteries".jpg used on input line 838.
+(pdftex.def)             Requested size: 227.62204pt x 128.10518pt.
+ [61 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/singleBattery.
+jpg> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/batteries.jpg>
 ]
+<figures/"charger".jpg, id=314, 238.1625pt x 134.028pt>
+File: figures/"charger".jpg Graphic file (type jpg)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[40 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/bcDetails.jpg> 
-<E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Pressure Hull.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-[41 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/PHFront.jpg> <E
-:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/CameraDome.jpg> <E:/U
-sers/Ben/Documents/GitHub/Shiela2/Final Report/figures/standoffs.jpg>]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
- [42 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/tray.jpg> <E:/
-Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/brains.jpg>]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
+<use figures/"charger".jpg>
+Package pdftex.def Info: figures/"charger".jpg used on input line 844.
+(pdftex.def)             Requested size: 227.62204pt x 128.0989pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -815,19 +1050,36 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [43] [44]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [62 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/charger.jpg>] 
+[63]
+<figures/gui.jpg, id=321, 682.04813pt x 472.76625pt>
+File: figures/gui.jpg Graphic file (type jpg)
+ <use figures/gui.jpg>
+Package pdftex.def Info: figures/gui.jpg used on input line 939.
+(pdftex.def)             Requested size: 341.43306pt x 236.6711pt.
 
-<figures/"guiOrientation".png, id=233, 487.8225pt x 372.64218pt>
+[64]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ <figures/"guiOrientation".png, id=325, 487.8225pt x 372.64218pt>
 File: figures/"guiOrientation".png Graphic file (type png)
 
 <use figures/"guiOrientation".png>
-Package pdftex.def Info: figures/"guiOrientation".png used on input line 681.
+Package pdftex.def Info: figures/"guiOrientation".png used on input line 949.
 (pdftex.def)             Requested size: 227.62204pt x 173.87953pt.
- [45] [46 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/guiOrient
-ation.png>]
+ [65 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/gui.jpg>] [66 
+<E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/guiOrientation.png>
+]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -840,7 +1092,6 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [47]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -850,48 +1101,880 @@ Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [48]
+ [67]
 Appendix A.
-[49
+<SHEILA.pdf, id=336, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf>
+Package pdftex.def Info: SHEILA.pdf used on input line 972.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf>
+Package pdftex.def Info: SHEILA.pdf used on input line 972.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf>
+Package pdftex.def Info: SHEILA.pdf used on input line 972.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf>
+Package pdftex.def Info: SHEILA.pdf used on input line 972.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [68
 
 ]
+<SHEILA.pdf, id=344, page=1, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 1>
+Package pdftex.def Info: SHEILA.pdf, page1 used on input line 972.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 1>
+Package pdftex.def Info: SHEILA.pdf, page1 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 1>
+Package pdftex.def Info: SHEILA.pdf, page1 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 1>
+Package pdftex.def Info: SHEILA.pdf, page1 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 1>
+Package pdftex.def Info: SHEILA.pdf, page1 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [69 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=367, page=2, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 2>
+Package pdftex.def Info: SHEILA.pdf, page2 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 2>
+Package pdftex.def Info: SHEILA.pdf, page2 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 2>
+Package pdftex.def Info: SHEILA.pdf, page2 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [70 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=380, page=3, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 3>
+Package pdftex.def Info: SHEILA.pdf, page3 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 3>
+Package pdftex.def Info: SHEILA.pdf, page3 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 3>
+Package pdftex.def Info: SHEILA.pdf, page3 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [71 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=391, page=4, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 4>
+Package pdftex.def Info: SHEILA.pdf, page4 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 4>
+Package pdftex.def Info: SHEILA.pdf, page4 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 4>
+Package pdftex.def Info: SHEILA.pdf, page4 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [72 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=403, page=5, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 5>
+Package pdftex.def Info: SHEILA.pdf, page5 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 5>
+Package pdftex.def Info: SHEILA.pdf, page5 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 5>
+Package pdftex.def Info: SHEILA.pdf, page5 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [73 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=416, page=6, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 6>
+Package pdftex.def Info: SHEILA.pdf, page6 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 6>
+Package pdftex.def Info: SHEILA.pdf, page6 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 6>
+Package pdftex.def Info: SHEILA.pdf, page6 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [74 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=427, page=7, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 7>
+Package pdftex.def Info: SHEILA.pdf, page7 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 7>
+Package pdftex.def Info: SHEILA.pdf, page7 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 7>
+Package pdftex.def Info: SHEILA.pdf, page7 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [75 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=440, page=8, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 8>
+Package pdftex.def Info: SHEILA.pdf, page8 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 8>
+Package pdftex.def Info: SHEILA.pdf, page8 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 8>
+Package pdftex.def Info: SHEILA.pdf, page8 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [76 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=455, page=9, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 9>
+Package pdftex.def Info: SHEILA.pdf, page9 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 9>
+Package pdftex.def Info: SHEILA.pdf, page9 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 9>
+Package pdftex.def Info: SHEILA.pdf, page9 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [77 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=468, page=10, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 10>
+Package pdftex.def Info: SHEILA.pdf, page10 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 10>
+Package pdftex.def Info: SHEILA.pdf, page10 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 10>
+Package pdftex.def Info: SHEILA.pdf, page10 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [78 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=480, page=11, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 11>
+Package pdftex.def Info: SHEILA.pdf, page11 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 11>
+Package pdftex.def Info: SHEILA.pdf, page11 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 11>
+Package pdftex.def Info: SHEILA.pdf, page11 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [79 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=494, page=12, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 12>
+Package pdftex.def Info: SHEILA.pdf, page12 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 12>
+Package pdftex.def Info: SHEILA.pdf, page12 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 12>
+Package pdftex.def Info: SHEILA.pdf, page12 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [80 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=510, page=13, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 13>
+Package pdftex.def Info: SHEILA.pdf, page13 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 13>
+Package pdftex.def Info: SHEILA.pdf, page13 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 13>
+Package pdftex.def Info: SHEILA.pdf, page13 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [81 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=521, page=14, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 14>
+Package pdftex.def Info: SHEILA.pdf, page14 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 14>
+Package pdftex.def Info: SHEILA.pdf, page14 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 14>
+Package pdftex.def Info: SHEILA.pdf, page14 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [82 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=533, page=15, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 15>
+Package pdftex.def Info: SHEILA.pdf, page15 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 15>
+Package pdftex.def Info: SHEILA.pdf, page15 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 15>
+Package pdftex.def Info: SHEILA.pdf, page15 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [83 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=545, page=16, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 16>
+Package pdftex.def Info: SHEILA.pdf, page16 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 16>
+Package pdftex.def Info: SHEILA.pdf, page16 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 16>
+Package pdftex.def Info: SHEILA.pdf, page16 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [84 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=557, page=17, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 17>
+Package pdftex.def Info: SHEILA.pdf, page17 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 17>
+Package pdftex.def Info: SHEILA.pdf, page17 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 17>
+Package pdftex.def Info: SHEILA.pdf, page17 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [85 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=577, page=18, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 18>
+Package pdftex.def Info: SHEILA.pdf, page18 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 18>
+Package pdftex.def Info: SHEILA.pdf, page18 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 18>
+Package pdftex.def Info: SHEILA.pdf, page18 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [86 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=587, page=19, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 19>
+Package pdftex.def Info: SHEILA.pdf, page19 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 19>
+Package pdftex.def Info: SHEILA.pdf, page19 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 19>
+Package pdftex.def Info: SHEILA.pdf, page19 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [87 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=600, page=20, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 20>
+Package pdftex.def Info: SHEILA.pdf, page20 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 20>
+Package pdftex.def Info: SHEILA.pdf, page20 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 20>
+Package pdftex.def Info: SHEILA.pdf, page20 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [88 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=620, page=21, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 21>
+Package pdftex.def Info: SHEILA.pdf, page21 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 21>
+Package pdftex.def Info: SHEILA.pdf, page21 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 21>
+Package pdftex.def Info: SHEILA.pdf, page21 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [89 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=634, page=22, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 22>
+Package pdftex.def Info: SHEILA.pdf, page22 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 22>
+Package pdftex.def Info: SHEILA.pdf, page22 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 22>
+Package pdftex.def Info: SHEILA.pdf, page22 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [90 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=647, page=37, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 37>
+Package pdftex.def Info: SHEILA.pdf, page37 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 37>
+Package pdftex.def Info: SHEILA.pdf, page37 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 37>
+Package pdftex.def Info: SHEILA.pdf, page37 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [91 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
+<SHEILA.pdf, id=674, page=38, 614.295pt x 794.97pt>
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 38>
+Package pdftex.def Info: SHEILA.pdf, page38 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+
+<use SHEILA.pdf, page 38>
+Package pdftex.def Info: SHEILA.pdf, page38 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SHEILA.pdf Graphic file (type pdf)
+ <use SHEILA.pdf, page 38>
+Package pdftex.def Info: SHEILA.pdf, page38 used on input line 972.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [92 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/SHEILA.pdf, page is ro
+tated 270 degrees>]
 Appendix B.
-[50
+[93
 
 ]
 Appendix C.
-[51
 
-] [52
 
-] ("E:\Users\Ben\Documents\GitHub\Shiela2\Final Report\Final Report.aux") ) 
+pdfTeX warning: pdflatex.exe (file E:/Users/Ben/Documents/GitHub/Shiela2/Final 
+Report/LSM9DS0.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+<LSM9DS0.pdf, id=698, 597.23125pt x 845.1575pt>
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf>
+Package pdftex.def Info: LSM9DS0.pdf used on input line 975.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+
+pdfTeX warning: pdflatex.exe (file E:/Users/Ben/Documents/GitHub/Shiela2/Final 
+Report/LSM9DS0.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+File: LSM9DS0.pdf Graphic file (type pdf)
+<use LSM9DS0.pdf>
+Package pdftex.def Info: LSM9DS0.pdf used on input line 975.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+
+pdfTeX warning: pdflatex.exe (file E:/Users/Ben/Documents/GitHub/Shiela2/Final 
+Report/LSM9DS0.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+[94
+
+]
+
+pdfTeX warning: pdflatex.exe (file E:/Users/Ben/Documents/GitHub/Shiela2/Final 
+Report/LSM9DS0.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+<LSM9DS0.pdf, id=704, page=1, 597.23125pt x 845.1575pt>
+File: LSM9DS0.pdf Graphic file (type pdf)
+
+<use LSM9DS0.pdf, page 1>
+Package pdftex.def Info: LSM9DS0.pdf, page1 used on input line 975.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 1>
+Package pdftex.def Info: LSM9DS0.pdf, page1 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 1>
+Package pdftex.def Info: LSM9DS0.pdf, page1 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+
+<use LSM9DS0.pdf, page 1>
+Package pdftex.def Info: LSM9DS0.pdf, page1 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 1>
+Package pdftex.def Info: LSM9DS0.pdf, page1 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
+ [95 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/LSM9DS0.pdf>]
+
+pdfTeX warning: pdflatex.exe (file E:/Users/Ben/Documents/GitHub/Shiela2/Final 
+Report/LSM9DS0.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+<LSM9DS0.pdf, id=746, page=2, 597.23125pt x 845.0471pt>
+File: LSM9DS0.pdf Graphic file (type pdf)
+
+<use LSM9DS0.pdf, page 2>
+Package pdftex.def Info: LSM9DS0.pdf, page2 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.00201pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 2>
+Package pdftex.def Info: LSM9DS0.pdf, page2 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.00201pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 2>
+Package pdftex.def Info: LSM9DS0.pdf, page2 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.00201pt.
+
+[96 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/LSM9DS0.pdf>]
+
+pdfTeX warning: pdflatex.exe (file E:/Users/Ben/Documents/GitHub/Shiela2/Final 
+Report/LSM9DS0.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+<LSM9DS0.pdf, id=767, page=3, 597.23125pt x 845.0471pt>
+File: LSM9DS0.pdf Graphic file (type pdf)
+
+<use LSM9DS0.pdf, page 3>
+Package pdftex.def Info: LSM9DS0.pdf, page3 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.00201pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 3>
+Package pdftex.def Info: LSM9DS0.pdf, page3 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.00201pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 3>
+Package pdftex.def Info: LSM9DS0.pdf, page3 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.00201pt.
+
+[97 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/LSM9DS0.pdf>]
+
+pdfTeX warning: pdflatex.exe (file E:/Users/Ben/Documents/GitHub/Shiela2/Final 
+Report/LSM9DS0.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+<LSM9DS0.pdf, id=773, page=4, 597.23125pt x 845.0471pt>
+File: LSM9DS0.pdf Graphic file (type pdf)
+
+<use LSM9DS0.pdf, page 4>
+Package pdftex.def Info: LSM9DS0.pdf, page4 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.00201pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 4>
+Package pdftex.def Info: LSM9DS0.pdf, page4 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.00201pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 4>
+Package pdftex.def Info: LSM9DS0.pdf, page4 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.00201pt.
+
+[98 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/LSM9DS0.pdf>]
+
+pdfTeX warning: pdflatex.exe (file E:/Users/Ben/Documents/GitHub/Shiela2/Final 
+Report/LSM9DS0.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+<LSM9DS0.pdf, id=779, page=5, 597.23125pt x 845.1575pt>
+File: LSM9DS0.pdf Graphic file (type pdf)
+
+<use LSM9DS0.pdf, page 5>
+Package pdftex.def Info: LSM9DS0.pdf, page5 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 5>
+Package pdftex.def Info: LSM9DS0.pdf, page5 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 5>
+Package pdftex.def Info: LSM9DS0.pdf, page5 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
+
+[99 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/LSM9DS0.pdf>]
+
+pdfTeX warning: pdflatex.exe (file E:/Users/Ben/Documents/GitHub/Shiela2/Final 
+Report/LSM9DS0.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+<LSM9DS0.pdf, id=785, page=6, 597.23125pt x 845.1575pt>
+File: LSM9DS0.pdf Graphic file (type pdf)
+
+<use LSM9DS0.pdf, page 6>
+Package pdftex.def Info: LSM9DS0.pdf, page6 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 6>
+Package pdftex.def Info: LSM9DS0.pdf, page6 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 6>
+Package pdftex.def Info: LSM9DS0.pdf, page6 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
+
+[100 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/LSM9DS0.pdf>]
+
+pdfTeX warning: pdflatex.exe (file E:/Users/Ben/Documents/GitHub/Shiela2/Final 
+Report/LSM9DS0.pdf): PDF inclusion: found PDF version <1.7>, but at most versio
+n <1.5> allowed
+<LSM9DS0.pdf, id=791, page=7, 597.23125pt x 845.1575pt>
+File: LSM9DS0.pdf Graphic file (type pdf)
+
+<use LSM9DS0.pdf, page 7>
+Package pdftex.def Info: LSM9DS0.pdf, page7 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 7>
+Package pdftex.def Info: LSM9DS0.pdf, page7 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
+File: LSM9DS0.pdf Graphic file (type pdf)
+ <use LSM9DS0.pdf, page 7>
+Package pdftex.def Info: LSM9DS0.pdf, page7 used on input line 975.
+(pdftex.def)             Requested size: 561.86221pt x 795.10587pt.
+
+[101 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/LSM9DS0.pdf>]
+Appendix D.
+<PrimerPackage.pdf, id=803, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf>
+Package pdftex.def Info: PrimerPackage.pdf used on input line 977.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf>
+Package pdftex.def Info: PrimerPackage.pdf used on input line 977.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [102
+
+]
+<PrimerPackage.pdf, id=810, page=1, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 1>
+Package pdftex.def Info: PrimerPackage.pdf, page1 used on input line 977.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 1>
+Package pdftex.def Info: PrimerPackage.pdf, page1 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 1>
+Package pdftex.def Info: PrimerPackage.pdf, page1 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 1>
+Package pdftex.def Info: PrimerPackage.pdf, page1 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 1>
+Package pdftex.def Info: PrimerPackage.pdf, page1 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [103 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>]
+<PrimerPackage.pdf, id=850, page=2, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 2>
+Package pdftex.def Info: PrimerPackage.pdf, page2 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 2>
+Package pdftex.def Info: PrimerPackage.pdf, page2 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 2>
+Package pdftex.def Info: PrimerPackage.pdf, page2 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [104 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>]
+<PrimerPackage.pdf, id=866, page=3, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 3>
+Package pdftex.def Info: PrimerPackage.pdf, page3 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 3>
+Package pdftex.def Info: PrimerPackage.pdf, page3 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 3>
+Package pdftex.def Info: PrimerPackage.pdf, page3 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [105 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>]
+<PrimerPackage.pdf, id=871, page=4, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 4>
+Package pdftex.def Info: PrimerPackage.pdf, page4 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 4>
+Package pdftex.def Info: PrimerPackage.pdf, page4 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 4>
+Package pdftex.def Info: PrimerPackage.pdf, page4 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [106 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>]
+<PrimerPackage.pdf, id=876, page=5, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 5>
+Package pdftex.def Info: PrimerPackage.pdf, page5 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 5>
+Package pdftex.def Info: PrimerPackage.pdf, page5 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 5>
+Package pdftex.def Info: PrimerPackage.pdf, page5 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [107 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>]
+<PrimerPackage.pdf, id=882, page=6, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 6>
+Package pdftex.def Info: PrimerPackage.pdf, page6 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 6>
+Package pdftex.def Info: PrimerPackage.pdf, page6 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 6>
+Package pdftex.def Info: PrimerPackage.pdf, page6 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [108 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>]
+<PrimerPackage.pdf, id=889, page=7, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 7>
+Package pdftex.def Info: PrimerPackage.pdf, page7 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 7>
+Package pdftex.def Info: PrimerPackage.pdf, page7 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 7>
+Package pdftex.def Info: PrimerPackage.pdf, page7 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [109 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>]
+<PrimerPackage.pdf, id=895, page=8, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 8>
+Package pdftex.def Info: PrimerPackage.pdf, page8 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 8>
+Package pdftex.def Info: PrimerPackage.pdf, page8 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 8>
+Package pdftex.def Info: PrimerPackage.pdf, page8 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [110 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>]
+<PrimerPackage.pdf, id=901, page=9, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 9>
+Package pdftex.def Info: PrimerPackage.pdf, page9 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 9>
+Package pdftex.def Info: PrimerPackage.pdf, page9 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 9>
+Package pdftex.def Info: PrimerPackage.pdf, page9 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [111 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>]
+<PrimerPackage.pdf, id=907, page=10, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 10>
+Package pdftex.def Info: PrimerPackage.pdf, page10 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 10>
+Package pdftex.def Info: PrimerPackage.pdf, page10 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 10>
+Package pdftex.def Info: PrimerPackage.pdf, page10 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [112 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>]
+<PrimerPackage.pdf, id=913, page=11, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 11>
+Package pdftex.def Info: PrimerPackage.pdf, page11 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 11>
+Package pdftex.def Info: PrimerPackage.pdf, page11 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 11>
+Package pdftex.def Info: PrimerPackage.pdf, page11 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [113 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>]
+<PrimerPackage.pdf, id=918, page=12, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 12>
+Package pdftex.def Info: PrimerPackage.pdf, page12 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 12>
+Package pdftex.def Info: PrimerPackage.pdf, page12 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 12>
+Package pdftex.def Info: PrimerPackage.pdf, page12 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [114 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>]
+<PrimerPackage.pdf, id=924, page=13, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 13>
+Package pdftex.def Info: PrimerPackage.pdf, page13 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 13>
+Package pdftex.def Info: PrimerPackage.pdf, page13 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 13>
+Package pdftex.def Info: PrimerPackage.pdf, page13 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [115 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>]
+<PrimerPackage.pdf, id=937, page=14, 614.295pt x 794.97pt>
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 14>
+Package pdftex.def Info: PrimerPackage.pdf, page14 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+ <use PrimerPackage.pdf, page 14>
+Package pdftex.def Info: PrimerPackage.pdf, page14 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: PrimerPackage.pdf Graphic file (type pdf)
+
+<use PrimerPackage.pdf, page 14>
+Package pdftex.def Info: PrimerPackage.pdf, page14 used on input line 977.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [116 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/PrimerPackage.pdf>] [
+117
+
+]
+("E:\Users\Ben\Documents\GitHub\Shiela2\Final Report\Final Report.aux") ) 
 Here is how much of TeX's memory you used:
- 3387 strings out of 493921
- 48634 string characters out of 3145684
- 114261 words of memory out of 3000000
- 6599 multiletter control sequences out of 15000+200000
+ 3681 strings out of 493921
+ 55009 string characters out of 3145684
+ 110261 words of memory out of 3000000
+ 6859 multiletter control sequences out of 15000+200000
  10581 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 37i,17n,39p,2073b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/
-New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/New 
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/New Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/New Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/New Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><E:/New Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/New Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/New Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb><E:/New Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr17.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr5.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy5.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy7.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.
-pfb>
-Output written on "Final Report.pdf" (53 pages, 11137631 bytes).
+ 39i,18n,43p,2073b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/Ne
+w Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/New Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/New Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/New Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/New Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><E:/New Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/New Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/New Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr12.pfb><E:/New Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr17.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr5.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr7.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmsy5.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pf
+b>
+Output written on "Final Report.pdf" (118 pages, 20200583 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
+ 997 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 266 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 686 words of extra memory for PDF output out of 10000 (max. 10000000)
 

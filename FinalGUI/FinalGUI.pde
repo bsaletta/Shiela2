@@ -5,7 +5,7 @@ boolean updateMap=true;
 int[] Position={0,0,0};
 int[] Orientation={0,0,0};
 void setup(){
-  frame.setTitle("Edna's Adventure"); //SEt the title of the box
+  frame.setTitle("DORY's Adventure"); //SEt the title of the box
   size(900,600,P3D); //Set the intiial dimentions of the box
   selectInput("Select Data File","dataFileSelected"); //Open a fileselection dialog to find data file
   setupCommandBox(455,305,435,285);     //  Thse 4 functions call the setup functions   
