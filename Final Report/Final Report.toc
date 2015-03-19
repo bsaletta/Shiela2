@@ -56,37 +56,37 @@
 \contentsline {subsection}{\numberline {3.2.2}Body}{29}
 \contentsline {subsection}{\numberline {3.2.3}Control Surfaces}{29}
 \contentsline {subsection}{\numberline {3.2.4}Buoyancy Control}{29}
-\contentsline {subsection}{\numberline {3.2.5}Pressure Hull}{29}
-\contentsline {subsection}{\numberline {3.2.6}Drive Train}{32}
-\contentsline {subsection}{\numberline {3.2.7}Sealing}{32}
-\contentsline {subsection}{\numberline {3.2.8}Electronics}{32}
-\contentsline {subsubsection}{Motor Controller}{32}
-\contentsline {subsubsection}{Micro SD Card Breakout Board}{32}
-\contentsline {subsubsection}{Camera}{32}
-\contentsline {subsubsection}{Inertial Measurement Unit}{32}
-\contentsline {subsubsection}{Batteries, Charging, and Power Budgeting}{33}
-\contentsline {section}{\numberline {3.3}Programming}{33}
-\contentsline {subsection}{\numberline {3.3.1}Firmware}{33}
+\contentsline {subsection}{\numberline {3.2.5}Pressure Hull}{30}
+\contentsline {subsection}{\numberline {3.2.6}Drive Train}{33}
+\contentsline {subsection}{\numberline {3.2.7}Sealing}{33}
+\contentsline {subsection}{\numberline {3.2.8}Electronics}{33}
+\contentsline {subsubsection}{Motor Controller}{33}
+\contentsline {subsubsection}{Micro SD Card Breakout Board}{33}
+\contentsline {subsubsection}{Camera}{33}
 \contentsline {subsubsection}{Inertial Measurement Unit}{33}
-\contentsline {paragraph}{Initial Filtering}{34}
-\contentsline {paragraph}{Orientation}{34}
-\contentsline {paragraph}{Acceleration of the Vehicle}{34}
-\contentsline {paragraph}{Velocity and Position}{34}
-\contentsline {paragraph}{Error Analysis}{35}
-\contentsline {subsection}{\numberline {3.3.2}Software, The Graphical User Interface}{35}
-\contentsline {subsubsection}{Video Box}{35}
-\contentsline {subsubsection}{The Orientation Model}{35}
-\contentsline {subsubsection}{The Map}{35}
-\contentsline {subsubsection}{The Control Screen}{36}
-\contentsline {section}{\numberline {3.4}Fundraising, Pricing, Time Decomposition}{36}
-\contentsline {section}{\numberline {3.5}Testing}{36}
-\contentsline {section}{\numberline {3.6}Conferences}{36}
-\contentsline {section}{\numberline {3.7}CVs and Team Bios}{36}
-\contentsline {subsection}{\numberline {3.7.1}Ben}{36}
-\contentsline {subsection}{\numberline {3.7.2}Brian}{37}
-\contentsline {subsection}{\numberline {3.7.3}Andrew}{37}
-\contentsline {subsection}{\numberline {3.7.4}Ketton}{37}
-\contentsline {subsection}{\numberline {3.7.5}Abraham}{37}
-\contentsline {chapter}{\numberline {A}Phase I Report}{38}
-\contentsline {chapter}{\numberline {B}Presentation Format}{39}
-\contentsline {chapter}{\numberline {C}Electronics Data Sheets}{40}
+\contentsline {subsubsection}{Batteries, Charging, and Power Budgeting}{34}
+\contentsline {section}{\numberline {3.3}Programming}{34}
+\contentsline {subsection}{\numberline {3.3.1}Firmware}{34}
+\contentsline {subsubsection}{Inertial Measurement Unit}{35}
+\contentsline {paragraph}{Initial Filtering}{35}
+\contentsline {paragraph}{Orientation}{35}
+\contentsline {paragraph}{Acceleration of the Vehicle}{35}
+\contentsline {paragraph}{Velocity and Position}{36}
+\contentsline {paragraph}{Error Analysis}{36}
+\contentsline {subsection}{\numberline {3.3.2}Software, The Graphical User Interface}{36}
+\contentsline {subsubsection}{Video Box}{36}
+\contentsline {subsubsection}{The Orientation Model}{36}
+\contentsline {subsubsection}{The Map}{37}
+\contentsline {subsubsection}{The Control Screen}{37}
+\contentsline {section}{\numberline {3.4}Fundraising, Pricing, Time Decomposition}{37}
+\contentsline {section}{\numberline {3.5}Testing}{37}
+\contentsline {section}{\numberline {3.6}Conferences}{37}
+\contentsline {section}{\numberline {3.7}CVs and Team Bios}{37}
+\contentsline {subsection}{\numberline {3.7.1}Ben}{37}
+\contentsline {subsection}{\numberline {3.7.2}Brian}{38}
+\contentsline {subsection}{\numberline {3.7.3}Andrew}{38}
+\contentsline {subsection}{\numberline {3.7.4}Ketton}{38}
+\contentsline {subsection}{\numberline {3.7.5}Abraham}{38}
+\contentsline {chapter}{\numberline {A}Phase I Report}{39}
+\contentsline {chapter}{\numberline {B}Presentation Format}{40}
+\contentsline {chapter}{\numberline {C}Electronics Data Sheets}{41}

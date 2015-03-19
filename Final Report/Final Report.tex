@@ -181,6 +181,7 @@ It was determined that the trailing edge is the dominant noise source on wings a
 \centering
 \includegraphics[width=8cm]{"Submarine Hydrostatics"}
 \caption{Center of Buoyancy and Center of Mass of a Submarine}
+\cite{hydrostatics}
 \end{figure}
 Research was conducted into ship and submarine hydrostatics in the surfaced, diving/surfacing, and submerged states.  Key factors considered included state of buoyancy, reserve of buoyancy, trim, configuration and use of main ballast tanks (internal and external), free flood spaces, margin ballasts, variable ballasts, superstructures, flexible bag ballasts with flotation collars, freeboard, and a pressure hull.\par
 \indent Methodologies for buoyancy calculation were researched heavily for both intact and damaged vessel states, surface (static), surfacing/diving (transition), and submerged (static) states, conditions of flotation, and disturbance response for small and large values of sway, yaw, surge, heave, and (the most complex case) heel/roll.\par
@@ -381,10 +382,10 @@ The dynamics of the system also had to be coded into the program. The angular ve
 \begin{tabular}{l|c|c}
 Variable&Value& Source\\
 \hline
-Acceleration due to Gravity, $g$&32.2$\frac{ft}{s^2}$&\\
-Specific Weight, $\gamma$&62.4 $\frac{lb}{ft^3}$&\\
-Kinematic Viscosity, $\nu$&12.1$*10^{-6}\frac{ft^2}{s}$&\\
-Surface Roughness, $\epsilon$&0.0015mm&\\
+Acceleration due to Gravity, $g$&32.2$\frac{ft}{s^2}$&\cite{munson}\\
+Specific Weight, $\gamma$&62.4 $\frac{lb}{ft^3}$&\cite{munson}\\
+Kinematic Viscosity, $\nu$&12.1$*10^{-6}\frac{ft^2}{s}$&\cite{munson}\\
+Surface Roughness, $\epsilon$&0.0015mm&\cite{munson}\\
 \hline 
 \end{tabular}
 \end{center}
@@ -439,6 +440,18 @@ The Cal Poly Chapter of the Southern California Engineering Technologists Associ
 \subsection{Body}
 \subsection{Control Surfaces}
 \subsection{Buoyancy Control}
+The underwater vehicle was designed to be neutrally buoyant. Therefore the need of a device to control the device to dive deeper into the water or rise to the surface was important. Buoyancy force is determined by the following equation Fb = ρ x g x V. Since the density of the water does not change significantly with respect to depth the team decided to change the density of the device itself by changing it mass by using a piston ballast tank. The piston ballast tank is made by the company Alexander Kengel KD located in Germany. Components of the ballast assembly are the following: 12V motor, threaded rod with piston, gear reduction system of 15:1, hollow metal cylinder, and limit switches. The main function of the ballast tank is to intake and expel water to control the buoyancy of the underwater vehicle. Voltage is ran through the motor that is connected to the gear reduction system. The gear reduction system is attached to the threaded rod and with rotational power given from the motor displacement of the threaded rod occurs to expel or intake water. A figure of the device is seen below.
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{bcOverview}
+\caption{Overview of the Buoyancy Control Device}
+\end{figure}
+The ballast tank itself can intake up to 30.5 cubic inches with an overall length of thirteen inches.  When the correct voltage is applied the tank can go from full stroke to no stroke in eleven seconds.  Limit switches (white components seen in the figure above) are used to determine the position of the threaded rod and piston assembly. One limit switch will indicate that the piston is located at the halfway point. The other limit switch is to indicate the piston has been fully retracted and shuts off power to the motor to ensure no damage to the ballast tank occurs. The piston ballast tank is suitable up to a depth of 34 feet. This piston ballast tank assembly is connected to the brains of the device to submerge the underwater vehicle where depth can be measured by the accelerometer.  Once depth is achieved the vehicle will be able to run its mission. The dimensions of the ballast tank can be seen in the figure below. Dimensions noted in figure are in millimeters.
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{bcDetails}
+\caption{Details of the Buoyancy Control Device}
+\end{figure}
 \subsection{Pressure Hull}
 Drawing from the concept found in SHEILA-D, the pressure hull is used to house vital components that power the project.  Located at the center of the vehicle, within the vane shell, the pressure hull was designed to satisfy numerous challenges associated with underwater operation.  After seeing how vulnerable SHEILA-D was to flooding, we knew that limiting entry points and creating obstacles for any water that may leak in was of top priority.  Our new design of powering the vane shell through a shaft located at the rear of the pressure hull eliminated the need to cut holes into the PVC pipe to transmit power.  This left the two pipe openings at either end and any holes needed to pass communication and power wires to external actuators.
 \begin{figure}[h]
@@ -605,5 +618,7 @@ Owl wing sections as they relate to stealth. Photo Credit: sciencedaily.com
 Submarine hydrostatics. Photo Credit: Naval Engineering Education Center
 \bibitem{design}
 Submarine design process. Photo Credit: Submarine Technology for the 21st Century (Zimmerman) 
+\bibitem{munson}
+Munson, Bruce Roy, T. H. Okiishi, Donald Young, and Wade Huebsch. \textit{Fundamentals of Fluid Mechanics.} 6th ed. Hoboken,NJ: J. Wiley \& Sons, 2009. Print.
 \end{thebibliography}
 \end{document}
