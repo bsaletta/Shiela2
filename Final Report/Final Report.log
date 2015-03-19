@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  18 MAR 2015 17:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  18 MAR 2015 20:10
 entering extended mode
 **Final*Report.tex
 ("E:\Users\Ben\Documents\GitHub\Shiela2\Final Report\Final Report.tex"
@@ -379,32 +379,32 @@ alth.png>]
 File: figures/"Test Tank".png Graphic file (type png)
 
 <use figures/"Test Tank".png>
-Package pdftex.def Info: figures/"Test Tank".png used on input line 150.
+Package pdftex.def Info: figures/"Test Tank".png used on input line 151.
 (pdftex.def)             Requested size: 142.26378pt x 94.84094pt.
  [14 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Test Tank.png>
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 157.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 159.
 
 
 ("E:\New Program Files\MiKTeX 2.9\tex/latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 157.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 159.
 
 <figures/"Thrust Augmentation".png, id=82, 192.72pt x 295.1025pt>
 File: figures/"Thrust Augmentation".png Graphic file (type png)
 
 <use figures/"Thrust Augmentation".png>
 Package pdftex.def Info: figures/"Thrust Augmentation".png used on input line 1
-63.
+65.
 (pdftex.def)             Requested size: 142.26378pt x 217.84106pt.
 
 <figures/"Owl Stealth".png, id=83, 395.97937pt x 222.8325pt>
 File: figures/"Owl Stealth".png Graphic file (type png)
 
 <use figures/"Owl Stealth".png>
-Package pdftex.def Info: figures/"Owl Stealth".png used on input line 170.
+Package pdftex.def Info: figures/"Owl Stealth".png used on input line 173.
 (pdftex.def)             Requested size: 227.62204pt x 128.09369pt.
 
 
@@ -417,27 +417,24 @@ File: figures/"Submarine Hydrostatics".png Graphic file (type png)
 
 <use figures/"Submarine Hydrostatics".png>
 Package pdftex.def Info: figures/"Submarine Hydrostatics".png used on input lin
-e 178.
+e 182.
 (pdftex.def)             Requested size: 227.62204pt x 127.17766pt.
 
 <figures/"Submarine Design".png, id=90, 401.24907pt x 203.25937pt>
 File: figures/"Submarine Design".png Graphic file (type png)
 
 <use figures/"Submarine Design".png>
-Package pdftex.def Info: figures/"Submarine Design".png used on input line 187.
+Package pdftex.def Info: figures/"Submarine Design".png used on input line 191.
 
 (pdftex.def)             Requested size: 142.26378pt x 72.06607pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[16 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Owl Stealth.png
-> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Submarine Hydrost
-atics.png>] <figures/"Currents".png, id=96, 626.34pt x 469.00218pt>
+ [16 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Owl Stealth.pn
+g> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Submarine Hydros
+tatics.png>]
+<figures/"Currents".png, id=96, 626.34pt x 469.00218pt>
 File: figures/"Currents".png Graphic file (type png)
 
 <use figures/"Currents".png>
-Package pdftex.def Info: figures/"Currents".png used on input line 199.
+Package pdftex.def Info: figures/"Currents".png used on input line 204.
 (pdftex.def)             Requested size: 142.26378pt x 106.52283pt.
 
 
@@ -465,73 +462,78 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 [19]
 Phase 3.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
 [20
 
-] <figures/"Ctrl Volume A".png, id=116, 415.5525pt x 136.25906pt>
+] <figures/"Ctrl Volume A".png, id=113, 415.5525pt x 136.25906pt>
 File: figures/"Ctrl Volume A".png Graphic file (type png)
 
 <use figures/"Ctrl Volume A".png>
-Package pdftex.def Info: figures/"Ctrl Volume A".png used on input line 242.
+Package pdftex.def Info: figures/"Ctrl Volume A".png used on input line 249.
 (pdftex.def)             Requested size: 415.55148pt x 136.25871pt.
 
-<figures/"Eqn A".png, id=117, 387.69844pt x 81.30376pt>
+<figures/"Eqn A".png, id=114, 387.69844pt x 81.30376pt>
 File: figures/"Eqn A".png Graphic file (type png)
 
 <use figures/"Eqn A".png>
-Package pdftex.def Info: figures/"Eqn A".png used on input line 247.
+Package pdftex.def Info: figures/"Eqn A".png used on input line 254.
 (pdftex.def)             Requested size: 387.69748pt x 81.30354pt.
- [21 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Ctrl Volume A.
-png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn A.png>]
-<figures/"Control Volume B".png, id=124, 301.125pt x 146.04562pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21] [22 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Ctrl Volum
+e A.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn A.png>
+] <figures/"Control Volume B".png, id=127, 301.125pt x 146.04562pt>
 File: figures/"Control Volume B".png Graphic file (type png)
 
 <use figures/"Control Volume B".png>
-Package pdftex.def Info: figures/"Control Volume B".png used on input line 290.
+Package pdftex.def Info: figures/"Control Volume B".png used on input line 297.
 
 (pdftex.def)             Requested size: 301.12425pt x 146.04524pt.
 
-<figures/"Eqn B".png, id=125, 387.69844pt x 92.59593pt>
+<figures/"Eqn B".png, id=128, 387.69844pt x 92.59593pt>
 File: figures/"Eqn B".png Graphic file (type png)
 
 <use figures/"Eqn B".png>
-Package pdftex.def Info: figures/"Eqn B".png used on input line 295.
+Package pdftex.def Info: figures/"Eqn B".png used on input line 302.
 (pdftex.def)             Requested size: 387.69748pt x 92.59569pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[22] <figures/"Nozzel Minor Losses".jpg, id=131, 402.00188pt x 336.50719pt>
+<figures/"Nozzel Minor Losses".jpg, id=129, 402.00188pt x 336.50719pt>
 File: figures/"Nozzel Minor Losses".jpg Graphic file (type jpg)
 
 <use figures/"Nozzel Minor Losses".jpg>
 Package pdftex.def Info: figures/"Nozzel Minor Losses".jpg used on input line 3
-05.
+12.
 (pdftex.def)             Requested size: 227.62204pt x 190.53767pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/"Control Volume C".png, id=132, 331.99031pt x 187.45032pt>
+ [23 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volume
+ B.png>]
+<figures/"Control Volume C".png, id=135, 331.99031pt x 187.45032pt>
 File: figures/"Control Volume C".png Graphic file (type png)
 
 <use figures/"Control Volume C".png>
-Package pdftex.def Info: figures/"Control Volume C".png used on input line 313.
+Package pdftex.def Info: figures/"Control Volume C".png used on input line 320.
 
 (pdftex.def)             Requested size: 331.98949pt x 187.44984pt.
 
-<figures/"Eqn C".png, id=133, 423.08063pt x 72.27pt>
+<figures/"Eqn C".png, id=136, 423.08063pt x 72.27pt>
 File: figures/"Eqn C".png Graphic file (type png)
  <use figures/"Eqn C".png>
-Package pdftex.def Info: figures/"Eqn C".png used on input line 318.
+Package pdftex.def Info: figures/"Eqn C".png used on input line 325.
 (pdftex.def)             Requested size: 423.07959pt x 72.2698pt.
 
 
@@ -540,22 +542,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/"Control Volume D".png, id=134, 434.37282pt x 155.83218pt>
+<figures/"Control Volume D".png, id=137, 434.37282pt x 155.83218pt>
 File: figures/"Control Volume D".png Graphic file (type png)
 
 <use figures/"Control Volume D".png>
-Package pdftex.def Info: figures/"Control Volume D".png used on input line 327.
+Package pdftex.def Info: figures/"Control Volume D".png used on input line 334.
 
 (pdftex.def)             Requested size: 434.37175pt x 155.8318pt.
 
-<figures/"Eqn D".png, id=135, 450.18187pt x 68.50594pt>
+<figures/"Eqn D".png, id=138, 450.18187pt x 68.50594pt>
 File: figures/"Eqn D".png Graphic file (type png)
 
 <use figures/"Eqn D".png>
-Package pdftex.def Info: figures/"Eqn D".png used on input line 332.
+Package pdftex.def Info: figures/"Eqn D".png used on input line 339.
 (pdftex.def)             Requested size: 450.18077pt x 68.50577pt.
- [23 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volume
- B.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn B.png>]
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -563,36 +563,97 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Nozzel Minor Lo
-sses.jpg>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[25 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volume 
-C.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn C.png>]
+[24 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn B.png> <E:/
+Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Nozzel Minor Losses.jpg
+>] [25 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volu
+me C.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn C.png
+>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [26 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volume 
 D.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn D.png>]
+[27]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [28] <figures/"Pressure Hull".jpg, id=155, 765.6103pt x 560.0925pt>
+File: figures/"Pressure Hull".jpg Graphic file (type jpg)
+
+<use figures/"Pressure Hull".jpg>
+Package pdftex.def Info: figures/"Pressure Hull".jpg used on input line 446.
+(pdftex.def)             Requested size: 227.62204pt x 166.51634pt.
+
+<figures/"PHFront".jpg, id=156, 225.0225pt x 126.801pt>
+File: figures/"PHFront".jpg Graphic file (type jpg)
+
+<use figures/"PHFront".jpg>
+Package pdftex.def Info: figures/"PHFront".jpg used on input line 452.
+(pdftex.def)             Requested size: 227.62204pt x 128.2692pt.
+
+<figures/"CameraDome".jpg, id=157, 228.3075pt x 128.4435pt>
+File: figures/"CameraDome".jpg Graphic file (type jpg)
+
+<use figures/"CameraDome".jpg>
+Package pdftex.def Info: figures/"CameraDome".jpg used on input line 453.
+(pdftex.def)             Requested size: 227.62204pt x 128.06296pt.
+
+<figures/"standoffs".jpg, id=158, 234.2205pt x 131.7285pt>
+File: figures/"standoffs".jpg Graphic file (type jpg)
+
+<use figures/"standoffs".jpg>
+Package pdftex.def Info: figures/"standoffs".jpg used on input line 459.
+(pdftex.def)             Requested size: 227.62204pt x 128.01767pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-[27] [28] [29] [30] [31]
+<figures/"tray".jpg, id=159, 228.9645pt x 128.772pt>
+File: figures/"tray".jpg Graphic file (type jpg)
+ <use figures/"tray".jpg>
+Package pdftex.def Info: figures/"tray".jpg used on input line 465.
+(pdftex.def)             Requested size: 227.62204pt x 128.02107pt.
+
+<figures/"brains".jpg, id=160, 229.95pt x 129.429pt>
+File: figures/"brains".jpg Graphic file (type jpg)
+
+<use figures/"brains".jpg>
+Package pdftex.def Info: figures/"brains".jpg used on input line 466.
+(pdftex.def)             Requested size: 227.62204pt x 128.12521pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Pressure Hull.j
+pg> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/PHFront.jpg> <E
+:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/CameraDome.jpg>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
+
+[31 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/standoffs.jpg> 
+<E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/tray.jpg> <E:/Users
+/Ben/Documents/GitHub/Shiela2/Final Report/figures/brains.jpg>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
  [32]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -602,29 +663,80 @@ Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
  [33]
+[34]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ <figures/"guiOrientation".png, id=180, 487.8225pt x 372.64218pt>
+File: figures/"guiOrientation".png Graphic file (type png)
+
+<use figures/"guiOrientation".png>
+Package pdftex.def Info: figures/"guiOrientation".png used on input line 564.
+(pdftex.def)             Requested size: 227.62204pt x 173.87953pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[35]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [36 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/guiOrientation
+.png>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [37]
 Appendix A.
-[34
+[38
 
 ]
 Appendix B.
-[35
+[39
 
 ]
 Appendix C.
-[36
+[40
 
-] [37
+] [41
 
 ] ("E:\Users\Ben\Documents\GitHub\Shiela2\Final Report\Final Report.aux") ) 
 Here is how much of TeX's memory you used:
- 3196 strings out of 493921
- 44955 string characters out of 3145684
- 109886 words of memory out of 3000000
- 6437 multiletter control sequences out of 15000+200000
+ 3237 strings out of 493921
+ 45882 string characters out of 3145684
+ 114902 words of memory out of 3000000
+ 6471 multiletter control sequences out of 15000+200000
  10581 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 37i,17n,39p,1319b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,17n,39p,2073b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/
 New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/New 
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/New Prog
@@ -641,9 +753,9 @@ nts/cm/cmsy10.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmsy5.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sy7.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.
 pfb>
-Output written on "Final Report.pdf" (38 pages, 7347213 bytes).
+Output written on "Final Report.pdf" (42 pages, 8111342 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
+ 252 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

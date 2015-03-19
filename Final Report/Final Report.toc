@@ -36,54 +36,57 @@
 \contentsline {subsection}{\numberline {2.4.22}Submarine Design Process}{17}
 \contentsline {subsection}{\numberline {2.4.23}Buoyancy Control}{17}
 \contentsline {subsection}{\numberline {2.4.24}Underwater Coatings}{17}
-\contentsline {subsection}{\numberline {2.4.25}Currents}{17}
+\contentsline {subsection}{\numberline {2.4.25}Currents}{18}
 \contentsline {section}{\numberline {2.5}TeamUV.org}{18}
 \contentsline {section}{\numberline {2.6}Summer Testing}{18}
 \contentsline {chapter}{\numberline {3}Final Prototype Design and Manufacture, DORY}{20}
 \contentsline {section}{\numberline {3.1}Lessons Learned}{20}
-\contentsline {section}{\numberline {3.2}Subsystem Decomposition}{20}
-\contentsline {subsection}{\numberline {3.2.1}Propulsor}{20}
-\contentsline {subsubsection}{Control Volumes}{20}
+\contentsline {section}{\numberline {3.2}Subsystem Decomposition}{21}
+\contentsline {subsection}{\numberline {3.2.1}Propulsor}{21}
+\contentsline {subsubsection}{Control Volumes}{21}
 \contentsline {paragraph}{Control Volume A}{21}
-\contentsline {paragraph}{Control Volume B}{22}
-\contentsline {paragraph}{Control Volume C}{23}
+\contentsline {paragraph}{Control Volume B}{23}
+\contentsline {paragraph}{Control Volume C}{24}
 \contentsline {paragraph}{Control Volume D}{24}
-\contentsline {paragraph}{Integration of Control Volumes}{24}
-\contentsline {subsubsection}{MatLab Code}{25}
-\contentsline {subsubsection}{Excel Narrowing of Results}{27}
-\contentsline {subsubsection}{CFD}{27}
-\contentsline {subsubsection}{Manufacturing}{28}
+\contentsline {paragraph}{Integration of Control Volumes}{25}
+\contentsline {subsubsection}{MatLab Code}{26}
+\contentsline {subsubsection}{Excel Narrowing of Results}{28}
+\contentsline {subsubsection}{CFD}{28}
+\contentsline {subsubsection}{Manufacturing}{29}
 \contentsline {subsection}{\numberline {3.2.2}Body}{29}
 \contentsline {subsection}{\numberline {3.2.3}Control Surfaces}{29}
 \contentsline {subsection}{\numberline {3.2.4}Buoyancy Control}{29}
 \contentsline {subsection}{\numberline {3.2.5}Pressure Hull}{29}
-\contentsline {subsection}{\numberline {3.2.6}Drive Train}{29}
-\contentsline {subsection}{\numberline {3.2.7}Sealing}{29}
-\contentsline {subsection}{\numberline {3.2.8}Electronics}{29}
-\contentsline {subsubsection}{Sensors}{29}
-\contentsline {paragraph}{Inertial Measurement Unit}{29}
-\contentsline {section}{\numberline {3.3}Programming}{29}
-\contentsline {subsection}{\numberline {3.3.1}Firmware}{29}
-\contentsline {subsubsection}{Inertial Measurement Unit}{29}
-\contentsline {paragraph}{Initial Filtering}{30}
-\contentsline {paragraph}{Orientation}{30}
-\contentsline {paragraph}{Acceleration of the Vehicle}{30}
-\contentsline {paragraph}{Velocity and Position}{30}
-\contentsline {paragraph}{Error Analysis}{31}
-\contentsline {subsection}{\numberline {3.3.2}Software, The Graphical User Interface}{31}
-\contentsline {subsubsection}{Video Box}{31}
-\contentsline {subsubsection}{The Orientation Model}{31}
-\contentsline {subsubsection}{The Map}{31}
-\contentsline {subsubsection}{The Control Screen}{31}
-\contentsline {section}{\numberline {3.4}Fundraising, Pricing, Time Decomposition}{32}
-\contentsline {section}{\numberline {3.5}Testing}{32}
-\contentsline {section}{\numberline {3.6}Conferences}{32}
-\contentsline {section}{\numberline {3.7}CVs and Team Bios}{32}
-\contentsline {subsection}{\numberline {3.7.1}Ben}{32}
-\contentsline {subsection}{\numberline {3.7.2}Brian}{32}
-\contentsline {subsection}{\numberline {3.7.3}Andrew}{32}
-\contentsline {subsection}{\numberline {3.7.4}Ketton}{33}
-\contentsline {subsection}{\numberline {3.7.5}Abraham}{33}
-\contentsline {chapter}{\numberline {A}Phase I Report}{34}
-\contentsline {chapter}{\numberline {B}Presentation Format}{35}
-\contentsline {chapter}{\numberline {C}Electronics Data Sheets}{36}
+\contentsline {subsection}{\numberline {3.2.6}Drive Train}{32}
+\contentsline {subsection}{\numberline {3.2.7}Sealing}{32}
+\contentsline {subsection}{\numberline {3.2.8}Electronics}{32}
+\contentsline {subsubsection}{Motor Controller}{32}
+\contentsline {subsubsection}{Micro SD Card Breakout Board}{32}
+\contentsline {subsubsection}{Camera}{32}
+\contentsline {subsubsection}{Inertial Measurement Unit}{32}
+\contentsline {subsubsection}{Batteries, Charging, and Power Budgeting}{33}
+\contentsline {section}{\numberline {3.3}Programming}{33}
+\contentsline {subsection}{\numberline {3.3.1}Firmware}{33}
+\contentsline {subsubsection}{Inertial Measurement Unit}{33}
+\contentsline {paragraph}{Initial Filtering}{34}
+\contentsline {paragraph}{Orientation}{34}
+\contentsline {paragraph}{Acceleration of the Vehicle}{34}
+\contentsline {paragraph}{Velocity and Position}{34}
+\contentsline {paragraph}{Error Analysis}{35}
+\contentsline {subsection}{\numberline {3.3.2}Software, The Graphical User Interface}{35}
+\contentsline {subsubsection}{Video Box}{35}
+\contentsline {subsubsection}{The Orientation Model}{35}
+\contentsline {subsubsection}{The Map}{35}
+\contentsline {subsubsection}{The Control Screen}{36}
+\contentsline {section}{\numberline {3.4}Fundraising, Pricing, Time Decomposition}{36}
+\contentsline {section}{\numberline {3.5}Testing}{36}
+\contentsline {section}{\numberline {3.6}Conferences}{36}
+\contentsline {section}{\numberline {3.7}CVs and Team Bios}{36}
+\contentsline {subsection}{\numberline {3.7.1}Ben}{36}
+\contentsline {subsection}{\numberline {3.7.2}Brian}{37}
+\contentsline {subsection}{\numberline {3.7.3}Andrew}{37}
+\contentsline {subsection}{\numberline {3.7.4}Ketton}{37}
+\contentsline {subsection}{\numberline {3.7.5}Abraham}{37}
+\contentsline {chapter}{\numberline {A}Phase I Report}{38}
+\contentsline {chapter}{\numberline {B}Presentation Format}{39}
+\contentsline {chapter}{\numberline {C}Electronics Data Sheets}{40}
