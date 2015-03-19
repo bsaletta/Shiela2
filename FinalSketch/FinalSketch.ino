@@ -44,7 +44,7 @@ const char* saveFile="03181501.txt"; //file name for this run
 #define gMin 2 //dps
 #define gDeviation 0.035 //acceptable deviation from 1g as gravity
 #define Gc 32.174 //Gravitational Constant
-#define mbuffer 10//magnometer buffer size
+#define mbuffer 5//magnometer buffer size
 //#define headingTolerance 100 //degrees deviation between readings
 #define declination -12.15//declination in area of test
 #define truncateValue 1000000 //truncate values smaller than 1/this 
