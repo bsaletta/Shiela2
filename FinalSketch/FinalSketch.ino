@@ -9,7 +9,7 @@
 //const int chipSelect = 10;
 //Establish MotorShield Mode
 SabertoothSimplified ST;
-const char* saveFile="03141501.txt"; //file name for this run
+const char* saveFile="03181501.txt"; //file name for this run
 
 //Arduino Hookup Pins-------------------------
 //PWM: 3,5,6,9,10,11
@@ -121,7 +121,7 @@ void setup() {
   
   
   //LOOK HERE VVVVV
-  delay(1000);//GRENADE FUSE TIMER HERE!!!!
+  delay(10000);//GRENADE FUSE TIMER HERE!!!!
  //^^^^^^^^^^^^^^^ 
   
   now=micros();
