@@ -1,17 +1,22 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  18 MAR 2015 09:47
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.25)  17 MAR 2015 17:48
->>>>>>> origin/master
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  18 MAR 2015 17:49
 entering extended mode
-**"C:/Users/bdsal_000/Documents/GitHub/Shiela2/Final Report/Final Report.tex"
-("C:/Users/bdsal_000/Documents/GitHub/Shiela2/Final Report/Final Report.tex"
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 68 languages loaded.
-(D:\TeX\tex\latex\base\report.cls
-Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-(D:\TeX\tex\latex\base\size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+**Final*Report.tex
+("E:\Users\Ben\Documents\GitHub\Shiela2\Final Report\Final Report.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("E:\New Program Files\MiKTeX 2.9\tex/latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("E:\New Program Files\MiKTeX 2.9\tex/latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -25,93 +30,201 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (D:\TeX\tex\latex\preprint\fullpage.sty
+)
+("E:\New Program Files\MiKTeX 2.9\tex/latex\preprint\fullpage.sty"
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip43
 )
-(D:\TeX\tex\latex\graphics\graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
- (D:\TeX\tex\latex\graphics\keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+("E:\New Program Files\MiKTeX 2.9\tex/latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("E:\New Program Files\MiKTeX 2.9\tex/latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(D:\TeX\tex\latex\graphics\graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
- (D:\TeX\tex\latex\graphics\trig.sty
+("E:\New Program Files\MiKTeX 2.9\tex/latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("E:\New Program Files\MiKTeX 2.9\tex/latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(D:\TeX\tex\latex\00miktex\graphics.cfg
+("E:\New Program Files\MiKTeX 2.9\tex/latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(D:\TeX\tex\latex\pdftex-def\pdftex.def
+("E:\New Program Files\MiKTeX 2.9\tex/latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(D:\TeX\tex\generic\oberdiek\infwarerr.sty
+("E:\New Program Files\MiKTeX 2.9\tex/generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(D:\TeX\tex\generic\oberdiek\ltxcmds.sty
+("E:\New Program Files\MiKTeX 2.9\tex/generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
-) ("Final Report.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-
-(D:\TeX\tex\context\base\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count89
-\scratchdimen=\dimen105
-\scratchbox=\box26
-\nofMPsegments=\count90
-\nofMParguments=\count91
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count92
-\MPscratchDim=\dimen106
-\MPnumerator=\count93
-\makeMPintoPDFobject=\count94
-\everyMPtoPDFconversion=\toks16
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 11.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 11.
+("E:\New Program Files\MiKTeX 2.9\tex/latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+
+("E:\New Program Files\MiKTeX 2.9\tex/latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("E:\New Program Files\MiKTeX 2.9\tex/latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count89
+\calc@Bcount=\count90
+\calc@Adimen=\dimen105
+\calc@Bdimen=\dimen106
+\calc@Askip=\skip44
+\calc@Bskip=\skip45
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count91
+\calc@Cskip=\skip46
+)
+("E:\New Program Files\MiKTeX 2.9\tex/latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+("E:\New Program Files\MiKTeX 2.9\tex/generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+("E:\New Program Files\MiKTeX 2.9\tex/generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+("E:\New Program Files\MiKTeX 2.9\tex/latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("E:\New Program Files\MiKTeX 2.9\tex/latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+("E:\New Program Files\MiKTeX 2.9\tex/latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box26
+\AM@toc@title=\toks15
+\c@AM@survey=\count92
+\AM@templatesizebox=\box27
+)
+("E:\New Program Files\MiKTeX 2.9\tex/latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+("E:\New Program Files\MiKTeX 2.9\tex/latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("E:\New Program Files\MiKTeX 2.9\tex/latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen107
+))
+("E:\New Program Files\MiKTeX 2.9\tex/latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen108
+)
+("E:\New Program Files\MiKTeX 2.9\tex/latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen109
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
+\dotsspace@=\muskip10
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
+\tag@help=\toks17
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
+\andhelp@=\toks18
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks19
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("E:\Users\Ben\Documents\GitHub\Shiela2\Final Report\Final Report.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+
+("E:\New Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count105
+\scratchdimen=\dimen116
+\scratchbox=\box30
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen117
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
+\everyMPtoPDFconversion=\toks22
+)
+\AtBeginShipoutBox=\box31
  [1
 
-{D:/TeX/pdftex/config/pdftex.map}] ("Final Report.toc"
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
- [1
+{C:/Users/Ben/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("E:\Users\Ben\Documents\GitHub\Shiela2\Final Report\Final Report.toc" [1
 
 ])
 \tf@toc=\write3
- [2]
-("Final Report.lof")
+
+[2] ("E:\Users\Ben\Documents\GitHub\Shiela2\Final Report\Final Report.lof")
 \tf@lof=\write4
- [3
+
+[3
 
 ]
- 1.
+Phase 1.
 
-Overfull \hbox (2.2726pt too wide) in paragraph at lines 16--17
+Overfull \hbox (2.2726pt too wide) in paragraph at lines 19--20
 \OT1/cmr/m/n/10 SHEILA-D stands for Sub-aquatic Hy-dro-dy-nam-i-caly pro-pelled
  Ex-plorer Im-ple-men-ta-tion Los An-ge-les - Demon-
  []
@@ -122,10 +235,11 @@ Overfull \hbox (2.2726pt too wide) in paragraph at lines 16--17
 File: figures/"Section View".png Graphic file (type png)
 
 <use figures/"Section View".png>
-Package pdftex.def Info: figures/"Section View".png used on input line 27.
+Package pdftex.def Info: figures/"Section View".png used on input line 30.
 (pdftex.def)             Requested size: 426.79134pt x 138.85141pt.
- [5 <./figures/Section View.png>] [6]
- 2.
+ [5 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Section View.pn
+g>] [6]
+Phase 2.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -138,14 +252,14 @@ Missing character: There is no ù in font cmr10!
 File: figures/"Shark Skin".png Graphic file (type png)
 
 <use figures/"Shark Skin".png>
-Package pdftex.def Info: figures/"Shark Skin".png used on input line 48.
+Package pdftex.def Info: figures/"Shark Skin".png used on input line 51.
 (pdftex.def)             Requested size: 142.26378pt x 96.38692pt.
 
 <figures/"Vantablack".png, id=35, 477.28313pt x 392.21532pt>
 File: figures/"Vantablack".png Graphic file (type png)
 
 <use figures/"Vantablack".png>
-Package pdftex.def Info: figures/"Vantablack".png used on input line 56.
+Package pdftex.def Info: figures/"Vantablack".png used on input line 59.
 (pdftex.def)             Requested size: 142.26378pt x 116.90544pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -158,21 +272,22 @@ Missing character: There is no ù in font cmr10!
 File: figures/"Cephalopod Skin".png Graphic file (type png)
 
 <use figures/"Cephalopod Skin".png>
-Package pdftex.def Info: figures/"Cephalopod Skin".png used on input line 64.
+Package pdftex.def Info: figures/"Cephalopod Skin".png used on input line 67.
 (pdftex.def)             Requested size: 142.26378pt x 94.65254pt.
- [8 <./figures/Shark Skin.png> <./figures/Vantablack.png>] <figures/"Potting".p
-ng, id=42, 392.21532pt x 602.25pt>
+ [8 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Shark Skin.png>
+ <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Vantablack.png>]
+<figures/"Potting".png, id=42, 392.21532pt x 602.25pt>
 File: figures/"Potting".png Graphic file (type png)
 
 <use figures/"Potting".png>
-Package pdftex.def Info: figures/"Potting".png used on input line 72.
+Package pdftex.def Info: figures/"Potting".png used on input line 75.
 (pdftex.def)             Requested size: 113.81102pt x 174.7583pt.
 
 <figures/"Conformal Coating".png, id=43, 225.84375pt x 148.30406pt>
 File: figures/"Conformal Coating".png Graphic file (type png)
 
 <use figures/"Conformal Coating".png>
-Package pdftex.def Info: figures/"Conformal Coating".png used on input line 73.
+Package pdftex.def Info: figures/"Conformal Coating".png used on input line 76.
 
 (pdftex.def)             Requested size: 170.71652pt x 112.11029pt.
 
@@ -180,7 +295,7 @@ Package pdftex.def Info: figures/"Conformal Coating".png used on input line 73.
 File: figures/"Arduino UNO".png Graphic file (type png)
 
 <use figures/"Arduino UNO".png>
-Package pdftex.def Info: figures/"Arduino UNO".png used on input line 80.
+Package pdftex.def Info: figures/"Arduino UNO".png used on input line 83.
 (pdftex.def)             Requested size: 142.26378pt x 61.45073pt.
 
 
@@ -189,30 +304,33 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-[9 <./figures/Cephalopod Skin.png> <./figures/Potting.png> <./figures/Conformal
- Coating.png>]
+[9 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Cephalopod Skin.
+png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Potting.png> <
+E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Conformal Coating.pn
+g>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [10 <./figures/Arduino UNO.png>]
-<figures/"CLT".png, id=55, 722.7pt x 542.025pt>
+ [10 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Arduino UNO.pn
+g>] <figures/"CLT".png, id=55, 722.7pt x 542.025pt>
 File: figures/"CLT".png Graphic file (type png)
  <use figures/"CLT".png>
-Package pdftex.def Info: figures/"CLT".png used on input line 97.
+Package pdftex.def Info: figures/"CLT".png used on input line 100.
 (pdftex.def)             Requested size: 142.26378pt x 106.69933pt.
 
 <figures/"Smart Duct".png, id=56, 150.5625pt x 263.48438pt>
 File: figures/"Smart Duct".png Graphic file (type png)
 
 <use figures/"Smart Duct".png>
-Package pdftex.def Info: figures/"Smart Duct".png used on input line 104.
+Package pdftex.def Info: figures/"Smart Duct".png used on input line 107.
 (pdftex.def)             Requested size: 142.26378pt x 248.986pt.
- [11 <./figures/CLT.png> <./figures/Smart Duct.png>] <figures/"Vortex Generator
-s".png, id=62, 414.04688pt x 196.48407pt>
+ [11 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/CLT.png> <E:/U
+sers/Ben/Documents/GitHub/Shiela2/Final Report/figures/Smart Duct.png>]
+<figures/"Vortex Generators".png, id=62, 414.04688pt x 196.48407pt>
 File: figures/"Vortex Generators".png Graphic file (type png)
 
 <use figures/"Vortex Generators".png>
-Package pdftex.def Info: figures/"Vortex Generators".png used on input line 111
+Package pdftex.def Info: figures/"Vortex Generators".png used on input line 114
 .
 (pdftex.def)             Requested size: 142.26378pt x 67.51125pt.
 
@@ -220,14 +338,16 @@ Package pdftex.def Info: figures/"Vortex Generators".png used on input line 111
 File: figures/"Wanda II".png Graphic file (type png)
 
 <use figures/"Wanda II".png>
-Package pdftex.def Info: figures/"Wanda II".png used on input line 118.
+Package pdftex.def Info: figures/"Wanda II".png used on input line 121.
 (pdftex.def)             Requested size: 142.26378pt x 107.55977pt.
- [12 <./figures/Vortex Generators.png> <./figures/Wanda II.png>] <figures/"Pitc
-h Roll Yaw".png, id=70, 602.25pt x 390.70969pt>
+ [12 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Vortex Generat
+ors.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Wanda II.p
+ng>]
+<figures/"Pitch Roll Yaw".png, id=70, 602.25pt x 390.70969pt>
 File: figures/"Pitch Roll Yaw".png Graphic file (type png)
 
 <use figures/"Pitch Roll Yaw".png>
-Package pdftex.def Info: figures/"Pitch Roll Yaw".png used on input line 125.
+Package pdftex.def Info: figures/"Pitch Roll Yaw".png used on input line 128.
 (pdftex.def)             Requested size: 142.26378pt x 92.29372pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -243,7 +363,7 @@ Missing character: There is no ù in font cmr10!
 File: figures/"Submarine Stealth".png Graphic file (type png)
 
 <use figures/"Submarine Stealth".png>
-Package pdftex.def Info: figures/"Submarine Stealth".png used on input line 134
+Package pdftex.def Info: figures/"Submarine Stealth".png used on input line 137
 .
 (pdftex.def)             Requested size: 142.26378pt x 98.30319pt.
 Missing character: There is no ‚ in font cmr10!
@@ -252,67 +372,72 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [13 <./figures/Pitch Roll Yaw.png> <./figures/Submarine Stealth.png>]
+ [13 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Pitch Roll Yaw
+.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Submarine Ste
+alth.png>]
 <figures/"Test Tank".png, id=77, 336.50719pt x 224.33812pt>
 File: figures/"Test Tank".png Graphic file (type png)
 
 <use figures/"Test Tank".png>
-Package pdftex.def Info: figures/"Test Tank".png used on input line 147.
+Package pdftex.def Info: figures/"Test Tank".png used on input line 150.
 (pdftex.def)             Requested size: 142.26378pt x 94.84094pt.
- [14 <./figures/Test Tank.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 154.
+ [14 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Test Tank.png>
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 157.
 
 
-(D:\TeX\tex\latex\base\omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+("E:\New Program Files\MiKTeX 2.9\tex/latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 154.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 157.
 
 <figures/"Thrust Augmentation".png, id=82, 192.72pt x 295.1025pt>
 File: figures/"Thrust Augmentation".png Graphic file (type png)
 
 <use figures/"Thrust Augmentation".png>
 Package pdftex.def Info: figures/"Thrust Augmentation".png used on input line 1
-60.
+63.
 (pdftex.def)             Requested size: 142.26378pt x 217.84106pt.
 
 <figures/"Owl Stealth".png, id=83, 395.97937pt x 222.8325pt>
 File: figures/"Owl Stealth".png Graphic file (type png)
 
 <use figures/"Owl Stealth".png>
-Package pdftex.def Info: figures/"Owl Stealth".png used on input line 167.
+Package pdftex.def Info: figures/"Owl Stealth".png used on input line 170.
 (pdftex.def)             Requested size: 227.62204pt x 128.09369pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15 <./figures/Thrust Augmentation.png>]
+[15 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Thrust Augmenta
+tion.png>]
 <figures/"Submarine Hydrostatics".png, id=89, 371.88937pt x 207.77625pt>
 File: figures/"Submarine Hydrostatics".png Graphic file (type png)
 
 <use figures/"Submarine Hydrostatics".png>
 Package pdftex.def Info: figures/"Submarine Hydrostatics".png used on input lin
-e 175.
+e 178.
 (pdftex.def)             Requested size: 227.62204pt x 127.17766pt.
 
 <figures/"Submarine Design".png, id=90, 401.24907pt x 203.25937pt>
 File: figures/"Submarine Design".png Graphic file (type png)
 
 <use figures/"Submarine Design".png>
-Package pdftex.def Info: figures/"Submarine Design".png used on input line 184.
+Package pdftex.def Info: figures/"Submarine Design".png used on input line 187.
 
 (pdftex.def)             Requested size: 142.26378pt x 72.06607pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16 <./figures/Owl Stealth.png> <./figures/Submarine Hydrostatics.png>]
-<figures/"Currents".png, id=96, 626.34pt x 469.00218pt>
+[16 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Owl Stealth.png
+> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Submarine Hydrost
+atics.png>] <figures/"Currents".png, id=96, 626.34pt x 469.00218pt>
 File: figures/"Currents".png Graphic file (type png)
 
 <use figures/"Currents".png>
-Package pdftex.def Info: figures/"Currents".png used on input line 196.
+Package pdftex.def Info: figures/"Currents".png used on input line 199.
 (pdftex.def)             Requested size: 142.26378pt x 106.52283pt.
 
 
@@ -324,7 +449,8 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-[17 <./figures/Submarine Design.png>]
+[17 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Submarine Desig
+n.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -334,38 +460,39 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [18 <./figures/Currents.png>]
+ [18 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Currents.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
 [19]
- 3.
+Phase 3.
 [20
 
 ] <figures/"Ctrl Volume A".png, id=116, 415.5525pt x 136.25906pt>
 File: figures/"Ctrl Volume A".png Graphic file (type png)
 
 <use figures/"Ctrl Volume A".png>
-Package pdftex.def Info: figures/"Ctrl Volume A".png used on input line 239.
+Package pdftex.def Info: figures/"Ctrl Volume A".png used on input line 242.
 (pdftex.def)             Requested size: 415.55148pt x 136.25871pt.
 
 <figures/"Eqn A".png, id=117, 387.69844pt x 81.30376pt>
 File: figures/"Eqn A".png Graphic file (type png)
 
 <use figures/"Eqn A".png>
-Package pdftex.def Info: figures/"Eqn A".png used on input line 244.
+Package pdftex.def Info: figures/"Eqn A".png used on input line 247.
 (pdftex.def)             Requested size: 387.69748pt x 81.30354pt.
- [21 <./figures/Ctrl Volume A.png> <./figures/Eqn A.png>] <figures/"Control Vol
-ume B".png, id=124, 301.125pt x 146.04562pt>
+ [21 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Ctrl Volume A.
+png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn A.png>]
+<figures/"Control Volume B".png, id=124, 301.125pt x 146.04562pt>
 File: figures/"Control Volume B".png Graphic file (type png)
 
 <use figures/"Control Volume B".png>
-Package pdftex.def Info: figures/"Control Volume B".png used on input line 287.
+Package pdftex.def Info: figures/"Control Volume B".png used on input line 290.
 
 (pdftex.def)             Requested size: 301.12425pt x 146.04524pt.
 
@@ -373,7 +500,7 @@ Package pdftex.def Info: figures/"Control Volume B".png used on input line 287.
 File: figures/"Eqn B".png Graphic file (type png)
 
 <use figures/"Eqn B".png>
-Package pdftex.def Info: figures/"Eqn B".png used on input line 292.
+Package pdftex.def Info: figures/"Eqn B".png used on input line 295.
 (pdftex.def)             Requested size: 387.69748pt x 92.59569pt.
 
 
@@ -387,7 +514,7 @@ File: figures/"Nozzel Minor Losses".jpg Graphic file (type jpg)
 
 <use figures/"Nozzel Minor Losses".jpg>
 Package pdftex.def Info: figures/"Nozzel Minor Losses".jpg used on input line 3
-02.
+05.
 (pdftex.def)             Requested size: 227.62204pt x 190.53767pt.
 
 
@@ -397,14 +524,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: figures/"Control Volume C".png Graphic file (type png)
 
 <use figures/"Control Volume C".png>
-Package pdftex.def Info: figures/"Control Volume C".png used on input line 310.
+Package pdftex.def Info: figures/"Control Volume C".png used on input line 313.
 
 (pdftex.def)             Requested size: 331.98949pt x 187.44984pt.
 
 <figures/"Eqn C".png, id=133, 423.08063pt x 72.27pt>
 File: figures/"Eqn C".png Graphic file (type png)
  <use figures/"Eqn C".png>
-Package pdftex.def Info: figures/"Eqn C".png used on input line 315.
+Package pdftex.def Info: figures/"Eqn C".png used on input line 318.
 (pdftex.def)             Requested size: 423.07959pt x 72.2698pt.
 
 
@@ -417,7 +544,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: figures/"Control Volume D".png Graphic file (type png)
 
 <use figures/"Control Volume D".png>
-Package pdftex.def Info: figures/"Control Volume D".png used on input line 324.
+Package pdftex.def Info: figures/"Control Volume D".png used on input line 327.
 
 (pdftex.def)             Requested size: 434.37175pt x 155.8318pt.
 
@@ -425,89 +552,98 @@ Package pdftex.def Info: figures/"Control Volume D".png used on input line 324.
 File: figures/"Eqn D".png Graphic file (type png)
 
 <use figures/"Eqn D".png>
-Package pdftex.def Info: figures/"Eqn D".png used on input line 329.
+Package pdftex.def Info: figures/"Eqn D".png used on input line 332.
 (pdftex.def)             Requested size: 450.18077pt x 68.50577pt.
- [23 <./figures/Control Volume B.png> <./figures/Eqn B.png>]
+ [23 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volume
+ B.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn B.png>]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24 <./figures/Nozzel Minor Losses.jpg>]
+[24 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Nozzel Minor Lo
+sses.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25 <./figures/Control Volume C.png> <./figures/Eqn C.png>]
+[25 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volume 
+C.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn C.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<<<<<<< HEAD
 [26 <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Control Volume 
 D.png> <E:/Users/Ben/Documents/GitHub/Shiela2/Final Report/figures/Eqn D.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 
-[27] [28] [29
-=======
-[26 <./figures/Control Volume D.png> <./figures/Eqn D.png>]
+[27] [28] [29] [30] [31]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [27] [28] [29
->>>>>>> origin/master
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [32]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [33]
+Appendix A.
+[34
 
 ]
-("Final Report.aux") ) 
+Appendix B.
+[35
+
+]
+Appendix C.
+[36
+
+] [37
+
+] ("E:\Users\Ben\Documents\GitHub\Shiela2\Final Report\Final Report.aux") ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 1343 strings out of 493921
- 20247 string characters out of 3145684
- 71517 words of memory out of 3000000
- 4634 multiletter control sequences out of 15000+200000
- 9453 words of font info for 33 fonts, out of 3000000 for 9000
+ 3196 strings out of 493921
+ 44955 string characters out of 3145684
+ 109886 words of memory out of 3000000
+ 6437 multiletter control sequences out of 15000+200000
+ 10581 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,9n,23p,1129b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/Ne
-w Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/New Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/New Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/New Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/New Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><E:/New Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/New Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/New Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr12.pfb><E:/New Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr17.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr5.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr7.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy5.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-7.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pf
-b>
-Output written on "Final Report.pdf" (30 pages, 7303618 bytes).
-=======
- 1342 strings out of 493698
- 19084 string characters out of 3153006
- 74516 words of memory out of 3000000
- 4665 multiletter control sequences out of 15000+200000
- 9453 words of font info for 33 fonts, out of 3000000 for 9000
- 1025 hyphenation exceptions out of 8191
- 27i,9n,23p,1188b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/TeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/TeX
-/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/TeX/fonts/type1/public/amsfonts/
-cm/cmex10.pfb><D:/TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/TeX/fonts/t
-ype1/public/amsfonts/cm/cmmi5.pfb><D:/TeX/fonts/type1/public/amsfonts/cm/cmmi7.
-pfb><D:/TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/TeX/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><D:/TeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/TeX
-/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/TeX/fonts/type1/public/amsfonts/cm
-/cmr7.pfb><D:/TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/TeX/fonts/type1
-/public/amsfonts/cm/cmsy5.pfb><D:/TeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-<D:/TeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Final Report.pdf" (30 pages, 7082938 bytes).
->>>>>>> origin/master
+ 37i,17n,39p,1319b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/
+New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><E:/New 
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/New Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/New Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/New Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><E:/New Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/New Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/New Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><E:/New Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr5.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr7.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy5.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy7.pfb><E:/New Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.
+pfb>
+Output written on "Final Report.pdf" (38 pages, 7347213 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
+ 233 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

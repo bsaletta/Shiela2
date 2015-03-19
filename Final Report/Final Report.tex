@@ -1,17 +1,20 @@
 \documentclass{report}
 \usepackage{fullpage}
 \usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{amsmath}
 \graphicspath{{figures/}}
 \title{Design of An Innovative, Highly Maneuverable, Stealthy Unmanned Underwater Vehicle with ISR Capabilities }
 \setlength{\parindent}{4em}
 \author{Andrew Blancarte\\ Ketton James\\ Brian Martin\\ Abraham Paucar\\ Ben Saletta}
 \date{\today}
-\renewcommand{\chaptername}{}
+\renewcommand{\chaptername}{Phase}
+\renewcommand{\bibname}{References}
 \begin{document}
 \maketitle
 \tableofcontents
 \listoffigures
-\chapter{Phase I: Propulsor Development, SHEILA-D}
+\chapter{Propulsor Development, SHEILA-D}
 \section{Overview}
 SHEILA-D stands for Subaquatic Hydrodynamicaly propelled Explorer Implementation Los Angeles - Demonstrator. The driving force behind the development of this unmanned underwater vehicle is the innovative propulsion system. This system was the foundation of the first phase of development, a proof of concept for this screw based propulsion system. As this phase was a deliverable for a Machine Design Class there is a detailed overview of this phase included in appendix A. 
 \section{Constraints}
@@ -33,7 +36,7 @@ These motors required a significant amount of current at a constant 12 volts. Th
 The construction of this device was completed in a very short time span using commercial off the shelf components. This involved PVC pipes of various diameters, cutting and thermoforming sheets of acrylic, and fastening components with traditional fasteners as well as epoxy. As the construction proceeded difficulties were discovered and the design was adjusted to compensate for these problems. One of the major difficulties was the manufacture of the helix screw. This was solved by thermoforming cut acrylic then filling gaps created in the vanes with waterproof tape. Other adjustments and quick fixes were applied through out the process. The construction was a challenge to complete within the time frame at an acceptably low cost.  
 \section{Testing}
 Once construction was completed the device needed to be tested to confirm that the propulsion system did indeed propel the device through the water. To do the testing properly the vehicle was taken to the Puddingstone reservoir at dawn and ran along the deck of a boat dock. It took a few tests to get the device operational and, while the vehicle could not be set off on its own at this stage, it pumped a significant amount of water though the body and out the cone and nozzle assembly. Many things were learned about the design during the testing session and made note of for future design. The major lessons were that the assumptions that were made in the fluid calculations were wrong and that without control surfaces the vehicle would reach an equilibrium rotation state where the outermost cylinder would rotate and counter the rotation of the center cylinder. 
-\chapter{Phase II: Summer Research and Testing}
+\chapter{Summer Research and Testing}
 During the summer of 2014 the group members of Team UV did not entirely part ways for three months. The group decided that it would be in the best interest of the group and design itself to meet twice a month where each member would give presentation on standard material along with research they have found during the two week period between meetings. These meetings started in June of 2014 and ended when the 2014 Fall period started, September 2014.  Each of the meetings held were roughly five to seven hours long. The format of the presentations were standardized however each member provided their own research and information. Presentation format can be found in appendix B. In the summer of 2014 Team UV spent roughly 240 hours as a group towards the senior project itself. That number includes research done outside of the meeting along with the meetings themselves. The PowerPoint presentations contained three sections.
 \section{Open Mind}
 The group was given a situation/problem that has or could happen in the world we live in today and each member had to give insight or propose a solution to the problem/situation. Each member were asked to provide their solution along with reasoning  as to why their solution would be efficient. Since Team UV are composed of mechanical engineering undergraduates, the solutions based on the prompts were required to use some aspect of engineering. For example, one open mind prompt addressed the issue that many people in developing countries lack the access to power. The group was asked if they were tasked with developing an inexpensive “do it yourself” power generation system for use in a 3rd world country, what kind of engineering considerations might you take into account. The idea behind the open mind prompt was to keep the group members mind engaged during the break and keep that engineering mentality sparked. Also, this prompt was to have the members think outside the box and to aid in developing creative/innovative ideas for use in the senior project design.
@@ -205,7 +208,7 @@ Establishing TeamUV.org was the obvious next step after a Summer filled with pro
 \section{Summer Testing}
 Along with delving into Summer research pertaining to many aspects of engineering design, Team UV also performed a couple of tests.  Another trip to Sailboat Cove was made to test the benefits of attaching control surfaces to Sheila-D.  Spring Quarter testing resulted in the formation of a free exit jet but minimal displacement of the vehicle.  Due to stacking inefficiencies with material availability, available manufacturing methods, and unaddressed torque transfer issues, Sheila-D was in need of support.  Scrap square pieces of aluminum flashing were roughly attached to the sides of the propulsor which controlled the overturning moments caused by torque transfer in the device.  This resulted in linear travel along the dock, verifying the projects potential.\par
 Testing the importance of the exit cone was also performed during the summer session.  2-liter soda bottles were modified to resemble the flow through Sheila-D.  Water was passed through the model’s nozzle. with and without an exit cone, and discharge times were recorded.  The use of the exit cone was verified by the faster exit times of the cone-equipped soda bottle.  Tests were also performed as to the effects of pre-swirl into the nozzle caused by the vane shell.  Tests using modified soda bottles showed promising results as the water look to discharge out the nozzle faster with pre-swirl but were eventually ruled inconclusive.  Controlling the swirl of the exiting water was difficult to accomplish giving the tests poor repeatability.\\
-\chapter{Phase III: Final Prototype Design and Manufacture}
+\chapter{Final Prototype Design and Manufacture, DORY}
 \section{Lessons Learned}
 \section{Subsystem Decomposition}
 \subsection{Propulsor}
@@ -388,20 +391,123 @@ These results from the fluid analysis were used to determine the efficiency of t
 \subsubsection{Excel Narrowing of Results}
 All of the designs were exported in a comma separated value format to be manipulated in Excel. First all efficiency values less than or equal to zero were removed as poor designs, then each variable was graphed with respect to efficiency. Due to the cyclic nature of the analysis data was plotted as clusters around certain values. Using these plots the clusters of data with low efficiency could be eliminated. Certain geometrical values were limited by realistic manufacturing constraints. This means that very small clearances between the inner radius and outer radius were removed along with  excessively small nozzle radi. By narrowing these results in this fashion final design values were arrived upon with a resulting efficiency of between 77.8\% and 80.7\% for a range of angular velocities. The final geometry was.
 %INSERT TABLE WITH FINAL GEOMETRY%
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{l|c}
+Variable& Value\\
+\hline
+Outer Radius, $r_o$&4.45in\\
+Inner Radius, $r_i$&3.2in\\
+Length, $L$ &19.6in\\
+Vane Angle, $\theta$&48$^{\circ}$\\
+Nozzle Radius $r_n$&1.218 in\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Final Geometry for the Propulsor Design}
+\end{table}
 \subsubsection{CFD}
-Computational Fluid Dynamics, or CFD, is a numerical technique for solving the Navier-Stokes equations and mathematical modeling a fluid’s behavior under specific circumstances. The Navier-Stokes equations do not have an explicit analytical solution but they are commonly used to model ideal cases where certain simplifying assumptions can be made, such as neglecting viscosity or compressibility. Before these computational techniques complicated fluid analysis was performed using experimentation with models. As designs involved more complicated geometries and fluid reactions such as with a super sonic jet iterative modeling experiments became excessively expensive in both time and money.  This, along with the evolution of computers, led to the development of these computational techniques. To understand further look at the Navier-Stokes Equaton:
+Computational Fluid Dynamics, or CFD, is a numerical technique for solving the Navier-Stokes equations and mathematical modeling a fluid’s behavior under specific circumstances. The Navier-Stokes equations do not have an explicit analytical solution but they are commonly used to model ideal cases where certain simplifying assumptions can be made, such as neglecting viscosity or compressibility. Before these computational techniques complicated fluid analysis was performed using experimentation with models. As designs involved more complicated geometries and fluid reactions such as with a super sonic jet iterative modeling experiments became excessively expensive in both time and money.  This, along with the evolution of computers, led to the development of these computational techniques.
+To understand further look at the Navier-Stokes Equaton:
 \begin{equation}
 \frac{\partial{\vec{V}}}{\partial{t}}+(\vec{V}\cdot\nabla)\vec{V}=\frac{-\nabla P}{\rho}+\nu\nabla^2\vec{V} 
 \end{equation}
-The $(\vec V\cdot\nabla)\vec V$ adds non-linearity to the equation while $\nu\nabla^2\vec{V}$ makes the system second order. These added complexities make the analytical solution of the equations practically impossible.For a numerical solution to be achieved first a numerical grid must be set up. Each node in the grid represents a position in space with an added dimension of time. This is because the dynamics of the fluid depend on the surrounding fluids as well as its position at the previous time. To understand the full dynamics of the fluid in quesetion the whole grid must be solved for every point in time. Computational techniques can only handle addition, subtraction, multiplication, and division, no calculus. This means the equation needs to be transformed into a numerically solvable form. For this the Taylor Series expansion can be used.\par
+The $(\vec V\cdot\nabla)\vec V$ adds non-linearity to the equation while $\nu\nabla^2\vec{V}$ makes the system second order. These added complexities make the analytical solution of the equations practically impossible.For a numerical solution to be achieved first a numerical grid must be set up. Each node in the grid represents a position in space with an added dimension of time. This is because the dynamics of the fluid depend on the surrounding fluids as well as its position at the previous time. To understand the full dynamics of the fluid in question the whole grid must be solved for every point in time. Computational techniques can only handle addition, subtraction, multiplication, and division, no calculus. This means the equation needs to be transformed into a numerically solvable form. For this the Taylor Series expansion can be used.\par
 The generic Taylor Series is as follows:
 \begin{equation}
 u(x)=\sum_{n=0}^{\infty}\frac{f^{(n)}(x_i)}{n!}(x-x_i)^n
 \end{equation}
-Solving the Taylor series for the $f^{(n)}$ term allows for the numerical solving of the differentials in the Navier Stokes equations. If the Taylor Series is solved on the previously discussed numerical grid 
+Solving the Taylor series for the $f^{(n)}$ term allows for the numerical solving of the differentials in the Navier Stokes equations. If the Taylor Series is solved on the previously discussed numerical grid for a one dimensional flow the following relationship is achieved:
+\begin{equation}
+\frac{\partial{u}}{\partial{x}}\bigg|_i=\frac{u_{i+1}-u_{i}}{x_{i+1}-x_i}-\frac{x_{x+1}-x_i}{2!}\frac{\partial^2u}{\partial x^2}\bigg|_i-\cdots
+\end{equation}
+If the grid spacing,$(x_{i+1}-x_i)$, is close enough the equation can be truncated with an error of $\frac{x_{x+1}-x_i}{2!}\frac{\partial^2u}{\partial x^2}\big|_i$. This allows for a simply algebraic solution to a partial derivative and is the function that gives CFD its power.\par
+These solutions still need set boundary conditions, such as velocity or pressure, the properties of the fluid, such as density and viscosity, as well as the properties of the design being tested, most significantly the geometry. Once these characteristics are imputed the program iterates through each point in space, solving the Navier-Stokes equations with the appropriate Taylor substitutions, then it moves to the next point in time and solves again until the designated amount of time has passed. The inputed conditions give the program a place to begin and therefor are an important consideration in the overall solution.\par
+With a good understanding of the basics of CFD the student version of AutoCAD CFD was used along with SolidWorks FlowAnalysis to find the solutions for our specific geometry. 
 \subsubsection{Manufacturing}
+The complicated geometry of the vane shell presented a challenge for manufacturing due to our limited resources. Any form of traditional manufacturing via removal of material, such as CNC milling or lathing, presented to high of a cost. Aluminum would be used for these methods due to the development of a protective Aluminum Oxide coat in a corrosive environment as well as the materials ease of manufacturing. \par
+Selective Laser Sintering, SLS, was also considered due to the ease of production for complicated geometries. This method would be expensive, but has a shorter lead time than traditional manufacturing. This process would also produce a metal part. Metal parts would be significantly heavy, which would remove some of the need for permanent balast, however it would add a significant inertial load to the drive train.\par
+Using an ABS 3D printer was also considered. This process had the lowest cost and lead time. There were some concerns about the strength of the part and the fact that it was quite large. Some further analysis was done on the part and was found that the loads would be low enough to be handled by the ABS. The vane shell was broken into six identical pieces so that it would fit within the print volume. \par
+The Cal Poly Chapter of the Southern California Engineering Technologists Association, SCETA, was chosen to manufacture these six sections that comprised the vane shell.  Once these parts were received they were linked together using aluminum rods along the length and marine epoxy on the surfaces. This provided a strong bond between each of the six pieces. Once the epoxy had hardened the surfaces were sanded to remove epoxy overspill and printing errors. Then the entire surface was coated with ABS cement to smooth the surface, ensure bonding, and fortify strength.
+\subsection{Body}
+\subsection{Control Surfaces}
+\subsection{Buoyancy Control}
+\subsection{Pressure Hull}
+\subsection{Drive Train}
+\subsection{Sealing}
+\subsection{Electronics}
+
+\subsubsection{Sensors}
+\paragraph{Inertial Measurement Unit}
+An inertial measurement unit, or IMU, is a micro-electromechanical system, MEMS, that consists of a combination of some of the following: accelerometers, gyroscopes, and manometers. The one selected for our project is a LSM9DS0 9 degree of freedom IMU from STmicroelectronics. Selected pages from the device's datasheet are posted in Appendix C. The 9 degrees of freedom represented are acceleration in the x,y,and z direction measured in gs, the change in angle in the x,y, and z direction measured in degrees per second, and the strength of the magnetic field in the x,y, and z direction measured in gauss'. These 9 degrees of freedom allow for the on board processor to locate the device in three dimensional space given an initial location. The IMU was selected over GPS because the signals required to get a GPS fix attenuate rapidly through water making it impossible to make a submersible device that relied on these signals. The use of and IMU and dead reckoning techniques is the most practical way to get a position for a device of this size. 
 \section{Programming}
 \subsection{Firmware}
+For the device to operate independent from a human pilot it needed to have an on board processing system that could navigate, log data, and control the motors for the control surfaces, buoyancy control and the main propulsor. The physical components that are used are described in the electronics section of the report. In this section the software techniques used to handle the data produced by each component will be discussed.
+\subsubsection{Inertial Measurement Unit}
+The inertial measurement unit, IMU, outputs data for the acceleration, change in angle, and magnetic field strength. This can be used to find position, however this particular IMU picks up normal forces caused by resisting gravity which need to be  canceled out to find the forces that are causing the overall vehicle to move. These forces can then be integrated over time to find the velocity and then the position of the vehicle. The position given will be an offset from an initial position because there is no way for the device to relate its position to absolute coordinates using only the degrees of freedom provided. This must be done in several steps.
+\paragraph{Initial Filtering} The raw data recieved from the IMU must be filtered to remove noise due to a non-ideal sensor. Each part of the IMU has a different kind of error that must be filtered in a different way. The accelerometer has noise that can be modeled a zero mean gaussian noise. This means that a low-pass filter can remove most of this noise and return a clean acceleration for later use. This was achieved by taking 10 readings from the accelerometer and averaging them thus creating a simple low-pass filter. The gyroscope tends to drift over time but is accurate in the short term. This means that a high-pass filter will attenuate the long term drift while allowing quick changes to be picked up.
+\paragraph{Orientation} After the initial filtering cleaned up some of the noise from the sensors the orientation of the device had to be determined. This is where the normal forces measured by the accelerometer become useful. They provide an absolute reference for down. Which can be calculated as follows:
+\begin{equation}
+\begin{bmatrix}
+\theta_{x_{a}}\\
+\theta_{y_{a}}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\arctan(\frac{Y}{\sqrt{X^2+Z^2}})\\
+\arctan(\frac{X}{\sqrt{Y^2+Z^2}})
+\end{bmatrix}
+\end{equation} 
+These, along with the change in angle due read from the gyroscope integrated over time, provide means for finding the Euler angles with respect to the normal gravitational inertial reference frame. The are combined using a complementary filter as follows:
+\begin{equation}
+\begin{bmatrix}
+\theta_x\\\theta_y
+\end{bmatrix}
+=
+\begin{bmatrix}
+K_g(\theta_{x_{t-1}}+\theta_{g_x} \Delta t)+K_a \theta_{x_{a}}\\
+K_g(\theta_{y_{t-1}}+\theta_{g_y} \Delta t)+K_a \theta_{y_{a}}
+\end{bmatrix}
+\end{equation}
+In this equation $K_g$ and $K_a$ are the gains for the two sensors that can contribute to the orientation. They must add up to 1. A small value for $K$ has a large impact in the short term orientation but a is over powered in the long term, while a large value of $K$ has the opposite effect, it is over powered in the short term but in the has a large impact on the long term value of the orientation.\par
+With these techniques the pitch and roll Euler angles can be found. For yaw the manometer can be used, the noise from the magnetometer has more to do with the environment it is in, what magnetic sources are around it and what kind of metals will redirect the field. These are hard to account for so a low-pass filter like the one created for the accelerometer was created to filter out environmental noise and pick up the natural magnetic field that surrounds the earth thus giving the final Euler angle, the yaw. 
+\paragraph{Acceleration of the Vehicle} With all three Euler angles calculated the acceleration needed to be transformed from the local inertail frame to the normal gravitational inertial frame. This was done with the following Euler transform:
+\begin{equation}
+\begin{bmatrix}
+A_x\\A_y\\A_Z
+\end{bmatrix}
+=
+\begin{bmatrix}
+1&0&0\\
+0&\cos{\theta_x}&-sin{\theta_x}\\
+0&\sin{\theta_x}&cos{\theta_x}\\
+\end{bmatrix}
+\begin{bmatrix}
+\cos{\theta_y}&0&\sin{\theta_y}\\
+0&1&0\\
+-\sin{\theta_y}&0&cos{\theta_y}\\
+\end{bmatrix}
+\begin{bmatrix}
+\cos{\theta_z}&-sin{\theta_z}&0\\
+\sin{\theta_z}&cos{\theta_z}&0\\
+0&0&1\\
+\end{bmatrix}
+\begin{bmatrix}
+a_x\\a_y\\a_z
+\end{bmatrix}
+\end{equation}
+Once the transformation is complete normal forces due to gravity can simply be removed by subtracting 1g from the acceleration in the Z direction.
+\paragraph{Velocity and Position}
+Calculating the velocity and position of the device was a simple matter once the acceleration had been transformed. This acceleration needed to be integrated with respect to time to get a dead reckoning position and acceleration. Simply,
+\begin{equation}
+\begin{split}
+\vec{V}=\vec{V_{t-1}}+\vec{A}\Delta t \\
+\vec{P}=\vec{P_{t-1}}+\vec{V}\Delta t
+\end{split}
+\end{equation}
+Through this method the displacement from initial position and the velocity of the device can be found. This can be used later in the analysis of data collected by the vehicle and is a major part of the mission objectives previously stated.
+\paragraph{Error Analysis} 
+This method of position estimation is full of error and cannot be fully trusted with the current sensors. This is because if the angle calculated is off, even slightly this will calculate an acceleration due to the normal force that wasn't fully canceled out. And through this acceleration an exponentially increasing error will occur in position. It is exceedingly difficult in these circumstances to filter out the real acceleration from the false acceleration without rendering the sensor useless. Due to this a large error must be considered in the final data analysis. A higher quality sensor, well above the price range for this project, would provide much more accurate data. This improved sensor will make the device much more accurate and yield a more capable ISR vehicle. 
 \subsection{Software, The Graphical User Interface}
 While the vehicle was designed to collect and log data while maneuvering through a marine environment there still needed to be a way to visualize the collected data in a manner that facilitated understanding. Most of the data for this design comes from the 1080p camera positioned to film through the front dome while the rest of the data serves to provide the context for the footage, specifically orientation and position. With this the analyst needed a way to easily watch the footage and know where it was taken and where the camera was pointed. This led to the creation of a graphical user interface. The GUI was broken down into 4 parts: the video, the orientation model, the map, and a control screen thus fulfilling the needs of the analyst.
 \subsubsection{Video Box}
@@ -409,10 +515,29 @@ The video from the camera is saved onto an SD card while the device is in the wa
 \subsubsection{The Orientation Model}
 While traveling through water there usually is not clear horizon line to use as a reference for orientation. This is why the orientation model was a necessary part of the GUI. Located to the right of the main video a solid three dimensional model of the device rotates in sync with the video giving a visual representation of the orientation of the device at the time of the recording. These rotations are kept in sync with the video through the system described in the above video section.
 \subsubsection{The Map}
-The location of the device at the time of the recording is another very important aspect required to satisfy the ISR capabilities. If some anomaly is seen in the footage it is imperative that the analyst can retrieve the location of the device at the time of the siting for further inspection.
+The location of the device at the time of the recording is another very important aspect required to satisfy the ISR capabilities. If some anomaly is seen in the footage it is imperative that the analyst can retrieve the location of the device at the time of the siting for further inspection. The map on the GUI requires the user to input a starting position and then displays the vehicles offset from the designated location thus plotting the path of the vehicle over the length of the mission. The map will further develop to allow the user to input waypoints relative to a selected starting position and therefore plot the path of the device for a future run.
 \subsubsection{The Control Screen}
-
+The control screen is located in the bottom left of the interface and reports important text to the user. The information about loaded files and the raw position data is shown here so that numerical values can easily be retrieved for a specific orientation and map position. In future development this is where the user would input the waypoints in a raw displacement form. 
+\section{Fundraising, Pricing, Time Decomposition}
+\section{Testing}
+\section{Conferences}
 \section{CVs and Team Bios}
+\subsection{Ben}
+Ben Saletta a Mechanical Engineering student at California State Polytechnic University, Pomona joined Team UV during the Spring of 2014 for the initial phase of the design, the production of SHIELA-D. An idea man, Ben is always coming up with new and creative approaches to  traditional problems.  In his final year at Cal Poly he has found himself the leader of various campus organizations ranging from organizing fraternity meetings for Pi Kappa Phi to supervising teams of Resident Advisors (RAs).  All of these jobs have honed his rapid creative problem solving skills and prepared him to be a unique design engineer.  His curiosity and drive have lead him to do several independent projects, from a low cost olive oil production method to small scale aquaponics systems.  When he can grab a bit of free time he likes to rock climb, SCUBA dive and generally adventure.
+\subsection{Brian}
+Graduating from Cal Poly Pomona in March 2015 with a BS in Mechanical Engineering and a minor in Materials Engineering, Brian is a member of the American Society of Mechanical Engineers (ASME), has made the Dean’s List 9 times, the President’s honor list, and passed the NCEES Fundamentals of Engineering (FE/EIT) Mechanical Engineering-specific exam.  Brian has interned at the C. Erwin Piper Technical Center where he did machining, 3D CAD modeling, and prepared patent drawings, Hyperion Treatment Plant where he did hydraulic design, structural design, and air flow analysis, produced technical proposals for Department of Defense (DoD) contract solicitations through the SBIR and STTR programs (subject: materials science), and has been interning at the Naval Surface Warfare Center since June 2014.  Brian’s future interests include attending graduate school to earn multiple degrees in fields such as materials science, fluid mechanics, mechanical, automotive, naval, and/or aerospace engineering, obtaining his Professional Engineer (PE) license, working as a design engineer within the defense industry on vehicles of all kinds (sea, air, land, manned, unmanned, etc.), and eventually starting his own small engineering design firm that works on special projects such as this project.
+\subsection{Andrew}
+From muscle cars to next gen cell phones, Andrew is interested in all things related to technology.  He is currently in the final year of mechanical engineering curriculum at Cal Poly Pomona where he has established strong leadership roots.  Aside from working on many design projects and participating in engineering clubs, Andrew has worked for University Advancement where he has led a team of students, alongside other departments, to raise about \$500,000 yearly for various campus needs.  He can see a future in engineering as well as in advancement, making possible career paths very exciting.  With his free time, you can find Andrew barbecuing with his family and working on his 1970 Camaro.
+\subsection{Ketton}
+One of the 5 (probably the coolest of them all) members of Team UV.  Grown up helping his Father work on cars and doing construction around the house.  You can say he’s  a jack of all trades.  Currently in his final year at Cal Poly Pomona as a mechanical engineering student and during his time has gotten valuable experience from classes as well as Internships.  Ketton worked three summers as a mechanical engineering intern for Hamilton Sundstrand (who created the first spacesuit) doing analysis of all sorts and even designed a part for the Orion space capsule.  Ketton is now working as a project associate for Otis Elevator overlooking the construction and installation of elevators.  Ones that you may be riding on in the near future.  Ketton is located in Riverside, CA and spends his free time playing recreation softball and playing league of legends.
+\subsection{Abraham}
+Part-time bassist.  Part-time photographer.  Full-time student.  Known to the team as “the lube man”, Abraham is a 6th year student at Cal Poly Pomona graduating in the Spring of 2015.  Adopting the scientific principle of Occam’s Razor, he finds that in both engineering and life often the best solution is the simpler one.  Currently open-minded in professional goals, he aspires to be masterful in many fields of engineering as well as in playing the blues.  Apart from school and work, Abraham spends his free time listening to various indie rock groups, wandering the trails in the wilderness, and actively traveling outside of Downey, California where he currently resides.
+\appendix
+\chapter{Phase I Report}
+%\includepdf[pages={-}]{SHEILA.pdf}
+\chapter{Presentation Format}
+\chapter{Electronics Data Sheets}
+%\includepdf[pages={-}]{LSM9DS0.pdf}
 \begin{thebibliography}{9}
 \bibitem{Rorres00}
 Rorres, Chris. "The Turn of the Screw: Optimal Design of an Archimedes Screw." Journal of Hydraulic Engineering (2000): 72. Print.
